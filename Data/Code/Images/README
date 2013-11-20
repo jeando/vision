@@ -1,0 +1,22 @@
+Ce repertoire contient un bout de code vous permettant de contruire lire et
+ecrire des images sur disque au formats ppm(couleur)/pgm(niveaux de gris).
+
+Le petit programme Test.C utilise ces codes. Les indications pour le compiler
+et l'utiliser se trouvent en commentaires au debut du fichier. Le programme
+en lui-meme ne fait pas grand chose, il se contente de lire l'image couleur
+passee en 1er argument et de la reecrire dans le fichier passe en deuxieme
+argument. De meme, il lit l'image en niveaux de gris passee en 3eme argument
+et la reecrit dans le fichier passe en 4eme argument.
+
+Le type de pixel a utiliser pour des images couleurs est RGB<>, et pour les
+images en niveaux de gris, Grey. Donc:
+
+Image<RGB<> > est une image couleur.
+Image<Grey>   est une image en niveaux de gris.
+
+Les differentes methodes disponibles sur les images sont decrites
+(tres brievement) dans le fichier Image.H.
+
+Je n'ai pas teste ce code beaucoup plus que Test.C, il peut donc subsister
+des erreurs.
+
