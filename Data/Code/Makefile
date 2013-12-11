@@ -42,12 +42,12 @@ LINK_CC = gcc
 # Variables ALL must be defined in specific makefiles; in addition
 # FOR NON TEMPLATE FILES
 
-vision: main.o lecture_match.o
-	$(LINK_CXX) main.o lecture_match.o -o $(EXE_NAME)
+vision: main.o lecture_match.o Image.o
+	$(LINK_CXX) main.o lecture_match.o Image.o -o $(EXE_NAME)
 lecture_match.o: lecture_match.cpp lecture_match.h
 	$(CXX) lecture_match.cpp
-main_Expr.o: main_Expr.cpp
-	$(CXX)  main_Expr.cpp
+Image.o: Image.cpp Image.h
+	$(CXX)  Image.cpp
 
 
 # FOR TEMPLATE FILES
