@@ -4,6 +4,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <map>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ lecture_match::lecture_match(string file)
 
 	fstream fichier(file.c_str());
 	int nb_img;
-	vector<Image> img;
+	map<int,Image*> img;
 
 	if(fichier)
 	{
@@ -24,7 +25,8 @@ lecture_match::lecture_match(string file)
             {
                 if(ligne[0]==' ')//donnees d'appariement
                 {
-
+                    //stringstream line(ligne);
+                    //line>>id1>>x1>>y1>>id2>>x2>>y2;
                 }else{
                     if(ligne.length()==1)
                     {
@@ -52,9 +54,9 @@ lecture_match::lecture_match(string file)
                             }
                         }
                         stringstream(ligne.substr(prec+1)) >> h;
-                        Image new_img(id,fich, w,h);
+                        Image new_img(fich,id, w,h);
                         new_img.print();
-                        img.push_back(new_img);
+                        img[fich]=&new_img;
                     }
                 }//donnees taille image
             }//else commentaire
@@ -62,8 +64,6 @@ lecture_match::lecture_match(string file)
 	}else{
 		cout << "impossible d'ouvrir le fichier" << endl;
 	}
-
-	cout << "fin test" << endl;
 };
 
 void lecture_match::test()

@@ -12,7 +12,7 @@ Image::Image(int id, string nom_fich, int w, int h)
 
 void Image::print()
 {
-    cout << numero << " " << identity << " " << width << "x" << height << endl;
+    cout << nom_fichier << " " << identity << " " << width << "x" << height << endl;
 }
 
 Image::~Image()
