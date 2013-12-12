@@ -7,13 +7,13 @@
 class Image
 {
     public:
-        Image(int num, std::string id, int w, int h);
+        Image(int id, std::string nom_fich, int w, int h);
         void print();
         virtual ~Image();
     protected:
     private:
-        int numero;
-        std::string identity;
+        int identity;
+        std::string nom_fichier;
         int width;
         int height;
 };

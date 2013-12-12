@@ -32,7 +32,7 @@ lecture_match::lecture_match(string file)
                     }else{
                         int prec = 2;
                         int cpt=0;
-                        int num=ligne[0]-'0';
+                        int fich=ligne[0]-'0';
                         string id; int w; int h;
                         for(int i=3;i<ligne.length();i++)
                         {
@@ -52,7 +52,7 @@ lecture_match::lecture_match(string file)
                             }
                         }
                         stringstream(ligne.substr(prec+1)) >> h;
-                        Image new_img(num,id, w,h);
+                        Image new_img(id,fich, w,h);
                         new_img.print();
                         img.push_back(new_img);
                     }

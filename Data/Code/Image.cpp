@@ -4,8 +4,8 @@
 #include "Image.h"
 using namespace std;
 
-Image::Image(int num, string id, int w, int h)
-:numero(num),identity(id),width(w),height(h)
+Image::Image(int id, string nom_fich, int w, int h)
+:nom_fichier(nom_fich),identity(id),width(w),height(h)
 {
     //ctor
 }
