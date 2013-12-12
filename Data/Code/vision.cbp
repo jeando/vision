@@ -17,6 +17,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Image.cpp" />
+		<Unit filename="Image.h" />
 		<Unit filename="lecture_match.cpp" />
 		<Unit filename="lecture_match.h" />
 		<Unit filename="main.cpp" />
