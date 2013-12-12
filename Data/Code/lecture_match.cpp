@@ -30,30 +30,28 @@ lecture_match::lecture_match(string file)
                     {
                         nb_img=ligne[0];
                     }else{
-                        int prec = 1;
+                        int prec = 2;
                         int cpt=0;
                         int num=ligne[0]-'0';
                         string id; int w; int h;
-                        for(int i=1;i<ligne.length();i++)
+                        for(int i=3;i<ligne.length();i++)
                         {
                             if(ligne[i]==' '|| ligne[i]=='x' || ligne[i]=='\t' || ligne[i]=='\n')
                             {
                                 switch(cpt)
                                 {
                                     case 0:
-                                        id=ligne.substr(i+1,prec);
+                                        id=ligne.substr(prec,i-prec);
                                         break;
                                     case 1:
-                                        stringstream(ligne.substr(i+1,prec)) >> w;
-                                        break;
-                                    case 2:
-                                        stringstream(ligne.substr(i+1)) >> h;
+                                        stringstream(ligne.substr(prec,i-prec)) >> w;
                                         break;
                                 }
                                 cpt++;
                                 prec=i;
                             }
                         }
+                        stringstream(ligne.substr(prec+1)) >> h;
                         Image new_img(num,id, w,h);
                         new_img.print();
                         img.push_back(new_img);

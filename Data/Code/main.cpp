@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(const int argc,const char* argv[])
+int main()
 {
 	cout << "toto" << endl;
 	lecture_match lm = lecture_match("../Mosaics/Eglise/i.matchs");
