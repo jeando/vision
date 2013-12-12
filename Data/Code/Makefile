@@ -23,7 +23,7 @@ EXE_NAME=vision
 INCL = -I$(INCL_DIR)
 
 #list of the options that must be passed to the compiler g++(man g++for details)
-CXX_FLAGS =-g -ansi -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -D_DEBUG_
+CXX_FLAGS =-g -ansi -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -D_DEBUG_ -std=c++11
 #shortcut to call the compiler call with the specified options and includes
 CXX = g++ $(CXX_FLAGS) -I $(INCL_COMMON_FONCTION_DIR) -c
 
