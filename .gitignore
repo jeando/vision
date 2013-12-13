@@ -4,5 +4,7 @@
 .*.swp
 *.o
 vision
+*.tgz
+*.out
 
 
