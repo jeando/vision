@@ -1,7 +1,9 @@
 #include "Image.h"
 
 #include <iostream>
-#include "Image.h"
+#include<sstream>
+#include<cassert>
+
 using namespace std;
 
 Image::Image(int _id, string nom_fich, int w, int h)
@@ -9,15 +11,27 @@ Image::Image(int _id, string nom_fich, int w, int h)
 {
     //ctor
 }
+Image::Image(std::string line)
+{
+	std::stringstream ss(line);
+	ss >> id >> name >> width;
+	ss.ignore();//'x'
+	ss >> height;
+}
+Image::~Image()
+{
+    //dtor
+}
 
-void Image::print()
+void Image::print()const
 {
 	std::cout << name << " " << id << " " << width << "x" << height << std::endl;
 }
 
-Image::~Image()
+void Image::add_correspondance(const point_i& p1, const point_i& p2)
 {
-    //dtor
+	assert(p1.id==id);
+	assoc[p2.id].push_back({p1.x,p1.y,p2.x,p2.y});
 }
 std::vector<correspondance<double>>& Image::operator[](int i)
 {

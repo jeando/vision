@@ -11,6 +11,12 @@ class correspondance
 	T x1,x2,y1,y2;
 };
 
+class point_i
+{
+	public:
+	int id;
+	double x,y;
+};
 template<typename T>
 cv::Mat_<T> compute_homographie(std::vector<correspondance<T>>& appariement)
 {

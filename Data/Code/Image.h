@@ -9,10 +9,12 @@ class Image
 {
     public:
         Image(int _id, std::string nom_fich, int w, int h);
-        void print();
+        Image(std::string line);
+        void print()const;
         virtual ~Image();
 		std::vector<correspondance<double>>& operator[](int i);
-
+		int get_id(){return id;}
+		void add_correspondance(const point_i& p1, const point_i& p2);
     protected:
     private:
         int id;
