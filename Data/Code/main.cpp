@@ -12,7 +12,12 @@ int main()
 	{
 		id = result.getIdProche()
 		h = compute_homographie(result[id]);
+		
 		on applique h aux appariement
 		
+		//on applique h aux appariement
+
 	}*/
 }
+
+
