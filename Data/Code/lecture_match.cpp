@@ -45,7 +45,7 @@ lecture_match::lecture_match(string file)
 		for(const auto& a : img)
 		{
 			//a.second->print();
-			cout << a.second;
+			cout << *a.second << std::endl;
 		}
 
 		std::vector<point_i> vtmp;

@@ -37,8 +37,8 @@ std::vector<correspondance<double>>& Image::operator[](int i)
 	return assoc[i];
 }
 
-std::ostream& operator<<(std::ostream& os, const Image& c)
+std::ostream& operator<<(std::ostream& os, const Image& i)
 {
-	os << name << " " << id << " " << width << "x" << height;
+	os << i.name << " " << i.id << " " << i.width << "x" << i.height;
 	return os;
 }
