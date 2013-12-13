@@ -24,7 +24,7 @@ lecture_match::lecture_match(string file)
 		string ligne;
 		correspondance<double> corr;
 		string id1,id2;
-		
+
 		std::getline(fichier, ligne);
 		while(ligne[0]=='#')
 			std::getline(fichier, ligne);
@@ -44,7 +44,8 @@ lecture_match::lecture_match(string file)
 		}
 		for(const auto& a : img)
 		{
-			a.second->print();
+			//a.second->print();
+			cout << a.second;
 		}
 
 		std::vector<point_i> vtmp;
@@ -107,7 +108,7 @@ lecture_match::lecture_match(string file)
                         for(int i=3;i<ligne.length();i++)
                         {
                             if(ligne[i]==' '|| ligne[i]=='x' || ligne[i]=='\t' || ligne[i]=='\n')
-                            
+
                                 switch(cpt)
                                 {
                                     case 0:
@@ -121,7 +122,7 @@ lecture_match::lecture_match(string file)
                                 prec=i;
                             }
                         }
-						
+
                         stringstream(ligne.substr(prec+1)) >> h;
                         Image new_img(fich,id, w,h);
                         new_img.print();

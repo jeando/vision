@@ -2,9 +2,10 @@
 #define IMAGE_H
 
 #include <iostream>
-#include<vector>
-#include<map>
-#include"correspondance.h"
+#include <vector>
+#include <map>
+#include "correspondance.h"
+
 class Image
 {
     public:
@@ -15,7 +16,10 @@ class Image
 		std::vector<correspondance<double>>& operator[](int i);
 		int get_id(){return id;}
 		void add_correspondance(const point_i& p1, const point_i& p2);
+		friend std::ostream& operator<< (std::ostream& os, const Image& i);
+
     protected:
+
     private:
         int id;
         std::string name;

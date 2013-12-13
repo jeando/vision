@@ -4,9 +4,7 @@
 #include<sstream>
 #include<cassert>
 
-using namespace std;
-
-Image::Image(int _id, string nom_fich, int w, int h)
+Image::Image(int _id, std::string nom_fich, int w, int h)
 :id(_id),name(nom_fich),width(w),height(h)
 {
     //ctor
@@ -37,4 +35,10 @@ void Image::add_correspondance(const point_i& p1, const point_i& p2)
 std::vector<correspondance<double>>& Image::operator[](int i)
 {
 	return assoc[i];
+}
+
+std::ostream& operator<<(std::ostream& os, const Image& c)
+{
+	os << name << " " << id << " " << width << "x" << height;
+	return os;
 }
