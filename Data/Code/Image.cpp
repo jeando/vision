@@ -32,6 +32,7 @@ void Image::add_correspondance(const point_i& p1, const point_i& p2)
 {
 	assert(p1.id==id);
 	assoc[p2.id].push_back({p1.x,p1.y,p2.x,p2.y});
+	std::cout << assoc[p2.id][0]<<std::endl;;
 }
 std::vector<correspondance<double>>& Image::operator[](int i)
 {
