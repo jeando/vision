@@ -5,6 +5,8 @@
 #include <sstream>
 #include <vector>
 #include <map>
+#include<memory>
+
 
 using namespace std;
 
@@ -14,8 +16,8 @@ lecture_match::lecture_match(string file)
 
 	fstream fichier(file.c_str());
 	int nb_img;
-	map<int,Image*> img;
-
+	std::map<int,std::unique_ptr<Image>> img;
+//	std::unique_ptr<Image> ptr_img;
 	if(fichier)
 	{
 		string ligne;
@@ -56,7 +58,7 @@ lecture_match::lecture_match(string file)
                         stringstream(ligne.substr(prec+1)) >> h;
                         Image new_img(fich,id, w,h);
                         new_img.print();
-                        img[fich]=&new_img;
+                        img[fich]= std::unique_ptr<Image>(new Image(fich,id,w,h));//new_img;
                     }
                 }//donnees taille image
             }//else commentaire

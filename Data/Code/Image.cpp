@@ -4,18 +4,22 @@
 #include "Image.h"
 using namespace std;
 
-Image::Image(int id, string nom_fich, int w, int h)
-:nom_fichier(nom_fich),identity(id),width(w),height(h)
+Image::Image(int _id, string nom_fich, int w, int h)
+:id(_id),name(nom_fich),width(w),height(h)
 {
     //ctor
 }
 
 void Image::print()
 {
-    cout << nom_fichier << " " << identity << " " << width << "x" << height << endl;
+	std::cout << name << " " << id << " " << width << "x" << height << std::endl;
 }
 
 Image::~Image()
 {
     //dtor
+}
+std::vector<correspondance<double>>& Image::operator[](int i)
+{
+	return assoc[i];
 }
