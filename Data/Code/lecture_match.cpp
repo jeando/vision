@@ -21,14 +21,16 @@ lecture_match::lecture_match(string file)
 	if(fichier)
 	{
 		string ligne;
+		int x1,y1,x2,y2;
+		string id1,id2;
         while(getline(fichier, ligne))  // tant que l'on peut mettre la ligne dans "contenu"
         {
             if(ligne[0]!='#')
             {
                 if(ligne[0]==' ')//donnees d'appariement
                 {
-                    //stringstream line(ligne);
-                    //line>>id1>>x1>>y1>>id2>>x2>>y2;
+                    stringstream line(ligne);
+                    line>>id1>>x1>>y1>>id2>>x2>>y2;
                 }else{
                     if(ligne.length()==1)
                     {
