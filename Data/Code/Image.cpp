@@ -39,6 +39,10 @@ std::vector<correspondance<double>>& Image::operator[](int i)
 
 std::ostream& operator<<(std::ostream& os, const Image& i)
 {
-	os << i.name << " " << i.id << " " << i.width << "x" << i.height;
+	os << i.name << " " << i.id << " " << i.width << "x" << i.height << std::endl;
+	typedef std::map<int, std::vector<correspondance<double>>>::iterator it_type;
+    for(it_type iterator = i.assoc.begin(); iterator != i.assoc.end(); iterator++) {
+        os << "/t" << *it_type << std::endl;
+    }
 	return os;
 }
