@@ -1,12 +1,13 @@
 #include <iostream>
-#include "lecture_match.h"
+#include "mosaic.h"
 
-using namespace std;
 
 int main()
 {
-	cout << "toto" << endl;
-	lecture_match lm = lecture_match("../Mosaics/Eglise/i.matchs");
+	mosaic<double> m;
+	m.lecture_appariement("../Mosaics/Eglise/i.matchs");
+
+
 /*
 	while(map.size())
 	{
