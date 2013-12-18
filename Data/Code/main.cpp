@@ -150,8 +150,9 @@ int main(int argc, char** argv)
 			glEnd();
 		}
 		window.display();		
-		
-		m.compute_next_mosaic();
+
+		if(m.size()==4)
+			m.compute_next_mosaic();
 		std::cout << m.size()<<std::endl;
 	}
 }

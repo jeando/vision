@@ -95,7 +95,7 @@ inline vec3<T>& vec3<T>::operator=(const vec2<T>& v)
 template<typename T>
 inline std::ostream& operator<<(std::ostream& os, const vec3<T>& c)
 {
-	os << "(" << c.x << ", " << c.y << ")";
+	os << "(" << c.x << ", " << c.y << ", " << c.z << ")";
 	return os;
 }
 
