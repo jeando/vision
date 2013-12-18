@@ -23,7 +23,7 @@ EXE_NAME=vision
 INCL = -I$(INCL_DIR)
 
 #list of the options that must be passed to the compiler g++(man g++for details)
-CXX_FLAGS =-g -ansi -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -D_DEBUG_ -std=c++11
+CXX_FLAGS =-O3 -ansi -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -D_DEBUG_ -std=c++11
 #shortcut to call the compiler call with the specified options and includes
 CXX = g++ $(CXX_FLAGS) -I $(INCL_COMMON_FONCTION_DIR) -c
 
@@ -42,8 +42,8 @@ LINK_CC = gcc
 # Variables ALL must be defined in specific makefiles; in addition
 # FOR NON TEMPLATE FILES
 
-vision: main.o 
-	$(LINK_CXX) main.o -o $(EXE_NAME)
+vision: main.o shader.o texture.o RessourcesManager.o
+	$(LINK_CXX) main.o shader.o texture.o RessourcesManager.o -o $(EXE_NAME) -lopencv_core -lGL -lGLEW -lGLU -lsfml-system -lsfml-window -lsfml-graphics
 
 
 
