@@ -430,6 +430,10 @@ void Shader::setTexture(const std::string &uniformLocation, const shared_ptr<Tex
 	m_textures[texture] = uniformID;
 }
 
+void Shader::clear_texture()
+{
+	m_textures.clear();
+}
 /**
  * Bind textures to GL_TEXTURE0 + some number
  * For all the textures assigned to the shader, bind them.

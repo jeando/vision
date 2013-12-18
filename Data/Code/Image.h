@@ -27,7 +27,7 @@ class image
 		return vertex[i];
 	}
 
-	//"coller" texture(name)(0,0) en A, (1,0) en B, (1,1) en C et (0,1) en D
+	//"coller" texture(name)(0,0) en A, (0,1) en B, (1,1) en C et (1,0) en D
 };
 template<typename T>
 class Image;
@@ -62,10 +62,14 @@ class Image
 		std::vector<image<T>> img;
 /*
 
-  A----B
+  A----D
   |    |
-  D----C
-
+  B----C
+  
+  
+  B----C
+  |    |
+  A----D
 */
 };
 #include"Image.cpp"

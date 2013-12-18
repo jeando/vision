@@ -10,9 +10,9 @@ Image<T>::Image(int _id, std::string nom_fich, T w, T h)
 {
     img.push_back(image<T>(nom_fich));
 	img[0][0] = vec2<T>(0,0);
-	img[0][1] = vec2<T>(w,0);
+	img[0][1] = vec2<T>(0,h);
 	img[0][2] = vec2<T>(w,h);
-	img[0][3] = vec2<T>(0,h);
+	img[0][3] = vec2<T>(w,0);
 }
 template<typename T>
 Image<T>::Image(std::string line)
@@ -23,8 +23,8 @@ Image<T>::Image(std::string line)
 	ss.ignore();//'x'
 	ss >> img[0][2].y;
 	img[0][0] = vec2<T>(0,0);
-	img[0][1] = vec2<T>(img[0][2].x,0);
-	img[0][3] = vec2<T>(0,img[0][2].y);
+	img[0][1] = vec2<T>(0,img[0][2].y);
+	img[0][3] = vec2<T>(img[0][2].x,0);
 }
 template<typename T>
 Image<T>::Image(int _id)

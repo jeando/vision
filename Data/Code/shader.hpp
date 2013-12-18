@@ -99,6 +99,7 @@ public:
 
 	void setTexture(const std::string &uniformLocation, GLuint texture);
 	void setTexture(const std::string &uniformLocation, const std::shared_ptr<Texture>& texture);
+	void clear_texture();
 
 	void setFloat(const std::string &uniformVarName, float value);
 	void setInt(const std::string &uniformVarName, int value);
