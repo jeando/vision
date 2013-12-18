@@ -39,16 +39,19 @@ class Image
     public:
         Image(int _id, std::string nom_fich, T w, T h);
         Image(std::string line);
-        Image();
+        Image(int id=-1);
         void print()const;
         virtual ~Image();
+		size_t nb_img_assoc(){return assoc.size();}
 		std::vector<correspondance<T>>& operator[](int i);
+		void erase(int i);
 		int get_id(){return id;}
 		void add_correspondance(const point_i<T>& p1, const point_i<T>& p2);
 		int get_id_closest_img();
 		friend std::ostream& operator<< <>(std::ostream& os, const Image<T>& i);
 		void add_tex(const image<T>& i);
-		const std::vector<image<T>>& get_img(){return img;}
+		const std::vector<image<T>>& get_img()const{return img;}
+		const std::map<int,std::vector<correspondance<T>>>& get_assoc(){return assoc;}
     protected:
 
     private:

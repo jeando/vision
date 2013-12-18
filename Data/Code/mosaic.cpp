@@ -92,18 +92,67 @@ void mosaic<T>::test()
 }
 
 template<typename T>
-void mosaic<T>::compute_mosaic()
+vec2<T> operator*(const cv::Mat_<T>& m, const vec2<T>& v)
 {
-	int indice;
-	while(img.size())
+	T z = m[2][0]*v.x+m[2][1]*v.y+m[2][2];
+	return vec2<T>((m[0][0]*v.x+m[0][1]*v.y+m[0][2])/z,(m[1][0]*v.x+m[1][1]*v.y+m[1][2])/z);
+}
+template<typename T>
+void mosaic<T>::init_compute_mosaic()
+{
+	int val = -1;
+	int indice = -1;
+	int tmp_val;
+	for(const auto& a : img)
 	{
+		tmp_val = (*a.second)[a.second->get_id_closest_img()].size();
+		if(tmp_val>val)
+		{
+			val = tmp_val;
+			indice = a.first;
+			std::cerr << indice << " " << tmp_val << std::endl;
+		}
+	}
+//	result;//ini result
+	image<T> tmp;
+	for(const image<T>& i : img[indice]->get_img())
+	{
+		tmp.name = i.name;
+		for(int j=0; j<4; j++)
+		{
+			tmp[j] = i[j];
+		}
+		result.add_tex(tmp);
+	}
+	for(const auto& a : img[indice]->get_assoc())
+	{
+		if(a.first == result.get_id())
+			continue;
+		img[a.first]->erase(indice);
+		for(const correspondance<T>& c : a.second)
+		{
+			result[a.first].push_back(c);
+			(*img[a.first])[result.get_id()].push_back(correspondance<T>(c.p2,c.p1));
+		}
+	}
+	std::cerr << indice << std::endl;
+	img.erase(indice);
+}
+template<typename T>
+void mosaic<T>::compute_next_mosaic()
+{
+	int indice = -1;
+	if(!img.size())
+	{
+		return;
+	}
 		indice = result.get_id_closest_img();
 		if(indice<0)
 		{
 			std::cerr << "erreur:\n\tfile: " << __FILE__ << "\n\tline: " << __LINE__<<std::endl;
 			std::cerr << "0 appariement ????" << std::endl;
 			img.clear();
-			continue;
+			return;
 		}
 		std::unique_ptr<Image<T>>& ptr = img[indice];
 		//compute homographie
@@ -111,18 +160,92 @@ void mosaic<T>::compute_mosaic()
 		//add appariement of img[indice] to result
 		//set coordinate of texture of img[indice] to the 4 vertex
 		
+		cv::Mat_<T> h;
+	std::cerr << "start compute_homographie " << indice << " " << result.get_id()<<std::endl;
+		compute_homographie(result[indice],h);
+	std::cerr << "end compute_homographie " << std::endl;
+
+		//add the image indice in the result
 		image<T> tmp;
 		for(const image<T>& i : ptr->get_img())
 		{
 			tmp.name = i.name;
 			for(int j=0; j<4; j++)
 			{
-//				tmp[i] = h * ptr->img[i];
+				tmp[j] = h * i[j];
 			}
 			result.add_tex(tmp);
 		}
-		//idem for correspondance
 
+		//mise a jour des correspondance dans les deux sens
+		correspondance<T> c2;
+		result.erase(indice);
+		for(const auto& a : ptr->get_assoc())
+		{
+			if(a.first == result.get_id())
+				continue;
+			img[a.first]->erase(indice);
+			for(const correspondance<T>& c : a.second)
+			{
+				c2.p1 = h * c.p1;
+				c2.p2 = c.p2;
+				result[a.first].push_back(c2);
+				(*img[a.first])[result.get_id()].push_back(correspondance<T>(c.p2,c.p1));
+			}
+		}
 		img.erase(indice);
-	}
 }
+template<typename T>
+void mosaic<T>::compute_homographie(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h)
+{
+	const size_t size = c.size();
+	h = cv::Mat_<T>(9, 1);
+	cv::Mat_<T> A(3*size, 9);
+	T* ptr = A[0]-1;
+	typename std::vector<correspondance<T>>::const_iterator it = c.begin();
+	const typename std::vector<correspondance<T>>::const_iterator it_end = c.end();
+	T x,y,z,t,tx,ty,zx,zy;
+	for(;it!=it_end; it++)
+	{
+		x=it->p2.x;
+		y=it->p2.y;
+		z=it->p1.x;
+		t=it->p1.y;
+
+		tx=t*x;
+		ty=t*y;
+		zx=z*x;
+		zy=z*y;
+		*++ptr = 0;
+		*++ptr = 0;
+		*++ptr = 0;
+		*++ptr = -x;
+		*++ptr = -y;
+		*++ptr = -1;
+		*++ptr = tx;
+		*++ptr = ty;
+		*++ptr = t;
+		*++ptr = x;
+		*++ptr = y;
+		*++ptr = 1;
+		*++ptr = 0;
+		*++ptr = 0;
+		*++ptr = 0;
+		*++ptr = -zx;
+		*++ptr = -zy;
+		*++ptr = -z;
+		*++ptr = -tx;
+		*++ptr = -ty;
+		*++ptr = -t;
+		*++ptr = zx;
+		*++ptr = zy;
+		*++ptr = z;
+		*++ptr = 0;
+		*++ptr = 0;
+		*++ptr = 0;
+	}
+	cv::SVD::solveZ(A,h);
+	h.reshape(0,3);
+}
+
+

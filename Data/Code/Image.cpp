@@ -27,7 +27,8 @@ Image<T>::Image(std::string line)
 	img[0][3] = vec2<T>(0,img[0][2].y);
 }
 template<typename T>
-Image<T>::Image()
+Image<T>::Image(int _id)
+	:id(_id)
 {
 	/*
 	img.push_back(image(""));
@@ -61,6 +62,11 @@ std::vector<correspondance<T>>& Image<T>::operator[](int i)
 {
 	return assoc[i];
 }
+template<typename T>
+void Image<T>::erase(int i)
+{
+	assoc.erase(i);
+}
 
 template<typename T>
 std::ostream& operator<<(std::ostream& os, const Image<T>& i)
@@ -90,7 +96,7 @@ int Image<T>::get_id_closest_img()
 		tmp = a.second.size();
 		if(tmp>val)
 		{
-			tmp=val;
+			val=tmp;
 			indice=a.first;
 		}
 	}

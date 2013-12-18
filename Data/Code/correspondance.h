@@ -17,6 +17,7 @@ class correspondance
 {
 	public:
 	vec2<T> p1,p2;//1,y1,x2,y2;
+	correspondance(vec2<T> _p1 = vec2<T>(), vec2<T> _p2 = vec2<T>()):p1(_p1),p2(_p2){}
 	friend std::ostream& operator<< <>(std::ostream& os, const correspondance& c);
 };
 template<typename T>
