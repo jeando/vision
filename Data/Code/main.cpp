@@ -5,6 +5,7 @@
 
 #include<map>
 #include<SFML/Window.hpp>
+#include<SFML/Graphics.hpp>
 #include<memory>
 #include"texture.hpp"
 #include"shader.hpp"
@@ -15,7 +16,9 @@ typedef double TYPE;
 
 int main(int argc, char** argv)
 {
-	sf::Window window(sf::VideoMode(800, 600), "My window");
+//	sf::Window window(sf::VideoMode(800, 600), "My window");
+	sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
+	//window.PreserveOpenGLStates(true);
 	glewInit();
     
 	glEnable(GL_DEPTH_TEST);
@@ -181,6 +184,18 @@ int main(int argc, char** argv)
 		if(m.size()>=2)
 			m.compute_next_mosaic();
 		std::cout << m.size()<<std::endl;
+		sf::Event event;
+        while (window.pollEvent(event))
+        {
+            // Close window : exit
+            if (event.type == sf::Event::Closed)
+                window.close();
+		if (event.key.code == sf::Keyboard::F1)
+		{
+			    sf::Image Screen = window.capture();
+			    Screen.saveToFile("screenshot.jpg");
+		}
+        }
 	}
 }
 
