@@ -19,6 +19,9 @@ int main(int argc, char** argv)
 	glewInit();
     
 	glEnable(GL_DEPTH_TEST);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glEnable( GL_BLEND );
+	glBlendFunc (GL_ONE, GL_ONE);
 	
 	
 	mosaic<TYPE> m;
@@ -37,16 +40,16 @@ int main(int argc, char** argv)
 	for(int i=0; i<nb_image; i++)
 	{
 		*ptr_quad++ = 0;
+		*ptr_quad++ = 0;
+	
+		*ptr_quad++ = 0;
 		*ptr_quad++ = 1;
 		
-		*ptr_quad++ = 0;
-		*ptr_quad++ = 0;
+		*ptr_quad++ = 1;
+		*ptr_quad++ = 1;
 	
 		*ptr_quad++ = 1;
 		*ptr_quad++ = 0;
-	
-		*ptr_quad++ = 1;
-		*ptr_quad++ = 1;
 	}
 		
 	glBufferData(GL_ARRAY_BUFFER, (4*(3+2))*nb_image*sizeof(GLfloat), vertex_data, GL_DYNAMIC_DRAW);
@@ -124,21 +127,45 @@ int main(int argc, char** argv)
 		ptr_tex = vertex_data + 12*nb_image;
 		shader.clear_texture();
 		shader.enable();
+#define SIZE_GRILLE 50.0f
 		for(int i=0; i<img_v.size(); i++)
 		{
 			shader.clear_texture();
 			shader.setTexture("Texture", tex[img_v[i].name]);
 			shader.enable();
 			glBegin(GL_QUADS);
-			for(int j=0; j<4; j++)
+//			for(int j=0; j<4; j++)
+//			{//765x509
+			for(int row=0; row<SIZE_GRILLE; row++)
 			{
-				glTexCoord2fv(ptr_tex);
-				glVertex3fv(ptr_quad);
-				std::cout << ptr_tex[0] << " " << ptr_tex[1] << std::endl;
-				std::cout << ptr_quad[0] << " " << ptr_quad[1] << " " << ptr_quad[2] <<std::endl;
-				ptr_quad += 3;
-				ptr_tex += 2;
+				for(int col=0; col<SIZE_GRILLE; col++)
+				{
+				//glTexCoord2fv(ptr_tex);
+				//glVertex3fv(ptr_quad);
+					__mat<TYPE> mm(img_v[i].h);
+				glTexCoord2f(col/SIZE_GRILLE, row/SIZE_GRILLE);
+				vec2<TYPE> v = mm * vec2<TYPE>(765*(col)/SIZE_GRILLE,509*(row)/SIZE_GRILLE);
+				glVertex3f(v.x/1000,v.y/1000,0);
+				
+				glTexCoord2f(col/SIZE_GRILLE, (row+1)/SIZE_GRILLE);
+					v = mm * vec2<TYPE>(765*(col)/SIZE_GRILLE,509*(row+1)/SIZE_GRILLE);
+				glVertex3f(v.x/1000,v.y/1000,0);
+				
+				glTexCoord2f((col+1)/SIZE_GRILLE, (row+1)/SIZE_GRILLE);
+					v = mm * vec2<TYPE>(765*(col+1)/SIZE_GRILLE,509*(row+1)/SIZE_GRILLE);
+				glVertex3f(v.x/1000,v.y/1000,0);
+				
+				glTexCoord2f((col+1)/SIZE_GRILLE, row/SIZE_GRILLE);
+					v = mm * vec2<TYPE>(765*(col+1)/SIZE_GRILLE,509*(row)/SIZE_GRILLE);
+				glVertex3f(v.x/1000,v.y/1000,0);
+//				std::cout << ptr_tex[0] << " " << ptr_tex[1] << std::endl;
+//				std::cout << ptr_quad[0] << " " << ptr_quad[1] << " " << ptr_quad[2] <<std::endl;
+//				ptr_quad += 3;
+//				ptr_tex += 2;
+				}
 			}
+
+//			}
 /*			glTexCoord2f(0,0);
 			glVertex3f(0,0,0);
 			glTexCoord2f(0,1);
@@ -151,7 +178,7 @@ int main(int argc, char** argv)
 		}
 		window.display();		
 
-		if(m.size()==4)
+		if(m.size()>=2)
 			m.compute_next_mosaic();
 		std::cout << m.size()<<std::endl;
 	}
