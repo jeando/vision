@@ -13,6 +13,7 @@
 #define BUFFER_OFFSET(i)   ((char *)NULL + (i))
 using namespace cg;
 typedef double TYPE;
+//typedef long double TYPE;
 
 int main(int argc, char** argv)
 {
@@ -35,9 +36,6 @@ int main(int argc, char** argv)
 	const int nb_image = m.size()+1;
 	std::vector<GLfloat> vertex_data__(20*nb_image);
 	GLfloat* vertex_data = vertex_data__.data();
-	GLuint buffer;
-	glGenBuffers(1, &buffer);
-	glBindBuffer(GL_ARRAY_BUFFER, buffer);
 	GLfloat* ptr_quad = vertex_data + 12*nb_image;
 	GLfloat* ptr_tex = vertex_data + 12*nb_image;
 	for(int i=0; i<nb_image; i++)
@@ -55,9 +53,6 @@ int main(int argc, char** argv)
 		*ptr_quad++ = 0;
 	}
 		
-	glBufferData(GL_ARRAY_BUFFER, (4*(3+2))*nb_image*sizeof(GLfloat), vertex_data, GL_DYNAMIC_DRAW);
-
-
 	Shader shader;
 	shader.loadVertexShaderFromFile("shader.vert");
 	shader.loadFragmentShaderFromFile("shader.frag");
@@ -98,12 +93,10 @@ int main(int argc, char** argv)
 		}
 		
 
-		glBindBuffer(GL_ARRAY_BUFFER, buffer);
-		glBufferData(GL_ARRAY_BUFFER, 20*nb_image*sizeof(GLfloat), vertex_data, GL_DYNAMIC_DRAW);
     	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glMatrixMode(GL_MODELVIEW);
 		glLoadIdentity();
-		glBindBuffer(GL_ARRAY_BUFFER, buffer);
+
 	/*	
 		glEnableClientState(GL_VERTEX_ARRAY);
 		glEnableClientState(GL_TEXTURE_COORD_ARRAY);
@@ -133,6 +126,8 @@ int main(int argc, char** argv)
 #define SIZE_GRILLE 50.0f
 		for(int i=0; i<img_v.size(); i++)
 		{
+		//	if(i!=img_v.size()-1)
+		//		continue;
 			shader.clear_texture();
 			shader.setTexture("Texture", tex[img_v[i].name]);
 			shader.enable();
@@ -147,19 +142,19 @@ int main(int argc, char** argv)
 				//glVertex3fv(ptr_quad);
 					__mat<TYPE> mm(img_v[i].h);
 				glTexCoord2f(col/SIZE_GRILLE, row/SIZE_GRILLE);
-				vec2<TYPE> v = mm * vec2<TYPE>(765*(col)/SIZE_GRILLE,509*(row)/SIZE_GRILLE);
+				vec2<TYPE> v = mm * vec2<TYPE>(img_v[i].cols*(col)/SIZE_GRILLE,img_v[i].rows*(row)/SIZE_GRILLE);
 				glVertex3f(v.x/1000,v.y/1000,0);
 				
 				glTexCoord2f(col/SIZE_GRILLE, (row+1)/SIZE_GRILLE);
-					v = mm * vec2<TYPE>(765*(col)/SIZE_GRILLE,509*(row+1)/SIZE_GRILLE);
+					v = mm * vec2<TYPE>(img_v[i].cols*(col)/SIZE_GRILLE,img_v[i].rows*(row+1)/SIZE_GRILLE);
 				glVertex3f(v.x/1000,v.y/1000,0);
 				
 				glTexCoord2f((col+1)/SIZE_GRILLE, (row+1)/SIZE_GRILLE);
-					v = mm * vec2<TYPE>(765*(col+1)/SIZE_GRILLE,509*(row+1)/SIZE_GRILLE);
+					v = mm * vec2<TYPE>(img_v[i].cols*(col+1)/SIZE_GRILLE,img_v[i].rows*(row+1)/SIZE_GRILLE);
 				glVertex3f(v.x/1000,v.y/1000,0);
 				
 				glTexCoord2f((col+1)/SIZE_GRILLE, row/SIZE_GRILLE);
-					v = mm * vec2<TYPE>(765*(col+1)/SIZE_GRILLE,509*(row)/SIZE_GRILLE);
+					v = mm * vec2<TYPE>(img_v[i].cols*(col+1)/SIZE_GRILLE,img_v[i].rows*(row)/SIZE_GRILLE);
 				glVertex3f(v.x/1000,v.y/1000,0);
 //				std::cout << ptr_tex[0] << " " << ptr_tex[1] << std::endl;
 //				std::cout << ptr_quad[0] << " " << ptr_quad[1] << " " << ptr_quad[2] <<std::endl;
@@ -181,21 +176,27 @@ int main(int argc, char** argv)
 		}
 		window.display();		
 
-		if(m.size()>=2)
-			m.compute_next_mosaic();
-		std::cout << m.size()<<std::endl;
 		sf::Event event;
         while (window.pollEvent(event))
         {
             // Close window : exit
-            if (event.type == sf::Event::Closed)
-                window.close();
+//            if (event.type == sf::Event::Closed)
+  //              window.close();
+        if (event.type == sf::Event::KeyPressed)
+		{
 		if (event.key.code == sf::Keyboard::F1)
 		{
 			    sf::Image Screen = window.capture();
 			    Screen.saveToFile("screenshot.jpg");
 		}
+		else if(event.key.code == sf::Keyboard::F2)
+		{
+			if(m.size()>=0)
+				m.compute_next_mosaic();
+			std::cout << m.size()<<std::endl;
+		}
         }
+		}
 	}
 }
 

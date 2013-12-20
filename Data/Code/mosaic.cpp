@@ -120,6 +120,8 @@ void mosaic<T>::init_compute_mosaic()
 	for(const image<T>& i : img[indice]->get_img())
 	{
 		tmp.name = i.name;
+		tmp.rows = i.rows;
+		tmp.cols = i.cols;
 		for(int j=0; j<4; j++)
 		{
 			tmp[j] = i[j];
@@ -173,6 +175,8 @@ void mosaic<T>::compute_next_mosaic()
 		for(const image<T>& i : ptr->get_img())
 		{
 			tmp.name = i.name;
+			tmp.rows = i.rows;
+			tmp.cols = i.cols;
 			for(int j=0; j<4; j++)
 			{
 				tmp[j] = h * i[j];
@@ -299,9 +303,9 @@ void mosaic<T>::compute_homographie(const std::vector<correspondance<T>>& c, cv:
 	for(const correspondance<T>& cc : c)
 	{
 		std::cout << cc.p1 << " " << vec2<T>(h*cc.p2)<<std::endl;
-		std::cout << cc.p2 << " " << vec2<T>(h*cc.p1)<<std::endl;
-		std::cout << cc.p1 << " " << vec3<T>(h*cc.p2)<<std::endl;
-		std::cout << cc.p2 << " " << vec3<T>(h*cc.p1)<<std::endl<<std::endl;;
+	//	std::cout << cc.p2 << " " << vec2<T>(h*cc.p1)<<std::endl;
+	//	std::cout << cc.p1 << " " << vec3<T>(h*cc.p2)<<std::endl;
+	//	std::cout << cc.p2 << " " << vec3<T>(h*cc.p1)<<std::endl<<std::endl;;
 	}
 }
 

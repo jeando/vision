@@ -16,6 +16,8 @@ class image
 	std::string name;
 	std::array<vec2<T>,4> vertex;//A,B,C,D;
 	T h[9]; 
+	T rows;
+	T cols;
 	image():name(""),h{1,0,0,0,1,0,0,0,1}{};
 	image(std::string s):name(s),h{1,0,0,0,1,0,0,0,1}{};
 	image(std::string s, std::array<vec2<T>,4> v):name(s),vertex(v),h{1,0,0,0,1,0,0,0,1}{};
