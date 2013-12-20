@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
+#include<cstring>
 
 template<typename T>
 mosaic<T>::mosaic()
@@ -91,11 +91,6 @@ void mosaic<T>::test()
 	std::cout << "!!!!!!!!!" << std::endl;
 }
 
-template<typename T>
-vec3<T> operator*(const cv::Mat_<T>& m, const vec2<T>& v)
-{
-	return vec3<T>(m[0][0]*v.x+m[0][1]*v.y+m[0][2],m[1][0]*v.x+m[1][1]*v.y+m[1][2],m[2][0]*v.x+m[2][1]*v.y+m[2][2]);
-}
 /*
 template<typename T>
 vec2<T> operator*(const cv::Mat_<T>& m, const vec2<T>& v)
@@ -174,6 +169,7 @@ void mosaic<T>::compute_next_mosaic()
 
 		//add the image indice in the result
 		image<T> tmp;
+		memcpy(tmp.h, h[0], sizeof(T)*9);
 		for(const image<T>& i : ptr->get_img())
 		{
 			tmp.name = i.name;
@@ -298,7 +294,7 @@ void mosaic<T>::compute_homographie(const std::vector<correspondance<T>>& c, cv:
 		std::cout << *ptr++<<std::endl;
 	}
 	cv::SVD::solveZ(A,h);
-	h.reshape(0,3);
+	h=h.reshape(0,3);
 	std::cout << h << std::endl;
 	for(const correspondance<T>& cc : c)
 	{

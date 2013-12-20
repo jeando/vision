@@ -39,6 +39,24 @@ class vec3
 	friend std::ostream& operator<< <>(std::ostream& os, const vec3& v);
 };
 
+template<typename T>
+vec3<T> operator*(const cv::Mat_<T>& m, const vec2<T>& v)
+{
+	return vec3<T>(m[0][0]*v.x+m[0][1]*v.y+m[0][2],m[1][0]*v.x+m[1][1]*v.y+m[1][2],m[2][0]*v.x+m[2][1]*v.y+m[2][2]);
+}
+template<typename T>
+class __mat
+{
+	public:
+		const T* m;
+		__mat(const T aa[9]):m(aa){};
+		const T& operator[](int i)const{return m[i];}
+};
+template<typename T>
+vec3<T> operator*(const __mat<T>& m, const vec2<T>& v)
+{
+	return vec3<T>(m[0]*v.x+m[1]*v.y+m[2],m[3]*v.x+m[4]*v.y+m[5],m[6]*v.x+m[7]*v.y+m[8]);
+}
 #include"vec.cpp"
 #endif
 
