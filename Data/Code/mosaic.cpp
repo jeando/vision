@@ -54,11 +54,10 @@ void mosaic<T>::lecture_appariement(std::string file)
 			vtmp.clear();
 			std::stringstream ss(ligne);
 
-			while(ss.ignore())
-			{
+			do{
 				ss >> ptmp.id >> ptmp.p.x >> ptmp.p.y;
 				vtmp.push_back(ptmp);
-			}
+			}while(ss.ignore());
 //			std::cout << vtmp.size()<<std::endl;
 			const int size = vtmp.size();
 			for(int i=0; i<size; i++)
@@ -90,12 +89,14 @@ void mosaic<T>::test()
 {
 	std::cout << "!!!!!!!!!" << std::endl;
 }
-
+/*
 template<typename T>
 vec3<T> operator*(const cv::Mat_<T>& m, const vec2<T>& v)
 {
 	return vec3<T>(m[0][0]*v.x+m[0][1]*v.y+m[0][2],m[1][0]*v.x+m[1][1]*v.y+m[1][2],m[2][0]*v.x+m[2][1]*v.y+m[2][2]);
 }
+
+//*/
 /*
 template<typename T>
 vec2<T> operator*(const cv::Mat_<T>& m, const vec2<T>& v)
