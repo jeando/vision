@@ -143,8 +143,13 @@ int main(int argc, char** argv)
 				//glTexCoord2fv(ptr_tex);
 				//glVertex3fv(ptr_quad);
 					__mat<TYPE> mm(img_v[i].h);
+
+//					std::cout << img_v[i].cols << std::endl;
+//					std::cout << img_v[i].rows << std::endl;
 				glTexCoord2f(col/SIZE_GRILLE, row/SIZE_GRILLE);
 				vec2<TYPE> v = mm * vec2<TYPE>(img_v[i].cols*(col)/SIZE_GRILLE,img_v[i].rows*(row)/SIZE_GRILLE);
+
+			//	std::cout << v.x<< " " << v.y << std::endl;
 				glVertex3f(v.x/1000,v.y/1000,0);
 				
 				glTexCoord2f(col/SIZE_GRILLE, (row+1)/SIZE_GRILLE);

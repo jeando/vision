@@ -126,6 +126,8 @@ void mosaic<T>::init_compute_mosaic()
 	for(const image<T>& i : img[indice]->get_img())
 	{
 		tmp.name = i.name;
+		tmp.rows = i.rows;
+		tmp.cols = i.cols;
 		for(int j=0; j<4; j++)
 		{
 			tmp[j] = i[j];
@@ -178,6 +180,10 @@ void mosaic<T>::compute_next_mosaic()
 		for(const image<T>& i : ptr->get_img())
 		{
 			tmp.name = i.name;
+			tmp.rows = i.rows;
+			tmp.cols = i.cols;
+			memcpy(tmp.h,h[0],sizeof(T)*9);
+//			tmp.h = i.h;
 			for(int j=0; j<4; j++)
 			{
 				tmp[j] = h * i[j];
