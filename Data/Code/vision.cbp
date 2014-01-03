@@ -17,25 +17,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Debug.h" />
 		<Unit filename="Image.cpp" />
 		<Unit filename="Image.h" />
-		<Unit filename="PrintOpenglErrors.h" />
-		<Unit filename="RessourcesManager.cpp" />
-		<Unit filename="RessourcesManager.h" />
 		<Unit filename="correspondance.h" />
-		<Unit filename="fbo.cpp" />
-		<Unit filename="fbo.hpp" />
-		<Unit filename="fboexception.hpp" />
+		<Unit filename="lecture_match.cpp" />
+		<Unit filename="lecture_match.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="mosaic.cpp" />
-		<Unit filename="mosaic.h" />
-		<Unit filename="shader.cpp" />
-		<Unit filename="shader.hpp" />
-		<Unit filename="texture.cpp" />
-		<Unit filename="texture.hpp" />
-		<Unit filename="vec.cpp" />
-		<Unit filename="vec.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
