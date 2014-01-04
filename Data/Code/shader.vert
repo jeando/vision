@@ -14,5 +14,6 @@ void main(void)
 //	gl_Position.y*=0.5f;
 	gl_Position.y*=ratio;
 //gl_Position.x-=1.0f;
+//	    gl_Position.xy = gl_MultiTexCoord0.xy;
 }
 
