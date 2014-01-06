@@ -37,7 +37,6 @@ Dans l'interface :
 * `echap` pour quitter
 * `w` pour sauvegarder les appariements dans un fichier `maching_points` et lance l'affichage du recollement
 
-<br>
 Dans l'affichage des recollements:
 
 * `F1` prend une impression d'écran sauvegardée dans un fichier `screenshot.jpg`
