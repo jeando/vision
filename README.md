@@ -7,7 +7,7 @@ Guénon Marie & Favreau Jean-Dominique
 
 Date :
 ------
-18/12/2013
+06/01/2014
 
 Librairies :
 ------------
@@ -22,9 +22,15 @@ Les librairies nécessaires à ce projet sont :<br>
 Compilation :
 -------------
 Pour compiler notre projet, il suffit de faire tourner la commande `make` ou `cmake` dans le fichier `./Data/Code`
+
 Execution :
 -----------
+
+* Si vous voulez rentrer à la main (au clic de souris) la liste des appariements :
 Se mettre dans le répertoire `./Data/code_back` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `.vision`
+* Si vous voulez générer le recollement à partir d'un fichier où les appariements sont listés :
+Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `.vision`
+
 
 commandes :
 -----------
