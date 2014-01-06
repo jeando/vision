@@ -26,9 +26,9 @@ Pour compiler notre projet, il suffit de faire tourner la commande `make` ou `cm
 Execution :
 -----------
 
-* Si vous voulez rentrer à la main (au clic de souris) la liste des appariements :
+* Si vous voulez rentrer à la main (au clic de souris) la liste des appariements :<br>
 Se mettre dans le répertoire `./Data/code_back` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `.vision`
-* Si vous voulez générer le recollement à partir d'un fichier où les appariements sont listés :
+* Si vous voulez générer le recollement à partir d'un fichier où les appariements sont listés :<br>
 Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `.vision`
 
 
