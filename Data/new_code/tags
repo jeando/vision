@@ -1,0 +1,1352 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BErr	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+BUFFER_OFFSET	main.cpp	13;"	d	file:
+C	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+CC	Makefile	/^CC = gcc $(CFLAGS)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -ansi -Wall$/;"	m
+COLOR	fbo.hpp	/^                COLOR = (1u << 1)$/;"	e	enum:cg::FBO::Type
+CORRESPONDANCE_H	correspondance.h	2;"	d
+CXX	Makefile	/^CXX = g++ $(CXX_FLAGS) -I $(INCL_COMMON_FONCTION_DIR) -c$/;"	m
+CXX_FLAGS	Makefile	/^CXX_FLAGS =-O3 -ansi -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -D_DEBUG_ -std=c++11$/;"	m
+Cholesky	Matrices/Matrix.H	/^    Matrix<TYPE> Cholesky(const Matrix<TYPE>& A) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A)
+CstrLeastSqrs	Matrices/lapack++.H	/^    CstrLeastSqrs(const unsigned n,const unsigned m,const unsigned p,double *A,double *B,$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,const unsigned p,double *A,double *B, double *C,double *D,double *X)
+D	Matrices/Matrix.H	/^        Vector<TYPE> D(N);$/;"	p	signature:(N)
+D	Matrices/lapack++.H	/^        double D[m];$/;"	l
+D	Matrices/lapack++.H	/^        double D[std::min(m,n)];$/;"	l
+DEPTH	fbo.hpp	/^                DEPTH = (1u << 0),$/;"	e	enum:cg::FBO::Type
+DGEEV77	Matrices/lapack++.H	/^    void DGEEV77(const char&,const char&,const int&,double*,const int&,double*,double*,double*,const int&,double*,const int&,double*,const int&,int&);$/;"	p	signature:(const char&,const char&,const int&,double*,const int&,double*,double*,double*,const int&,double*,const int&,double*,const int&,int&)
+DGEEV77	Matrices/lapack++.H	66;"	d
+DGELQF77	Matrices/lapack++.H	/^    void DGELQF77(const int&,const int&,double*,const int&,double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,double*,const int&,double*,double*,const int&,int&)
+DGELQF77	Matrices/lapack++.H	90;"	d
+DGELS77	Matrices/lapack++.H	/^    void DGELS77(const char&,const int&,const int&,const int&,double*,const int&,double*,const int&,double*,const int&,int&);$/;"	p	signature:(const char&,const int&,const int&,const int&,double*,const int&,double*,const int&,double*,const int&,int&)
+DGELS77	Matrices/lapack++.H	51;"	d
+DGELSS77	Matrices/lapack++.H	/^    void DGELSS77(const int&,const int&,const int&,double*,const int&,double*,const int&,double*,const double&,int&,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,const int&,double*,const int&,double*,const int&,double*,const double&,int&,double*,const int&,int&)
+DGELSS77	Matrices/lapack++.H	75;"	d
+DGEQLF77	Matrices/lapack++.H	/^    void DGEQLF77(const int&,const int&,double*,const int&,double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,double*,const int&,double*,double*,const int&,int&)
+DGEQLF77	Matrices/lapack++.H	91;"	d
+DGEQPF77	Matrices/lapack++.H	/^    void DGEQPF77(const int&,const int&,double*,const int&,int*,double*,double*,int&);$/;"	p	signature:(const int&,const int&,double*,const int&,int*,double*,double*,int&)
+DGEQPF77	Matrices/lapack++.H	100;"	d
+DGEQRF77	Matrices/lapack++.H	/^    void DGEQRF77(const int&,const int&,double*,const int&,double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,double*,const int&,double*,double*,const int&,int&)
+DGEQRF77	Matrices/lapack++.H	92;"	d
+DGERQF77	Matrices/lapack++.H	/^    void DGERQF77(const int&,const int&,double*,const int&,double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,double*,const int&,double*,double*,const int&,int&)
+DGERQF77	Matrices/lapack++.H	93;"	d
+DGESV77	Matrices/lapack++.H	/^    void DGESV77(const int&,const int&,double*,const int&,const int*, $/;"	p	signature:(const int&,const int&,double*,const int&,const int*, double *,const int&,int&)
+DGESV77	Matrices/lapack++.H	120;"	d
+DGESVD77	Matrices/lapack++.H	/^    void DGESVD77(const char&,const char&,const int&,const int&,double*,const int&,double*,double*,const int&,double*,const int&,double*,const int&,int&);$/;"	p	signature:(const char&,const char&,const int&,const int&,double*,const int&,double*,double*,const int&,double*,const int&,double*,const int&,int&)
+DGESVD77	Matrices/lapack++.H	28;"	d
+DGESVX77	Matrices/lapack++.H	/^    void DGESVX77(const char&,const char&,const int&,const int&,double*,const int&,double*,$/;"	p	signature:(const char&,const char&,const int&,const int&,double*,const int&,double*, const int&,int*,const char&,double*,double*,double*,const int&,double*, const int&,double&,double*,double*,double*,int*,int&)
+DGESVX77	Matrices/lapack++.H	45;"	d
+DGETRF77	Matrices/lapack++.H	/^    void DGETRF77(const int&,const int&,double*,const int&,int*,int&);$/;"	p	signature:(const int&,const int&,double*,const int&,int*,int&)
+DGETRF77	Matrices/lapack++.H	82;"	d
+DGETRI77	Matrices/lapack++.H	/^    void DGETRI77(const int&,double*,const int&,const int*,double*,const int&,int&);$/;"	p	signature:(const int&,double*,const int&,const int*,double*,const int&,int&)
+DGETRI77	Matrices/lapack++.H	83;"	d
+DGGLSE77	Matrices/lapack++.H	/^    void DGGLSE77(const int&,const int&,const int&,double*,const int&,double*,const int&,double*,double*,double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,const int&,double*,const int&,double*,const int&,double*,double*,double*,double*,const int&,int&)
+DGGLSE77	Matrices/lapack++.H	41;"	d
+DGGSVD77	Matrices/lapack++.H	/^    void DGGSVD77(const char&,const char&,const char&,const int&,const int&,const int&,$/;"	p	signature:(const char&,const char&,const char&,const int&,const int&,const int&, int&,int&,double*,const int&,double*,const int&,double*,double*, double*,const int&,double*,const int&,double*,const int&,double*,int*,int&)
+DGGSVD77	Matrices/lapack++.H	35;"	d
+DORGLQ77	Matrices/lapack++.H	/^    void DORGLQ77(const int&,const int&,const int&,double*,const int&,const double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,const int&,double*,const int&,const double*,double*,const int&,int&)
+DORGLQ77	Matrices/lapack++.H	104;"	d
+DORGQL77	Matrices/lapack++.H	/^    void DORGQL77(const int&,const int&,const int&,double*,const int&,const double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,const int&,double*,const int&,const double*,double*,const int&,int&)
+DORGQL77	Matrices/lapack++.H	105;"	d
+DORGQR77	Matrices/lapack++.H	/^    void DORGQR77(const int&,const int&,const int&,double*,const int&,const double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,const int&,double*,const int&,const double*,double*,const int&,int&)
+DORGQR77	Matrices/lapack++.H	106;"	d
+DORGRQ77	Matrices/lapack++.H	/^    void DORGRQ77(const int&,const int&,const int&,double*,const int&,const double*,double*,const int&,int&);$/;"	p	signature:(const int&,const int&,const int&,double*,const int&,const double*,double*,const int&,int&)
+DORGRQ77	Matrices/lapack++.H	107;"	d
+DPOTRF77	Matrices/lapack++.H	/^    void DPOTRF77(const char&,const int&,double*,const int&,int&); $/;"	p	signature:(const char&,const int&,double*,const int&,int&)
+DPOTRF77	Matrices/lapack++.H	116;"	d
+DSYEV77	Matrices/lapack++.H	/^    void DSYEV77(const char&,const char&,const int&,double*,const int&,double*,double*,const int&,int&);$/;"	p	signature:(const char&,const char&,const int&,double*,const int&,double*,double*,const int&,int&)
+DSYEV77	Matrices/lapack++.H	58;"	d
+DUMMY	Matrices/lapack++.H	/^        double *DUMMY=0,work[ldwork];$/;"	l
+DUMMY	Matrices/lapack++.H	/^        double *DUMMY=0;$/;"	l
+Default	main.cpp	/^	sf::Window window(sf::VideoMode(800, 600), "My window", sf::Style::Default, settings);$/;"	m	class:sf::Style	file:
+EXE_NAME	Makefile	/^EXE_NAME=vision$/;"	m
+EigenElmts	Matrices/lapack++.H	/^    EigenElmts(const unsigned n,double* mat,double* valuesReal,double* valuesIma,double* vects) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double* mat,double* valuesReal,double* valuesIma,double* vects)
+EigenVals	Matrices/lapack++.H	/^    EigenVals(const unsigned n,double* mat,double* valuesReal,double* valuesIma) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double* mat,double* valuesReal,double* valuesIma)
+Equed	Matrices/lapack++.H	/^        char   Equed;$/;"	l
+F77_FUNC	Matrices/lapack++.H	4;"	d
+FBO	fbo.cpp	/^    FBO::FBO(int width, int height, const Type type) {$/;"	f	class:cg::FBO	signature:(int width, int height, const Type type)
+FBO	fbo.hpp	/^            FBO(int width, int height, const Type type);$/;"	p	class:cg::FBO	access:public	signature:(int width, int height, const Type type)
+FBO	fbo.hpp	/^    class FBO {$/;"	c	namespace:cg
+FBOEXCEPTION_H_	fboexception.hpp	9;"	d
+FBOException	fboexception.hpp	/^    FBOException(const std::string& message)$/;"	f	class:FBOException	access:public	signature:(const std::string& message)
+FBOException	fboexception.hpp	/^class FBOException : public std::runtime_error {$/;"	c	inherits:std::runtime_error
+FBOException::FBOException	fboexception.hpp	/^    FBOException(const std::string& message)$/;"	f	class:FBOException	access:public	signature:(const std::string& message)
+FBO_H_	fbo.hpp	9;"	d
+FErr	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+FullSvd	Matrices/Matrix.H	/^        Lapack<TYPE>::FullSvd(M,N,&UT(1,1),&D(1),&V(1,1));$/;"	p	class:Maths::Lapack	signature:(M,N,&UT(1,1),&D(1),&V(1,1))
+FullSvd	Matrices/lapack++.H	/^    FullSvd(const unsigned n,const unsigned m,double* Mat,double *D,double *VT) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat,double *D,double *VT)
+GL_FALSE	shader.cpp	/^	glUniformMatrix4fv(getVariableId(uniformVarName), 1, GL_FALSE,$/;"	l
+Grey	Images/Pixels.h	/^    typedef unsigned char Grey;$/;"	t	namespace:Pixels
+IMAGE_H	Image.h	2;"	d
+IMAGE_H	Images/Image.h	2;"	d
+INCL	Makefile	/^INCL = -I$(INCL_DIR)$/;"	m
+INCL_COMMON_FONCTION_DIR	Makefile	/^INCL_COMMON_FONCTION_DIR = none$/;"	m
+INSTALL_DIR	Makefile	/^INSTALL_DIR = .\/bin$/;"	m
+Image	Image.cpp	/^Image<T>::Image(int _id)$/;"	f	class:Image	signature:(int _id)
+Image	Image.cpp	/^Image<T>::Image(int _id, std::string nom_fich, T w, T h)$/;"	f	class:Image	signature:(int _id, std::string nom_fich, T w, T h)
+Image	Image.cpp	/^Image<T>::Image(std::string line)$/;"	f	class:Image	signature:(std::string line)
+Image	Image.h	/^        Image(int _id, std::string nom_fich, T w, T h);$/;"	p	class:Image	access:public	signature:(int _id, std::string nom_fich, T w, T h)
+Image	Image.h	/^        Image(int id=-1);$/;"	p	class:Image	access:public	signature:(int id=-1)
+Image	Image.h	/^        Image(std::string line);$/;"	p	class:Image	access:public	signature:(std::string line)
+Image	Image.h	/^class Image$/;"	c
+Image	Images/Image.h	/^        Image(): data(0) { dims[0] = dims[1] = 0; }$/;"	f	class:Images::Image	access:public	signature:()
+Image	Images/Image.h	/^        Image(const Image& im): data(0) {$/;"	f	class:Images::Image	access:public	signature:(const Image& im)
+Image	Images/Image.h	/^        Image(const char* file) throw(const std::string): data(0) {$/;"	f	class:Images::Image	access:public	signature:(const char* file)
+Image	Images/Image.h	/^        Image(const unsigned sx,const unsigned sy): data(0) { resize(sx,sy); }$/;"	f	class:Images::Image	access:public	signature:(const unsigned sx,const unsigned sy)
+Image	Images/Image.h	/^    class Image {$/;"	c	namespace:Images
+Image::Image	Image.cpp	/^Image<T>::Image(int _id)$/;"	f	class:Image	signature:(int _id)
+Image::Image	Image.cpp	/^Image<T>::Image(int _id, std::string nom_fich, T w, T h)$/;"	f	class:Image	signature:(int _id, std::string nom_fich, T w, T h)
+Image::Image	Image.cpp	/^Image<T>::Image(std::string line)$/;"	f	class:Image	signature:(std::string line)
+Image::Image	Image.h	/^        Image(int _id, std::string nom_fich, T w, T h);$/;"	p	class:Image	access:public	signature:(int _id, std::string nom_fich, T w, T h)
+Image::Image	Image.h	/^        Image(int id=-1);$/;"	p	class:Image	access:public	signature:(int id=-1)
+Image::Image	Image.h	/^        Image(std::string line);$/;"	p	class:Image	access:public	signature:(std::string line)
+Image::add_correspondance	Image.cpp	/^void Image<T>::add_correspondance(const point_i<T>& p1, const point_i<T>& p2)$/;"	f	class:Image	signature:(const point_i<T>& p1, const point_i<T>& p2)
+Image::add_correspondance	Image.h	/^		void add_correspondance(const point_i<T>& p1, const point_i<T>& p2);$/;"	p	class:Image	access:public	signature:(const point_i<T>& p1, const point_i<T>& p2)
+Image::add_tex	Image.cpp	/^void Image<T>::add_tex(const image<T>& i)$/;"	f	class:Image	signature:(const image<T>& i)
+Image::add_tex	Image.h	/^		void add_tex(const image<T>& i);$/;"	p	class:Image	access:public	signature:(const image<T>& i)
+Image::assoc	Image.h	/^		std::map<int,std::vector<correspondance<T>>> assoc;$/;"	m	class:Image	access:private
+Image::erase	Image.cpp	/^void Image<T>::erase(int i)$/;"	f	class:Image	signature:(int i)
+Image::erase	Image.h	/^		void erase(int i);$/;"	p	class:Image	access:public	signature:(int i)
+Image::get_assoc	Image.h	/^		const std::map<int,std::vector<correspondance<T>>>& get_assoc(){return assoc;}$/;"	f	class:Image	access:public	signature:()
+Image::get_id	Image.h	/^		int get_id(){return id;}$/;"	f	class:Image	access:public	signature:()
+Image::get_id_closest_img	Image.cpp	/^int Image<T>::get_id_closest_img()$/;"	f	class:Image	signature:()
+Image::get_id_closest_img	Image.h	/^		int get_id_closest_img();$/;"	p	class:Image	access:public	signature:()
+Image::get_img	Image.h	/^		const std::vector<image<T>>& get_img()const{return img;}$/;"	f	class:Image	access:public	signature:() const
+Image::id	Image.h	/^        int id;$/;"	m	class:Image	access:private
+Image::img	Image.h	/^		std::vector<image<T>> img;$/;"	m	class:Image	access:private
+Image::nb_img_assoc	Image.h	/^		size_t nb_img_assoc(){return assoc.size();}$/;"	f	class:Image	access:public	signature:()
+Image::operator <<	Image.h	/^		friend std::ostream& operator<< <>(std::ostream& os, const Image<T>& i);$/;"	p	class:Image	access:friend	signature:(std::ostream& os, const Image<T>& i)
+Image::operator []	Image.cpp	/^std::vector<correspondance<T>>& Image<T>::operator[](int i)$/;"	f	class:Image	signature:(int i)
+Image::operator []	Image.h	/^		std::vector<correspondance<T>>& operator[](int i);$/;"	p	class:Image	access:public	signature:(int i)
+Image::print	Image.cpp	/^void Image<T>::print()const$/;"	f	class:Image	signature:() const
+Image::print	Image.h	/^        void print()const;$/;"	p	class:Image	access:public	signature:() const
+Image::~Image	Image.cpp	/^Image<T>::~Image()$/;"	f	class:Image	signature:()
+Image::~Image	Image.h	/^        virtual ~Image();$/;"	p	class:Image	access:public	signature:()
+Images	Images/Image.h	/^namespace Images {$/;"	n
+Images::Image	Images/Image.h	/^    class Image {$/;"	c	namespace:Images
+Images::Image::Image	Images/Image.h	/^        Image(): data(0) { dims[0] = dims[1] = 0; }$/;"	f	class:Images::Image	access:public	signature:()
+Images::Image::Image	Images/Image.h	/^        Image(const Image& im): data(0) {$/;"	f	class:Images::Image	access:public	signature:(const Image& im)
+Images::Image::Image	Images/Image.h	/^        Image(const char* file) throw(const std::string): data(0) {$/;"	f	class:Images::Image	access:public	signature:(const char* file)
+Images::Image::Image	Images/Image.h	/^        Image(const unsigned sx,const unsigned sy): data(0) { resize(sx,sy); }$/;"	f	class:Images::Image	access:public	signature:(const unsigned sx,const unsigned sy)
+Images::Image::data	Images/Image.h	/^        TYPE*    data;$/;"	m	class:Images::Image	access:private
+Images::Image::destroy	Images/Image.h	/^        void destroy() {$/;"	f	class:Images::Image	access:private	signature:()
+Images::Image::dim	Images/Image.h	/^        unsigned dim(const unsigned i) const { return dims[i-1]; }$/;"	f	class:Images::Image	access:public	signature:(const unsigned i) const
+Images::Image::dims	Images/Image.h	/^        unsigned dims[2];$/;"	m	class:Images::Image	access:private
+Images::Image::dimx	Images/Image.h	/^        unsigned dimx() const { return dim(1); }$/;"	f	class:Images::Image	access:public	signature:() const
+Images::Image::dimy	Images/Image.h	/^        unsigned dimy() const { return dim(2); }$/;"	f	class:Images::Image	access:public	signature:() const
+Images::Image::ifs	Images/Image.h	/^            std::ifstream ifs(file);$/;"	p	signature:(file)
+Images::Image::operator ()	Images/Image.h	/^              TYPE& operator()(const unsigned i,const unsigned j)       { return data[i*dimx()+j]; }$/;"	f	class:Images::Image	access:public	signature:(const unsigned i,const unsigned j)
+Images::Image::operator ()	Images/Image.h	/^        const TYPE& operator()(const unsigned i,const unsigned j) const { return data[i*dimx()+j]; }$/;"	f	class:Images::Image	access:public	signature:(const unsigned i,const unsigned j) const
+Images::Image::resize	Images/Image.h	/^        void resize(const unsigned sx,const unsigned sy) {$/;"	f	class:Images::Image	access:public	signature:(const unsigned sx,const unsigned sy)
+Images::Image::~Image	Images/Image.h	/^        ~Image() { destroy(); }$/;"	f	class:Images::Image	access:public	signature:()
+Images::depth	Images/Image.h	/^        unsigned sx,sy,depth;$/;"	l
+Images::max	Images/Image.h	/^            is.ignore(std::numeric_limits<int>::max(),'\\n');$/;"	p	signature:()
+Images::operator <<	Images/Image.h	/^    std::ostream& operator<<(std::ostream& os,const Image<TYPE>& im) throw(const std::string) {$/;"	f	namespace:Images	signature:(std::ostream& os,const Image<TYPE>& im)
+Images::operator >>	Images/Image.h	/^    std::istream& operator>>(std::istream& is,Image<TYPE>& im) throw(const std::string) {$/;"	f	namespace:Images	signature:(std::istream& is,Image<TYPE>& im)
+Images::resize	Images/Image.h	/^        im.resize(sx,sy);$/;"	p	signature:(sx,sy)
+Images::size	Images/Image.h	/^        const unsigned size = im.dimx()*im.dimy()*sizeof(TYPE);$/;"	l
+Images::std::endl	Images/Image.h	/^           << Pixels::TAG<TYPE>::depth << std::endl;$/;"	m	class:Images::std
+Images::std::endl	Images/Image.h	/^        os << Pixels::TAG<TYPE>::value << std::endl;$/;"	m	class:Images::std
+Images::std::ws	Images/Image.h	/^        is >> std::ws;$/;"	m	class:Images::std
+Images::std::ws	Images/Image.h	/^        is >> sx >> sy >> depth >> std::ws;$/;"	m	class:Images::std
+Images::str	Images/Image.h	/^        is >> str;$/;"	l
+Images::str	Images/Image.h	/^        std::string str;$/;"	l
+Images::sx	Images/Image.h	/^        unsigned sx,sy,depth;$/;"	l
+Images::sy	Images/Image.h	/^        unsigned sx,sy,depth;$/;"	l
+LAPACKPP_H	Matrices/lapack++.H	2;"	d
+LINK_CC	Makefile	/^LINK_CC = gcc$/;"	m
+LINK_CXX	Makefile	/^LINK_CXX = g++$/;"	m
+LQ	Matrices/lapack++.H	/^    LQ(const unsigned m,const unsigned n,double *Mat,double *L) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,double *L)
+LU	Matrices/lapack++.H	/^    LU(const unsigned m,const unsigned n,double *Mat,int* pivot) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,int* pivot)
+Lapack	Matrices/lapack++.H	/^class Lapack {$/;"	c
+Lapack	Matrices/lapack++.H	/^class Lapack<double> {$/;"	c
+Lapack::BErr	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+Lapack::C	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+Lapack::CstrLeastSqrs	Matrices/lapack++.H	/^    CstrLeastSqrs(const unsigned n,const unsigned m,const unsigned p,double *A,double *B,$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,const unsigned p,double *A,double *B, double *C,double *D,double *X)
+Lapack::D	Matrices/lapack++.H	/^        double D[m];$/;"	l
+Lapack::D	Matrices/lapack++.H	/^        double D[std::min(m,n)];$/;"	l
+Lapack::DUMMY	Matrices/lapack++.H	/^        double *DUMMY=0,work[ldwork];$/;"	l
+Lapack::DUMMY	Matrices/lapack++.H	/^        double *DUMMY=0;$/;"	l
+Lapack::EigenElmts	Matrices/lapack++.H	/^    EigenElmts(const unsigned n,double* mat,double* valuesReal,double* valuesIma,double* vects) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double* mat,double* valuesReal,double* valuesIma,double* vects)
+Lapack::EigenVals	Matrices/lapack++.H	/^    EigenVals(const unsigned n,double* mat,double* valuesReal,double* valuesIma) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double* mat,double* valuesReal,double* valuesIma)
+Lapack::Equed	Matrices/lapack++.H	/^        char   Equed;$/;"	l
+Lapack::FErr	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+Lapack::FullSvd	Matrices/lapack++.H	/^    FullSvd(const unsigned n,const unsigned m,double* Mat,double *D,double *VT) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat,double *D,double *VT)
+Lapack::LQ	Matrices/lapack++.H	/^    LQ(const unsigned m,const unsigned n,double *Mat,double *L) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,double *L)
+Lapack::LU	Matrices/lapack++.H	/^    LU(const unsigned m,const unsigned n,double *Mat,int* pivot) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,int* pivot)
+Lapack::LeastSqrs	Matrices/lapack++.H	/^    LeastSqrs(const unsigned n,const unsigned m,const unsigned nrhs,double* A,double* B,$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,const unsigned nrhs,double* A,double* B, double* Sing,const double RCond,unsigned& rank)
+Lapack::M	Matrices/lapack++.H	/^        const int M    = m;$/;"	l
+Lapack::M	Matrices/lapack++.H	/^        const int M = m,P = p,N = n; $/;"	l
+Lapack::M	Matrices/lapack++.H	/^        const int M = m;$/;"	l
+Lapack::MF	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+Lapack::N	Matrices/lapack++.H	/^        const int M = m,P = p,N = n; $/;"	l
+Lapack::N	Matrices/lapack++.H	/^        const int N    = n;$/;"	l
+Lapack::N	Matrices/lapack++.H	/^        const int N = n;$/;"	l
+Lapack::NRHS	Matrices/lapack++.H	/^        const int NRHS = nrhs;$/;"	l
+Lapack::P	Matrices/lapack++.H	/^        const int M = m,P = p,N = n; $/;"	l
+Lapack::P	Matrices/lapack++.H	/^        const int P = p;$/;"	l
+Lapack::QL	Matrices/lapack++.H	/^    QL(const unsigned m,const unsigned n,double *Mat,double *L) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,double *L)
+Lapack::QR	Matrices/lapack++.H	/^    QR(const unsigned m,const unsigned n,double *Mat,double *R) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,double *R)
+Lapack::R	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+Lapack::RCond	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+Lapack::RQ	Matrices/lapack++.H	/^    RQ(const unsigned m,const unsigned n,double *Mat,double *R) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,double *R)
+Lapack::Rank	Matrices/lapack++.H	/^        int    info,Rank;$/;"	l
+Lapack::Solve	Matrices/lapack++.H	/^    Solve(const unsigned n,double *A,double *B,double *X) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double *A,double *B,double *X)
+Lapack::Svd	Matrices/lapack++.H	/^    Svd(const unsigned n,const unsigned m,double* Mat) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat)
+Lapack::Svd	Matrices/lapack++.H	/^    Svd(const unsigned n,const unsigned m,double* Mat,double *D) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat,double *D)
+Lapack::SvdV	Matrices/lapack++.H	/^    SvdV(const unsigned n,const unsigned m,double* Mat,double *D,double *V) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat,double *D,double *V)
+Lapack::SvdV	Matrices/lapack++.H	/^    SvdV(const unsigned n,const unsigned m,double* Mat,double *V) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat,double *V)
+Lapack::SymmEigenElmts	Matrices/lapack++.H	/^    SymmEigenElmts(const unsigned n,double* mat,double* values) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double* mat,double* values)
+Lapack::SymmEigenVals	Matrices/lapack++.H	/^    SymmEigenVals(const unsigned n,double* mat,double* values) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double* mat,double* values)
+Lapack::Tau	Matrices/lapack++.H	/^        double work[ldwork],Tau[minmn];$/;"	l
+Lapack::Tau	Matrices/lapack++.H	/^        double work[ldwork],Tau[std::min(M,N)];$/;"	l
+Lapack::cholesky	Matrices/lapack++.H	/^    cholesky(const unsigned n,double *Mat) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double *Mat)
+Lapack::det	Matrices/lapack++.H	/^        double det = 1.0;$/;"	l
+Lapack::det	Matrices/lapack++.H	/^    det(const unsigned n,double *Mat) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double *Mat)
+Lapack::dummy	Matrices/lapack++.H	/^        double*   dummy;$/;"	l
+Lapack::dwork	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+Lapack::gsvd	Matrices/lapack++.H	/^    gsvd(const unsigned m,const unsigned n,const unsigned p, $/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,const unsigned p, double *A,double* B,double *Q,double* SigA,double* SigB,int & K,int & L)
+Lapack::gsvd	Matrices/lapack++.H	/^    gsvd(const unsigned m,const unsigned n,const unsigned p, $/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,const unsigned p, double *A,double* B,double *Q,double* U,double* V,double* SigA,double* SigB,int & K,int & L)
+Lapack::info	Matrices/lapack++.H	/^        int       info;$/;"	l
+Lapack::info	Matrices/lapack++.H	/^        int    info,Rank;$/;"	l
+Lapack::info	Matrices/lapack++.H	/^        int    info;$/;"	l
+Lapack::info	Matrices/lapack++.H	/^        int info = 0;$/;"	l
+Lapack::info	Matrices/lapack++.H	/^        int info;$/;"	l
+Lapack::inverse	Matrices/lapack++.H	/^    inverse(const unsigned n,double *Mat) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double *Mat)
+Lapack::iwork	Matrices/lapack++.H	/^        int    pivot[n],iwork[n];$/;"	l
+Lapack::iwork	Matrices/lapack++.H	/^        int iwork[N];$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = 3*minmn+Maths::max(2*minmn,NRHS,maxmn);$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = 4*n;$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = Maths::max(1,M,N);$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = N+P+Maths::max(M,N,P);$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(1,M);$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(1,N);$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(1U,3*n);$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(1U,3*n-1);$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(3*minmn+maxmn,5*minmn);$/;"	l
+Lapack::ldwork	Matrices/lapack++.H	/^        const int ldwork =3*n;$/;"	l
+Lapack::maxmn	Matrices/lapack++.H	/^        const int maxmn = std::max(M,N);$/;"	l
+Lapack::maxmn	Matrices/lapack++.H	/^        const int maxmn = std::max(m,n);$/;"	l
+Lapack::minmn	Matrices/lapack++.H	/^        const int minmn  = std::min(M,N);$/;"	l
+Lapack::minmn	Matrices/lapack++.H	/^        const int minmn = std::min(M,N);$/;"	l
+Lapack::minmn	Matrices/lapack++.H	/^        const int minmn = std::min(m,n);$/;"	l
+Lapack::pivot	Matrices/lapack++.H	/^        int    pivot[n],iwork[n];$/;"	l
+Lapack::pivot	Matrices/lapack++.H	/^        int    pivot[n];$/;"	l
+Lapack::pivot	Matrices/lapack++.H	/^        int pivot[n];$/;"	l
+Lapack::std::endl	Matrices/lapack++.H	/^        std::cerr << M << ' ' <<N << ' ' << ldwork << ' ' << Mat << ' ' << D << std::endl;$/;"	m	class:Lapack::std
+Lapack::std::endl	Matrices/lapack++.H	/^        std::cerr <<"B" << std::endl;$/;"	m	class:Lapack::std
+Lapack::work	Matrices/lapack++.H	/^        double    work[ldwork];$/;"	l
+Lapack::work	Matrices/lapack++.H	/^        double *DUMMY=0,work[ldwork];$/;"	l
+Lapack::work	Matrices/lapack++.H	/^        double work[ldwork],Tau[minmn];$/;"	l
+Lapack::work	Matrices/lapack++.H	/^        double work[ldwork],Tau[std::min(M,N)];$/;"	l
+Lapack::work	Matrices/lapack++.H	/^        double work[ldwork];$/;"	l
+Lapack::work	Matrices/lapack++.H	/^        double work[n];$/;"	l
+Lapack::work1	Matrices/lapack++.H	/^        double work1[ws];$/;"	l
+Lapack::ws	Matrices/lapack++.H	/^        const unsigned ws = Maths::max(M,P,3*N)+N;$/;"	l
+LeastSqrs	Matrices/lapack++.H	/^    LeastSqrs(const unsigned n,const unsigned m,const unsigned nrhs,double* A,double* B,$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,const unsigned nrhs,double* A,double* B, double* Sing,const double RCond,unsigned& rank)
+M	Matrices/Matrix.H	/^                is >> M(i,j);$/;"	p	signature:(i,j)
+M	Matrices/Matrix.H	/^                os << M(i,j) << ' ';$/;"	p	signature:(i,j)
+M	Matrices/Matrix.H	/^        Matrix<TYPE> M = A;$/;"	l
+M	Matrices/Matrix.H	/^        const unsigned M = A.rows();$/;"	l
+M	Matrices/lapack++.H	/^        const int M    = m;$/;"	l
+M	Matrices/lapack++.H	/^        const int M = m,P = p,N = n; $/;"	l
+M	Matrices/lapack++.H	/^        const int M = m;$/;"	l
+MATRIX_H	Matrices/Matrix.H	2;"	d
+MF	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+MM	Matrices/Matrix.H	/^        TYPE MM[A.rows()*A.cols()];$/;"	l
+Maths	Matrices/Matrix.H	/^namespace Maths {$/;"	n
+Maths	Matrices/lapack++.H	/^namespace Maths {$/;"	n
+Maths::Cholesky	Matrices/Matrix.H	/^    Matrix<TYPE> Cholesky(const Matrix<TYPE>& A) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A)
+Maths::D	Matrices/Matrix.H	/^        Vector<TYPE> D(N);$/;"	p	signature:(N)
+Maths::Lapack::FullSvd	Matrices/Matrix.H	/^        Lapack<TYPE>::FullSvd(M,N,&UT(1,1),&D(1),&V(1,1));$/;"	p	class:Maths::Lapack	signature:(M,N,&UT(1,1),&D(1),&V(1,1))
+Maths::Lapack::RQ	Matrices/Matrix.H	/^        Lapack<TYPE>::RQ(M,N,&Q(1,1),&R(1,1));$/;"	p	class:Maths::Lapack	signature:(M,N,&Q(1,1),&R(1,1))
+Maths::Lapack::cholesky	Matrices/Matrix.H	/^        Lapack<TYPE>::cholesky(N,&mat(1,1));$/;"	p	class:Maths::Lapack	signature:(N,&mat(1,1))
+Maths::Lapack::inverse	Matrices/Matrix.H	/^        Lapack<TYPE>::inverse(M.rows(),&M(1,1));$/;"	p	class:Maths::Lapack	signature:(M.rows(),&M(1,1))
+Maths::M	Matrices/Matrix.H	/^                is >> M(i,j);$/;"	p	signature:(i,j)
+Maths::M	Matrices/Matrix.H	/^                os << M(i,j) << ' ';$/;"	p	signature:(i,j)
+Maths::M	Matrices/Matrix.H	/^        Matrix<TYPE> M = A;$/;"	l
+Maths::M	Matrices/Matrix.H	/^        const unsigned M = A.rows();$/;"	l
+Maths::MM	Matrices/Matrix.H	/^        TYPE MM[A.rows()*A.cols()];$/;"	l
+Maths::Matrix	Matrices/Matrix.H	/^    class Matrix {$/;"	c	namespace:Maths
+Maths::Matrix::Matrix	Matrices/Matrix.H	/^        Matrix(): nl(0),nc(0),elmts(0) { }$/;"	f	class:Maths::Matrix	access:public	signature:()
+Maths::Matrix::Matrix	Matrices/Matrix.H	/^        Matrix(const Matrix& M): nl(M.nl),nc(M.nc),elmts(new TYPE[nl*nc]) { std::copy(M.elmts,M.elmts+nl*nc,elmts); }$/;"	f	class:Maths::Matrix	access:public	signature:(const Matrix& M)
+Maths::Matrix::Matrix	Matrices/Matrix.H	/^        Matrix(const unsigned n,const unsigned m): nl(n),nc(m),elmts(new TYPE[n*m]) { }$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned n,const unsigned m)
+Maths::Matrix::alloc	Matrices/Matrix.H	/^        void alloc(const unsigned n,const unsigned m) {$/;"	f	class:Maths::Matrix	access:private	signature:(const unsigned n,const unsigned m)
+Maths::Matrix::col	Matrices/Matrix.H	/^        Vector<TYPE> col(const unsigned j) const {$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned j) const
+Maths::Matrix::cols	Matrices/Matrix.H	/^            Matrix<TYPE> res(rows(),M.cols());$/;"	p	signature:()
+Maths::Matrix::cols	Matrices/Matrix.H	/^            Vector<TYPE> res(cols());$/;"	p	signature:()
+Maths::Matrix::cols	Matrices/Matrix.H	/^        unsigned cols() const { return nc; }$/;"	f	class:Maths::Matrix	access:public	signature:() const
+Maths::Matrix::elmts	Matrices/Matrix.H	/^        TYPE*    elmts;$/;"	m	class:Maths::Matrix	access:private
+Maths::Matrix::nc	Matrices/Matrix.H	/^        unsigned nc;$/;"	m	class:Maths::Matrix	access:private
+Maths::Matrix::nl	Matrices/Matrix.H	/^        unsigned nl;$/;"	m	class:Maths::Matrix	access:private
+Maths::Matrix::operator ()	Matrices/Matrix.H	/^              TYPE& operator()(const unsigned int i,const unsigned j)      { return elmts[(j-1)*nl+(i-1)]; }$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned int i,const unsigned j)
+Maths::Matrix::operator ()	Matrices/Matrix.H	/^        const TYPE&  operator()(const unsigned int i,const unsigned j) const{ return elmts[(j-1)*nl+(i-1)]; }$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned int i,const unsigned j) const
+Maths::Matrix::operator *	Matrices/Matrix.H	/^        Matrix<TYPE> operator*(const Matrix<TYPE>& M) const {$/;"	f	class:Maths::Matrix	access:public	signature:(const Matrix<TYPE>& M) const
+Maths::Matrix::operator *	Matrices/Matrix.H	/^        Vector<TYPE> operator*(const Vector<TYPE>& V) const {$/;"	f	class:Maths::Matrix	access:public	signature:(const Vector<TYPE>& V) const
+Maths::Matrix::operator *=	Matrices/Matrix.H	/^        Matrix<TYPE>& operator*=(const TYPE val) {$/;"	f	class:Maths::Matrix	access:public	signature:(const TYPE val)
+Maths::Matrix::operator -	Matrices/Matrix.H	/^        Matrix operator-() const {$/;"	f	class:Maths::Matrix	access:public	signature:() const
+Maths::Matrix::operator /=	Matrices/Matrix.H	/^        Matrix<TYPE>& operator\/=(const TYPE val) {$/;"	f	class:Maths::Matrix	access:public	signature:(const TYPE val)
+Maths::Matrix::operator =	Matrices/Matrix.H	/^        Matrix& operator=(const Matrix& M) {$/;"	f	class:Maths::Matrix	access:public	signature:(const Matrix& M)
+Maths::Matrix::operator =	Matrices/Matrix.H	/^        Matrix& operator=(const TYPE val) {$/;"	f	class:Maths::Matrix	access:public	signature:(const TYPE val)
+Maths::Matrix::res	Matrices/Matrix.H	/^            Matrix res = *this;$/;"	l
+Maths::Matrix::row	Matrices/Matrix.H	/^        Vector<TYPE> row(const unsigned i) const {$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned i) const
+Maths::Matrix::rows	Matrices/Matrix.H	/^            Matrix<TYPE> res(rows(),M.cols());$/;"	p	signature:()
+Maths::Matrix::rows	Matrices/Matrix.H	/^            Vector<TYPE> res(rows());$/;"	p	signature:()
+Maths::Matrix::rows	Matrices/Matrix.H	/^        unsigned rows() const { return nl; }$/;"	f	class:Maths::Matrix	access:public	signature:() const
+Maths::Matrix::std::copy	Matrices/Matrix.H	/^            std::copy(M.elmts,M.elmts+nl*nc,elmts);$/;"	p	class:Maths::Matrix::std	signature:(M.elmts,M.elmts+nl*nc,elmts)
+Maths::Matrix::std::copy	Matrices/Matrix.H	/^        Matrix(const Matrix& M): nl(M.nl),nc(M.nc),elmts(new TYPE[nl*nc]) { std::copy(M.elmts,M.elmts+nl*nc,elmts); }$/;"	p	class:Maths::Matrix::std	signature:(M.elmts,M.elmts+nl*nc,elmts)
+Maths::Matrix::val	Matrices/Matrix.H	/^                    TYPE val =0.0;$/;"	l
+Maths::Matrix::val	Matrices/Matrix.H	/^                TYPE val =0.0;$/;"	l
+Maths::Matrix::~Matrix	Matrices/Matrix.H	/^        ~Matrix() { delete[] elmts; }$/;"	f	class:Maths::Matrix	access:public	signature:()
+Maths::N	Matrices/Matrix.H	/^        const unsigned N = A.cols();$/;"	l
+Maths::RQ	Matrices/Matrix.H	/^    void RQ(const Matrix<TYPE>& A,Matrix<TYPE>& Q,Matrix<TYPE>& R) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A,Matrix<TYPE>& Q,Matrix<TYPE>& R)
+Maths::Svd	Matrices/Matrix.H	/^    Vector<TYPE> Svd(const Matrix<TYPE>& A,Matrix<TYPE>& U,Matrix<TYPE>& V) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A,Matrix<TYPE>& U,Matrix<TYPE>& V)
+Maths::UT	Matrices/Matrix.H	/^        Matrix<TYPE> UT = transpose(A);$/;"	l
+Maths::V	Matrices/Matrix.H	/^            is >> V(i);$/;"	p	signature:(i)
+Maths::V	Matrices/Matrix.H	/^            os << V(i) << ' ';$/;"	p	signature:(i)
+Maths::Vector	Matrices/Matrix.H	/^    class Vector {$/;"	c	namespace:Maths
+Maths::Vector::Vector	Matrices/Matrix.H	/^        Vector(const Vector& V): n(V.n),elmts(new TYPE[n]) { std::copy(V.elmts,V.elmts+n,elmts); }$/;"	f	class:Maths::Vector	access:public	signature:(const Vector& V)
+Maths::Vector::Vector	Matrices/Matrix.H	/^        Vector(const unsigned d): n(d),elmts(new TYPE[d]) { }$/;"	f	class:Maths::Vector	access:public	signature:(const unsigned d)
+Maths::Vector::dim	Matrices/Matrix.H	/^        unsigned dim() const { return n; }$/;"	f	class:Maths::Vector	access:public	signature:() const
+Maths::Vector::elmts	Matrices/Matrix.H	/^        TYPE*    elmts;$/;"	m	class:Maths::Vector	access:private
+Maths::Vector::n	Matrices/Matrix.H	/^        unsigned n;$/;"	m	class:Maths::Vector	access:private
+Maths::Vector::operator ()	Matrices/Matrix.H	/^              TYPE& operator()(const unsigned int i)      { return elmts[i-1]; }$/;"	f	class:Maths::Vector	access:public	signature:(const unsigned int i)
+Maths::Vector::operator ()	Matrices/Matrix.H	/^        const TYPE&  operator()(const unsigned int i) const{ return elmts[i-1]; }$/;"	f	class:Maths::Vector	access:public	signature:(const unsigned int i) const
+Maths::Vector::operator *	Matrices/Matrix.H	/^        Vector operator*(const TYPE val) const {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val) const
+Maths::Vector::operator *=	Matrices/Matrix.H	/^        Vector& operator*=(const TYPE val) {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val)
+Maths::Vector::operator +	Matrices/Matrix.H	/^        Vector operator+(const Vector<TYPE>& V) const {$/;"	f	class:Maths::Vector	access:public	signature:(const Vector<TYPE>& V) const
+Maths::Vector::operator +=	Matrices/Matrix.H	/^        Vector& operator+=(const Vector<TYPE>& V) {$/;"	f	class:Maths::Vector	access:public	signature:(const Vector<TYPE>& V)
+Maths::Vector::operator -	Matrices/Matrix.H	/^        Vector operator-() const {$/;"	f	class:Maths::Vector	access:public	signature:() const
+Maths::Vector::operator -=	Matrices/Matrix.H	/^        Vector& operator-=(const Vector<TYPE>& V) {$/;"	f	class:Maths::Vector	access:public	signature:(const Vector<TYPE>& V)
+Maths::Vector::operator /	Matrices/Matrix.H	/^        Vector operator\/(const TYPE val) const {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val) const
+Maths::Vector::operator /=	Matrices/Matrix.H	/^        Vector& operator\/=(const TYPE val) {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val)
+Maths::Vector::operator =	Matrices/Matrix.H	/^        Vector& operator=(const TYPE val) {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val)
+Maths::Vector::operator =	Matrices/Matrix.H	/^        Vector& operator=(const Vector<TYPE>& V) {$/;"	f	class:Maths::Vector	access:public	signature:(const Vector<TYPE>& V)
+Maths::Vector::res	Matrices/Matrix.H	/^            Vector res = *this;$/;"	l
+Maths::Vector::std::copy	Matrices/Matrix.H	/^        Vector(const Vector& V): n(V.n),elmts(new TYPE[n]) { std::copy(V.elmts,V.elmts+n,elmts); }$/;"	p	class:Maths::Vector::std	signature:(V.elmts,V.elmts+n,elmts)
+Maths::Vector::~Vector	Matrices/Matrix.H	/^        ~Vector() { delete[] elmts; }$/;"	f	class:Maths::Vector	access:public	signature:()
+Maths::det	Matrices/Matrix.H	/^    TYPE det(const Matrix<TYPE>& A) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A)
+Maths::dotprod	Matrices/Matrix.H	/^    inline TYPE dotprod(const Vector<TYPE>& V1,const Vector<TYPE>& V2) {$/;"	f	namespace:Maths	signature:(const Vector<TYPE>& V1,const Vector<TYPE>& V2)
+Maths::dp	Matrices/Matrix.H	/^        TYPE dp = 0;$/;"	l
+Maths::inverse	Matrices/Matrix.H	/^    Matrix<TYPE> inverse(const Matrix<TYPE>& A) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A)
+Maths::mat	Matrices/Matrix.H	/^        Matrix<TYPE> mat(A);$/;"	p	signature:(A)
+Maths::max	Matrices/lapack++.H	/^    T max(const T t1,const T t2,const T t3) {$/;"	f	namespace:Maths	signature:(const T t1,const T t2,const T t3)
+Maths::norm	Matrices/Matrix.H	/^    inline TYPE norm(const Vector<TYPE>& V) {$/;"	f	namespace:Maths	signature:(const Vector<TYPE>& V)
+Maths::operator *	Matrices/Matrix.H	/^    inline Vector<TYPE> operator*(const TYPE s,const Vector<TYPE>& V) {$/;"	f	namespace:Maths	signature:(const TYPE s,const Vector<TYPE>& V)
+Maths::operator <<	Matrices/Matrix.H	/^    std::ostream& operator<<(std::ostream& os,const Matrix<TYPE>& M) {$/;"	f	namespace:Maths	signature:(std::ostream& os,const Matrix<TYPE>& M)
+Maths::operator <<	Matrices/Matrix.H	/^    std::ostream& operator<<(std::ostream& os,const Vector<TYPE>& V) {$/;"	f	namespace:Maths	signature:(std::ostream& os,const Vector<TYPE>& V)
+Maths::operator >>	Matrices/Matrix.H	/^    std::istream& operator>>(std::istream& is,Matrix<TYPE>& M) {$/;"	f	namespace:Maths	signature:(std::istream& is,Matrix<TYPE>& M)
+Maths::operator >>	Matrices/Matrix.H	/^    std::istream& operator>>(std::istream& is,Vector<TYPE>& V) {$/;"	f	namespace:Maths	signature:(std::istream& is,Vector<TYPE>& V)
+Maths::res	Matrices/Matrix.H	/^        Matrix<TYPE> res(M.cols(),M.rows());$/;"	p	signature:(M.cols(),M.rows())
+Maths::std::endl	Matrices/Matrix.H	/^            os << std::endl;$/;"	m	class:Maths::std
+Maths::transpose	Matrices/Matrix.H	/^    inline Matrix<TYPE> transpose(const Matrix<TYPE>& M) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& M)
+Matrix	Matrices/Matrix.H	/^        Matrix(): nl(0),nc(0),elmts(0) { }$/;"	f	class:Maths::Matrix	access:public	signature:()
+Matrix	Matrices/Matrix.H	/^        Matrix(const Matrix& M): nl(M.nl),nc(M.nc),elmts(new TYPE[nl*nc]) { std::copy(M.elmts,M.elmts+nl*nc,elmts); }$/;"	f	class:Maths::Matrix	access:public	signature:(const Matrix& M)
+Matrix	Matrices/Matrix.H	/^        Matrix(const unsigned n,const unsigned m): nl(n),nc(m),elmts(new TYPE[n*m]) { }$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned n,const unsigned m)
+Matrix	Matrices/Matrix.H	/^    class Matrix {$/;"	c	namespace:Maths
+N	Matrices/Matrix.H	/^        const unsigned N = A.cols();$/;"	l
+N	Matrices/lapack++.H	/^        const int M = m,P = p,N = n; $/;"	l
+N	Matrices/lapack++.H	/^        const int N    = n;$/;"	l
+N	Matrices/lapack++.H	/^        const int N = n;$/;"	l
+NRHS	Matrices/lapack++.H	/^        const int NRHS = nrhs;$/;"	l
+P	Matrices/lapack++.H	/^        const int M = m,P = p,N = n; $/;"	l
+P	Matrices/lapack++.H	/^        const int P = p;$/;"	l
+PIXELS_H	Images/Pixels.h	2;"	d
+Pixels	Images/Pixels.h	/^namespace Pixels {$/;"	n
+Pixels::Grey	Images/Pixels.h	/^    typedef unsigned char Grey;$/;"	t	namespace:Pixels
+Pixels::RGB	Images/Pixels.h	/^    struct RGB {$/;"	s	namespace:Pixels
+Pixels::RGB::values	Images/Pixels.h	/^        TYPE values[3];$/;"	m	struct:Pixels::RGB	access:public
+Pixels::TAG	Images/Pixels.h	/^    template <> struct TAG<Grey> {$/;"	s	namespace:Pixels
+Pixels::TAG	Images/Pixels.h	/^    template <> struct TAG<RGB<> > {$/;"	s	namespace:Pixels
+Pixels::TAG	Images/Pixels.h	/^    template <typename T> struct TAG{ };$/;"	s	namespace:Pixels
+Pixels::TAG::depth	Images/Pixels.h	/^        static const unsigned depth = 255;$/;"	m	struct:Pixels::TAG	access:public
+Pixels::TAG::value	Images/Pixels.h	/^        static const char value[];$/;"	m	struct:Pixels::TAG	access:public
+Pixels::TAG::value	Images/Pixels.h	/^    const char TAG<Grey>::value[] = "P5";$/;"	m	class:Pixels::TAG
+Pixels::TAG::value	Images/Pixels.h	/^    const char TAG<RGB<> >::value[] = "P6";$/;"	m	class:Pixels::TAG
+QL	Matrices/lapack++.H	/^    QL(const unsigned m,const unsigned n,double *Mat,double *L) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,double *L)
+QR	Matrices/lapack++.H	/^    QR(const unsigned m,const unsigned n,double *Mat,double *R) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,double *R)
+R	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+R	RessourcesManager.h	29;"	d
+RCond	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+RGB	Images/Pixels.h	/^    struct RGB {$/;"	s	namespace:Pixels
+RQ	Matrices/Matrix.H	/^        Lapack<TYPE>::RQ(M,N,&Q(1,1),&R(1,1));$/;"	p	class:Maths::Lapack	signature:(M,N,&Q(1,1),&R(1,1))
+RQ	Matrices/Matrix.H	/^    void RQ(const Matrix<TYPE>& A,Matrix<TYPE>& Q,Matrix<TYPE>& R) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A,Matrix<TYPE>& Q,Matrix<TYPE>& R)
+RQ	Matrices/lapack++.H	/^    RQ(const unsigned m,const unsigned n,double *Mat,double *R) {$/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,double *Mat,double *R)
+Rank	Matrices/lapack++.H	/^        int    info,Rank;$/;"	l
+RessourcesManager	RessourcesManager.h	/^	inline explicit RessourcesManager() {$/;"	f	class:cg::RessourcesManager	access:private	signature:()
+RessourcesManager	RessourcesManager.h	/^	inline explicit RessourcesManager(RessourcesManager const&) {$/;"	f	class:cg::RessourcesManager	access:private	signature:(RessourcesManager const&)
+RessourcesManager	RessourcesManager.h	/^class RessourcesManager {$/;"	c	namespace:cg
+SGEEV77	Matrices/lapack++.H	/^    void SGEEV77(const char&,const char&,const int&,float*,const int&,float*,float*,float*,const int&,float*,const int&,float*,const int&,int&);$/;"	p	signature:(const char&,const char&,const int&,float*,const int&,float*,float*,float*,const int&,float*,const int&,float*,const int&,int&)
+SGEEV77	Matrices/lapack++.H	65;"	d
+SGELSS77	Matrices/lapack++.H	/^    void SGELSS77(const int&,const int&,const int&,float*,const int&,float*,const int&,float*,const float&,int&,float*,const int&,int&);$/;"	p	signature:(const int&,const int&,const int&,float*,const int&,float*,const int&,float*,const float&,int&,float*,const int&,int&)
+SGELSS77	Matrices/lapack++.H	74;"	d
+SGESVD77	Matrices/lapack++.H	/^    void SGESVD77(const char&,const char&,const int&,const int&,float*,const int&,float*,float*,const int&,float*,const int&,float*,const int&,int&);$/;"	p	signature:(const char&,const char&,const int&,const int&,float*,const int&,float*,float*,const int&,float*,const int&,float*,const int&,int&)
+SGESVD77	Matrices/lapack++.H	27;"	d
+SSYEV77	Matrices/lapack++.H	/^    void SSYEV77(const char&,const char&,const int&,float*,const int&,float*,float*,const int&,int&);$/;"	p	signature:(const char&,const char&,const int&,float*,const int&,float*,float*,const int&,int&)
+SSYEV77	Matrices/lapack++.H	57;"	d
+Shader	shader.cpp	/^Shader::Shader() {$/;"	f	class:cg::Shader	signature:()
+Shader	shader.cpp	/^Shader::Shader(const std::string &vertexShaderPath,$/;"	f	class:cg::Shader	signature:(const std::string &vertexShaderPath, const std::string &fragmentShaderPath)
+Shader	shader.hpp	/^	Shader();$/;"	p	class:cg::Shader	access:public	signature:()
+Shader	shader.hpp	/^	Shader(const std::string &vertexShaderPath,$/;"	p	class:cg::Shader	access:public	signature:(const std::string &vertexShaderPath, const std::string &fragmentShaderPath)
+Shader	shader.hpp	/^class Shader {$/;"	c	namespace:cg
+Shader::disable	main.cpp	/^			Shader::disable();$/;"	p	class:Shader	file:	signature:()
+Solve	Matrices/lapack++.H	/^    Solve(const unsigned n,double *A,double *B,double *X) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double *A,double *B,double *X)
+Success	shader.cpp	/^    GLint Success;$/;"	l
+Svd	Matrices/Matrix.H	/^    Vector<TYPE> Svd(const Matrix<TYPE>& A,Matrix<TYPE>& U,Matrix<TYPE>& V) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A,Matrix<TYPE>& U,Matrix<TYPE>& V)
+Svd	Matrices/lapack++.H	/^    Svd(const unsigned n,const unsigned m,double* Mat) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat)
+Svd	Matrices/lapack++.H	/^    Svd(const unsigned n,const unsigned m,double* Mat,double *D) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat,double *D)
+SvdV	Matrices/lapack++.H	/^    SvdV(const unsigned n,const unsigned m,double* Mat,double *D,double *V) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat,double *D,double *V)
+SvdV	Matrices/lapack++.H	/^    SvdV(const unsigned n,const unsigned m,double* Mat,double *V) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,const unsigned m,double* Mat,double *V)
+SymmEigenElmts	Matrices/lapack++.H	/^    SymmEigenElmts(const unsigned n,double* mat,double* values) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double* mat,double* values)
+SymmEigenVals	Matrices/lapack++.H	/^    SymmEigenVals(const unsigned n,double* mat,double* values) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double* mat,double* values)
+TAG	Images/Pixels.h	/^    template <> struct TAG<Grey> {$/;"	s	namespace:Pixels
+TAG	Images/Pixels.h	/^    template <> struct TAG<RGB<> > {$/;"	s	namespace:Pixels
+TAG	Images/Pixels.h	/^    template <typename T> struct TAG{ };$/;"	s	namespace:Pixels
+TYPE	main.cpp	/^typedef double TYPE;$/;"	t	file:
+TYPE	test.cpp	/^typedef double TYPE;$/;"	t	file:
+Tau	Matrices/lapack++.H	/^        double work[ldwork],Tau[minmn];$/;"	l
+Tau	Matrices/lapack++.H	/^        double work[ldwork],Tau[std::min(M,N)];$/;"	l
+Texture	texture.cpp	/^Texture::Texture() {$/;"	f	class:cg::Texture	signature:()
+Texture	texture.cpp	/^Texture::Texture(const GLuint id) {$/;"	f	class:cg::Texture	signature:(const GLuint id)
+Texture	texture.cpp	/^Texture::Texture(const std::string& path) {$/;"	f	class:cg::Texture	signature:(const std::string& path)
+Texture	texture.hpp	/^	Texture();$/;"	p	class:cg::Texture	access:public	signature:()
+Texture	texture.hpp	/^	Texture(const GLuint id);$/;"	p	class:cg::Texture	access:public	signature:(const GLuint id)
+Texture	texture.hpp	/^	Texture(const std::string& path);$/;"	p	class:cg::Texture	access:public	signature:(const std::string& path)
+Texture	texture.hpp	/^class Texture {$/;"	c	namespace:cg
+Type	fbo.hpp	/^            enum Type {$/;"	g	class:cg::FBO	access:public
+UT	Matrices/Matrix.H	/^        Matrix<TYPE> UT = transpose(A);$/;"	l
+V	Matrices/Matrix.H	/^            is >> V(i);$/;"	p	signature:(i)
+V	Matrices/Matrix.H	/^            os << V(i) << ' ';$/;"	p	signature:(i)
+VEC_HHH	vec.h	2;"	d
+Vector	Matrices/Matrix.H	/^        Vector(const Vector& V): n(V.n),elmts(new TYPE[n]) { std::copy(V.elmts,V.elmts+n,elmts); }$/;"	f	class:Maths::Vector	access:public	signature:(const Vector& V)
+Vector	Matrices/Matrix.H	/^        Vector(const unsigned d): n(d),elmts(new TYPE[d]) { }$/;"	f	class:Maths::Vector	access:public	signature:(const unsigned d)
+Vector	Matrices/Matrix.H	/^    class Vector {$/;"	c	namespace:Maths
+_LECTURE_H_	mosaic.h	2;"	d
+__RessourcesManager__	RessourcesManager.h	20;"	d
+__Shader__	shader.hpp	25;"	d
+__Texture__	texture.hpp	20;"	d
+addImage	RessourcesManager.cpp	/^void RessourcesManager::addImage(sf::Image *img, const std::string& id) {$/;"	f	class:cg::RessourcesManager	signature:(sf::Image *img, const std::string& id)
+addImage	RessourcesManager.h	/^	void addImage(sf::Image *, const std::string& id);$/;"	p	class:cg::RessourcesManager	access:public	signature:(sf::Image *, const std::string& id)
+addTexture	RessourcesManager.cpp	/^bool RessourcesManager::addTexture(Texture *texture, const std::string &path) {$/;"	f	class:cg::RessourcesManager	signature:(Texture *texture, const std::string &path)
+addTexture	RessourcesManager.h	/^	bool addTexture(Texture* texture, const std::string &path);$/;"	p	class:cg::RessourcesManager	access:public	signature:(Texture* texture, const std::string &path)
+add_correspondance	Image.cpp	/^void Image<T>::add_correspondance(const point_i<T>& p1, const point_i<T>& p2)$/;"	f	class:Image	signature:(const point_i<T>& p1, const point_i<T>& p2)
+add_correspondance	Image.h	/^		void add_correspondance(const point_i<T>& p1, const point_i<T>& p2);$/;"	p	class:Image	access:public	signature:(const point_i<T>& p1, const point_i<T>& p2)
+add_correspondance	mosaic.cpp	/^					img[id]->add_correspondance(vtmp[i],vtmp[j]);$/;"	p	file:	signature:(vtmp[i],vtmp[j])
+add_tex	Image.cpp	/^void Image<T>::add_tex(const image<T>& i)$/;"	f	class:Image	signature:(const image<T>& i)
+add_tex	Image.h	/^		void add_tex(const image<T>& i);$/;"	p	class:Image	access:public	signature:(const image<T>& i)
+add_tex	mosaic.cpp	/^			result.add_tex(tmp);$/;"	p	file:	signature:(tmp)
+add_tex	mosaic.cpp	/^		result.add_tex(tmp);$/;"	p	file:	signature:(tmp)
+alloc	Matrices/Matrix.H	/^        void alloc(const unsigned n,const unsigned m) {$/;"	f	class:Maths::Matrix	access:private	signature:(const unsigned n,const unsigned m)
+assoc	Image.h	/^		std::map<int,std::vector<correspondance<T>>> assoc;$/;"	m	class:Image	access:private
+bind	texture.cpp	/^void Texture::bind() {$/;"	f	class:cg::Texture	signature:()
+bind	texture.hpp	/^	void bind();$/;"	p	class:cg::Texture	access:public	signature:()
+bindTextures	shader.cpp	/^void Shader::bindTextures() {$/;"	f	class:cg::Shader	signature:()
+bindTextures	shader.hpp	/^	void bindTextures();$/;"	p	class:cg::Shader	access:private	signature:()
+buf	fbo.cpp	/^            GLenum buf[1] = { GL_COLOR_ATTACHMENT0_EXT};$/;"	l
+buffer	shader.cpp	/^		std::stringstream buffer;$/;"	l
+buffer	shader.cpp	/^	GLuint buffer;$/;"	l
+buffer_vbo	shader.hpp	/^	std::vector<GLuint> buffer_vbo;$/;"	m	class:cg::Shader	access:private
+c	main.cpp	/^	sf::Context c;$/;"	l
+c2	mosaic.cpp	/^		correspondance<T> c2;$/;"	l
+cerr	shader.cpp	/^        std::cerr << "Shader::createSharedObjects: Failed creating shader object";$/;"	m	class:cg::std	file:
+cg	RessourcesManager.cpp	/^namespace cg {$/;"	n	file:
+cg	RessourcesManager.h	/^namespace cg {$/;"	n
+cg	fbo.cpp	/^namespace cg$/;"	n	file:
+cg	fbo.hpp	/^namespace cg$/;"	n
+cg	shader.cpp	/^namespace cg {$/;"	n	file:
+cg	shader.hpp	/^namespace cg {$/;"	n
+cg	texture.cpp	/^namespace cg {$/;"	n	file:
+cg	texture.hpp	/^namespace cg {$/;"	n
+cg::FBO	fbo.hpp	/^    class FBO {$/;"	c	namespace:cg
+cg::FBO::COLOR	fbo.hpp	/^                COLOR = (1u << 1)$/;"	e	enum:cg::FBO::Type
+cg::FBO::DEPTH	fbo.hpp	/^                DEPTH = (1u << 0),$/;"	e	enum:cg::FBO::Type
+cg::FBO::FBO	fbo.cpp	/^    FBO::FBO(int width, int height, const Type type) {$/;"	f	class:cg::FBO	signature:(int width, int height, const Type type)
+cg::FBO::FBO	fbo.hpp	/^            FBO(int width, int height, const Type type);$/;"	p	class:cg::FBO	access:public	signature:(int width, int height, const Type type)
+cg::FBO::Type	fbo.hpp	/^            enum Type {$/;"	g	class:cg::FBO	access:public
+cg::FBO::checkFBO	fbo.cpp	/^    void FBO::checkFBO() throw () {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::checkFBO	fbo.hpp	/^            void checkFBO() throw ();$/;"	p	class:cg::FBO	access:protected	signature:()
+cg::FBO::clear	fbo.cpp	/^    void FBO::clear() {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::clear	fbo.hpp	/^            void clear();$/;"	p	class:cg::FBO	access:public	signature:()
+cg::FBO::getColorTextureId	fbo.hpp	/^            GLuint getColorTextureId() const {$/;"	f	class:cg::FBO	access:public	signature:() const
+cg::FBO::getDepthTextureId	fbo.hpp	/^            GLuint getDepthTextureId() const {$/;"	f	class:cg::FBO	access:public	signature:() const
+cg::FBO::init	fbo.cpp	/^    void FBO::init() {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::init	fbo.hpp	/^            void init();$/;"	p	class:cg::FBO	access:public	signature:()
+cg::FBO::initColorAttachement	fbo.cpp	/^    void FBO::initColorAttachement() {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::initColorAttachement	fbo.hpp	/^            void initColorAttachement();$/;"	p	class:cg::FBO	access:protected	signature:()
+cg::FBO::initDepthTexture	fbo.cpp	/^    void FBO::initDepthTexture() {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::initDepthTexture	fbo.hpp	/^            void initDepthTexture();$/;"	p	class:cg::FBO	access:protected	signature:()
+cg::FBO::initFBO	fbo.cpp	/^    void FBO::initFBO() {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::initFBO	fbo.hpp	/^            void initFBO();$/;"	p	class:cg::FBO	access:protected	signature:()
+cg::FBO::mColorTexture	fbo.hpp	/^            GLuint mColorTexture;$/;"	m	class:cg::FBO	access:protected
+cg::FBO::mDepthTex	fbo.hpp	/^            GLuint mDepthTex;$/;"	m	class:cg::FBO	access:protected
+cg::FBO::mFrameBuffer	fbo.hpp	/^            GLuint mFrameBuffer;$/;"	m	class:cg::FBO	access:protected
+cg::FBO::mHeight	fbo.hpp	/^            int mHeight;$/;"	m	class:cg::FBO	access:protected
+cg::FBO::mTexture	fbo.hpp	/^            GLuint mTexture;$/;"	m	class:cg::FBO	access:protected
+cg::FBO::mType	fbo.hpp	/^            Type mType;$/;"	m	class:cg::FBO	access:public
+cg::FBO::mWidth	fbo.hpp	/^            int mWidth;$/;"	m	class:cg::FBO	access:protected
+cg::FBO::renderToFBO	fbo.cpp	/^    void FBO::renderToFBO() {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::renderToFBO	fbo.hpp	/^            void renderToFBO();$/;"	p	class:cg::FBO	access:public	signature:()
+cg::FBO::renderToScreen	fbo.cpp	/^    void FBO::renderToScreen() {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::renderToScreen	fbo.hpp	/^            static void renderToScreen();$/;"	p	class:cg::FBO	access:public	signature:()
+cg::FBO::~FBO	fbo.cpp	/^    FBO::~FBO() {$/;"	f	class:cg::FBO	signature:()
+cg::FBO::~FBO	fbo.hpp	/^            virtual ~FBO();$/;"	p	class:cg::FBO	access:public	signature:()
+cg::GL_FALSE	shader.cpp	/^	glUniformMatrix4fv(getVariableId(uniformVarName), 1, GL_FALSE,$/;"	l
+cg::RessourcesManager	RessourcesManager.h	/^class RessourcesManager {$/;"	c	namespace:cg
+cg::RessourcesManager::RessourcesManager	RessourcesManager.h	/^	inline explicit RessourcesManager() {$/;"	f	class:cg::RessourcesManager	access:private	signature:()
+cg::RessourcesManager::RessourcesManager	RessourcesManager.h	/^	inline explicit RessourcesManager(RessourcesManager const&) {$/;"	f	class:cg::RessourcesManager	access:private	signature:(RessourcesManager const&)
+cg::RessourcesManager::addImage	RessourcesManager.cpp	/^void RessourcesManager::addImage(sf::Image *img, const std::string& id) {$/;"	f	class:cg::RessourcesManager	signature:(sf::Image *img, const std::string& id)
+cg::RessourcesManager::addImage	RessourcesManager.h	/^	void addImage(sf::Image *, const std::string& id);$/;"	p	class:cg::RessourcesManager	access:public	signature:(sf::Image *, const std::string& id)
+cg::RessourcesManager::addTexture	RessourcesManager.cpp	/^bool RessourcesManager::addTexture(Texture *texture, const std::string &path) {$/;"	f	class:cg::RessourcesManager	signature:(Texture *texture, const std::string &path)
+cg::RessourcesManager::addTexture	RessourcesManager.h	/^	bool addTexture(Texture* texture, const std::string &path);$/;"	p	class:cg::RessourcesManager	access:public	signature:(Texture* texture, const std::string &path)
+cg::RessourcesManager::getImage	RessourcesManager.cpp	/^sf::Image* RessourcesManager::getImage(const std::string& path) const {$/;"	f	class:cg::RessourcesManager	signature:(const std::string& path) const
+cg::RessourcesManager::getImage	RessourcesManager.h	/^	sf::Image* getImage(const std::string& path) const;$/;"	p	class:cg::RessourcesManager	access:public	signature:(const std::string& path) const
+cg::RessourcesManager::getInstance	RessourcesManager.h	/^	inline static RessourcesManager& getInstance() {$/;"	f	class:cg::RessourcesManager	access:public	signature:()
+cg::RessourcesManager::instance	RessourcesManager.h	/^		static RessourcesManager instance;$/;"	l
+cg::RessourcesManager::loadImage	RessourcesManager.cpp	/^bool RessourcesManager::loadImage(const std::string& path) {$/;"	f	class:cg::RessourcesManager	signature:(const std::string& path)
+cg::RessourcesManager::loadImage	RessourcesManager.h	/^	bool loadImage(const std::string& path);$/;"	p	class:cg::RessourcesManager	access:public	signature:(const std::string& path)
+cg::RessourcesManager::loadTexture	RessourcesManager.cpp	/^Texture * RessourcesManager::loadTexture(const std::string &path) {$/;"	f	class:cg::RessourcesManager	signature:(const std::string &path)
+cg::RessourcesManager::loadTexture	RessourcesManager.h	/^	Texture* loadTexture(const std::string &path);$/;"	p	class:cg::RessourcesManager	access:public	signature:(const std::string &path)
+cg::RessourcesManager::mImages	RessourcesManager.h	/^	std::map<std::string, sf::Image*> mImages;$/;"	m	class:cg::RessourcesManager	access:protected
+cg::RessourcesManager::mTextures	RessourcesManager.h	/^	std::map<std::string, Texture*> mTextures;$/;"	m	class:cg::RessourcesManager	access:protected
+cg::RessourcesManager::operator =	RessourcesManager.h	/^	inline RessourcesManager& operator=(RessourcesManager const&) {$/;"	f	class:cg::RessourcesManager	access:private	signature:(RessourcesManager const&)
+cg::RessourcesManager::~RessourcesManager	RessourcesManager.cpp	/^RessourcesManager::~RessourcesManager() {$/;"	f	class:cg::RessourcesManager	signature:()
+cg::RessourcesManager::~RessourcesManager	RessourcesManager.h	/^	~RessourcesManager();$/;"	p	class:cg::RessourcesManager	access:private	signature:()
+cg::Shader	shader.hpp	/^class Shader {$/;"	c	namespace:cg
+cg::Shader::Shader	shader.cpp	/^Shader::Shader() {$/;"	f	class:cg::Shader	signature:()
+cg::Shader::Shader	shader.cpp	/^Shader::Shader(const std::string &vertexShaderPath,$/;"	f	class:cg::Shader	signature:(const std::string &vertexShaderPath, const std::string &fragmentShaderPath)
+cg::Shader::Shader	shader.hpp	/^	Shader();$/;"	p	class:cg::Shader	access:public	signature:()
+cg::Shader::Shader	shader.hpp	/^	Shader(const std::string &vertexShaderPath,$/;"	p	class:cg::Shader	access:public	signature:(const std::string &vertexShaderPath, const std::string &fragmentShaderPath)
+cg::Shader::bindTextures	shader.cpp	/^void Shader::bindTextures() {$/;"	f	class:cg::Shader	signature:()
+cg::Shader::bindTextures	shader.hpp	/^	void bindTextures();$/;"	p	class:cg::Shader	access:private	signature:()
+cg::Shader::buffer_vbo	shader.hpp	/^	std::vector<GLuint> buffer_vbo;$/;"	m	class:cg::Shader	access:private
+cg::Shader::clear_texture	shader.cpp	/^void Shader::clear_texture()$/;"	f	class:cg::Shader	signature:()
+cg::Shader::clear_texture	shader.hpp	/^	void clear_texture();$/;"	p	class:cg::Shader	access:public	signature:()
+cg::Shader::createSharedObjects	shader.cpp	/^GLuint Shader::createSharedObjects(const std::string shader,$/;"	f	class:cg::Shader	signature:(const std::string shader, GLenum shaderType)
+cg::Shader::createSharedObjects	shader.hpp	/^	GLhandleARB createSharedObjects(const std::string shader,$/;"	p	class:cg::Shader	access:private	signature:(const std::string shader, GLenum shaderType)
+cg::Shader::disable	shader.cpp	/^void Shader::disable() {$/;"	f	class:cg::Shader	signature:()
+cg::Shader::disable	shader.hpp	/^	static void disable();$/;"	p	class:cg::Shader	access:public	signature:()
+cg::Shader::enable	shader.cpp	/^void Shader::enable() {$/;"	f	class:cg::Shader	signature:()
+cg::Shader::enable	shader.hpp	/^	void enable();$/;"	p	class:cg::Shader	access:public	signature:()
+cg::Shader::getProgramHandle	shader.cpp	/^GLuint Shader::getProgramHandle() const {$/;"	f	class:cg::Shader	signature:() const
+cg::Shader::getProgramHandle	shader.hpp	/^	GLhandleARB getProgramHandle() const;$/;"	p	class:cg::Shader	access:public	signature:() const
+cg::Shader::getVariableId	shader.cpp	/^int Shader::getVariableId(const std::string& strVariable) const {$/;"	f	class:cg::Shader	signature:(const std::string& strVariable) const
+cg::Shader::getVariableId	shader.hpp	/^	int getVariableId(const std::string& strVariable) const;$/;"	p	class:cg::Shader	access:private	signature:(const std::string& strVariable) const
+cg::Shader::hasShaderSupport	shader.cpp	/^bool Shader::hasShaderSupport() {$/;"	f	class:cg::Shader	signature:()
+cg::Shader::hasShaderSupport	shader.hpp	/^	bool hasShaderSupport();$/;"	p	class:cg::Shader	access:public	signature:()
+cg::Shader::init	shader.cpp	/^void Shader::init() {$/;"	f	class:cg::Shader	signature:()
+cg::Shader::init	shader.hpp	/^	void init();$/;"	p	class:cg::Shader	access:private	signature:()
+cg::Shader::linkShader	shader.cpp	/^void Shader::linkShader(GLuint shaderHandle) {$/;"	f	class:cg::Shader	signature:(GLuint shaderHandle)
+cg::Shader::linkShader	shader.hpp	/^	void linkShader(GLhandleARB);$/;"	p	class:cg::Shader	access:private	signature:(GLhandleARB)
+cg::Shader::loadFile	shader.cpp	/^std::string Shader::loadFile(const std::string &str) {$/;"	f	class:cg::Shader	signature:(const std::string &str)
+cg::Shader::loadFile	shader.hpp	/^	std::string loadFile(const std::string &str);$/;"	p	class:cg::Shader	access:private	signature:(const std::string &str)
+cg::Shader::loadFragmentShader	shader.cpp	/^void Shader::loadFragmentShader(const std::string &fragmentShader) {$/;"	f	class:cg::Shader	signature:(const std::string &fragmentShader)
+cg::Shader::loadFragmentShader	shader.hpp	/^	void loadFragmentShader(const std::string &);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &)
+cg::Shader::loadFragmentShaderFromFile	shader.cpp	/^void Shader::loadFragmentShaderFromFile(const std::string &fragmentShader) {$/;"	f	class:cg::Shader	signature:(const std::string &fragmentShader)
+cg::Shader::loadFragmentShaderFromFile	shader.hpp	/^	void loadFragmentShaderFromFile(const std::string &);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &)
+cg::Shader::loadFromFile	shader.cpp	/^void Shader::loadFromFile(const std::string& vertexShaderPath, const std::string& fragmentShaderPath)$/;"	f	class:cg::Shader	signature:(const std::string& vertexShaderPath, const std::string& fragmentShaderPath)
+cg::Shader::loadFromFile	shader.hpp	/^    void loadFromFile(const std::string& vertex, const std::string& fragment);$/;"	p	class:cg::Shader	access:public	signature:(const std::string& vertex, const std::string& fragment)
+cg::Shader::loadFromMemory	shader.cpp	/^void Shader::loadFromMemory(const std::string& vertex, const std::string& fragment)$/;"	f	class:cg::Shader	signature:(const std::string& vertex, const std::string& fragment)
+cg::Shader::loadFromMemory	shader.hpp	/^    void loadFromMemory(const std::string& vertex, const std::string& fragment);$/;"	p	class:cg::Shader	access:public	signature:(const std::string& vertex, const std::string& fragment)
+cg::Shader::loadGeometryShader	shader.cpp	/^void Shader::loadGeometryShader(const std::string &shader) {$/;"	f	class:cg::Shader	signature:(const std::string &shader)
+cg::Shader::loadGeometryShader	shader.hpp	/^    void loadGeometryShader(const std::string &shader);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &shader)
+cg::Shader::loadGeometryShaderFromFile	shader.cpp	/^void Shader::loadGeometryShaderFromFile(const std::string &shaderPath) {$/;"	f	class:cg::Shader	signature:(const std::string &shaderPath)
+cg::Shader::loadGeometryShaderFromFile	shader.hpp	/^    void loadGeometryShaderFromFile(const std::string &shader);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &shader)
+cg::Shader::loadVertexShader	shader.cpp	/^void Shader::loadVertexShader(const std::string &vertexShader) {$/;"	f	class:cg::Shader	signature:(const std::string &vertexShader)
+cg::Shader::loadVertexShader	shader.hpp	/^	void loadVertexShader(const std::string &);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &)
+cg::Shader::loadVertexShaderFromFile	shader.cpp	/^void Shader::loadVertexShaderFromFile(const std::string &vertexShader) {$/;"	f	class:cg::Shader	signature:(const std::string &vertexShader)
+cg::Shader::loadVertexShaderFromFile	shader.hpp	/^	void loadVertexShaderFromFile(const std::string &);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &)
+cg::Shader::mFragmentHandle	shader.hpp	/^	GLhandleARB mFragmentHandle;$/;"	m	class:cg::Shader	access:private
+cg::Shader::mGeometryHandle	shader.hpp	/^	GLhandleARB mGeometryHandle;$/;"	m	class:cg::Shader	access:private
+cg::Shader::mProgramHandle	shader.hpp	/^	GLhandleARB mProgramHandle;$/;"	m	class:cg::Shader	access:private
+cg::Shader::mShaderName	shader.hpp	/^	std::string mShaderName;$/;"	m	class:cg::Shader	access:private
+cg::Shader::mVertexHandle	shader.hpp	/^	GLhandleARB mVertexHandle;$/;"	m	class:cg::Shader	access:private
+cg::Shader::m_textures	shader.hpp	/^	std::map<std::shared_ptr<Texture> , int> m_textures;$/;"	m	class:cg::Shader	access:private
+cg::Shader::operator ()	shader.hpp	/^    void operator()() {  enable();  }$/;"	f	class:cg::Shader	access:public	signature:()
+cg::Shader::operator GLuint	shader.hpp	/^    operator GLuint() { return mProgramHandle; }$/;"	f	class:cg::Shader	access:public	signature:()
+cg::Shader::printLog	shader.cpp	/^void Shader::printLog(GLuint object)$/;"	f	class:cg::Shader	signature:(GLuint object)
+cg::Shader::printLog	shader.hpp	/^    void printLog(GLuint object);$/;"	p	class:cg::Shader	access:private	signature:(GLuint object)
+cg::Shader::setFloat	shader.cpp	/^void Shader::setFloat(const std::string &uniformVarName, float value) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, float value)
+cg::Shader::setFloat	shader.hpp	/^	void setFloat(const std::string &uniformVarName, float value);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, float value)
+cg::Shader::setFloatArray	shader.cpp	/^void Shader::setFloatArray(const std::string &uniformVarName,$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const std::vector<float>& f)
+cg::Shader::setFloatArray	shader.hpp	/^	void setFloatArray(const std::string &uniformVarName,$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const std::vector<float>& f)
+cg::Shader::setInt	shader.cpp	/^void Shader::setInt(const std::string &uniformVarName, int value) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, int value)
+cg::Shader::setInt	shader.hpp	/^	void setInt(const std::string &uniformVarName, int value);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, int value)
+cg::Shader::setMat4	shader.cpp	/^void Shader::setMat4(const std::string &uniformVarName, const glm::mat4& mat) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const glm::mat4& mat)
+cg::Shader::setMat4	shader.hpp	/^	void setMat4(const std::string &uniformVarName, const glm::mat4& mat);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const glm::mat4& mat)
+cg::Shader::setName	shader.hpp	/^    void setName(const std::string& name) {$/;"	f	class:cg::Shader	access:public	signature:(const std::string& name)
+cg::Shader::setTexture	shader.cpp	/^void Shader::setTexture(const std::string &uniformLocation, GLuint texture) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformLocation, GLuint texture)
+cg::Shader::setTexture	shader.cpp	/^void Shader::setTexture(const std::string &uniformLocation, const shared_ptr<Texture>& texture) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformLocation, const shared_ptr<Texture>& texture)
+cg::Shader::setTexture	shader.hpp	/^	void setTexture(const std::string &uniformLocation, GLuint texture);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformLocation, GLuint texture)
+cg::Shader::setTexture	shader.hpp	/^	void setTexture(const std::string &uniformLocation, const std::shared_ptr<Texture>& texture);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformLocation, const std::shared_ptr<Texture>& texture)
+cg::Shader::setVec2	shader.cpp	/^void Shader::setVec2(const std::string &uniformVarName,$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const glm::vec2& vector)
+cg::Shader::setVec2	shader.hpp	/^	void setVec2(const std::string &uniformVarName, const glm::vec2& vector);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const glm::vec2& vector)
+cg::Shader::setVec3	shader.cpp	/^void Shader::setVec3(const std::string &uniformVarName,$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const glm::vec3& vector)
+cg::Shader::setVec3	shader.hpp	/^	void setVec3(const std::string &uniformVarName, const glm::vec3& vector);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const glm::vec3& vector)
+cg::Shader::setVec3Array	shader.cpp	/^void Shader::setVec3Array(const std::string &uniformVarName,$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const std::vector<sf::Vector3f>& f)
+cg::Shader::setVec3Array	shader.hpp	/^	void setVec3Array(const std::string &uniformVarName,$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const std::vector<sf::Vector3f>& f)
+cg::Shader::setVec4	shader.cpp	/^void Shader::setVec4(const std::string &uniformVarName, const glm::vec4& vector) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const glm::vec4& vector)
+cg::Shader::setVec4	shader.hpp	/^	void setVec4(const std::string &uniformVarName, const glm::vec4& vector);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const glm::vec4& vector)
+cg::Shader::set_in_f	shader.cpp	/^void Shader::set_in_f(int n, const std::string &in_name,$/;"	f	class:cg::Shader	signature:(int n, const std::string &in_name, const std::vector<float>& pos)
+cg::Shader::set_in_f	shader.hpp	/^	void set_in_f(int n, const std::string &in_name,$/;"	p	class:cg::Shader	access:public	signature:(int n, const std::string &in_name, const std::vector<float>& pos)
+cg::Shader::shader_type	shader.hpp	/^	GLenum shader_type;$/;"	m	class:cg::Shader	access:private
+cg::Shader::vao	shader.hpp	/^	GLuint vao;$/;"	m	class:cg::Shader	access:private
+cg::Shader::~Shader	shader.cpp	/^Shader::~Shader() {$/;"	f	class:cg::Shader	signature:()
+cg::Shader::~Shader	shader.hpp	/^	virtual ~Shader();$/;"	p	class:cg::Shader	access:public	signature:()
+cg::Success	shader.cpp	/^    GLint Success;$/;"	l
+cg::Texture	texture.hpp	/^class Texture {$/;"	c	namespace:cg
+cg::Texture::Texture	texture.cpp	/^Texture::Texture() {$/;"	f	class:cg::Texture	signature:()
+cg::Texture::Texture	texture.cpp	/^Texture::Texture(const GLuint id) {$/;"	f	class:cg::Texture	signature:(const GLuint id)
+cg::Texture::Texture	texture.cpp	/^Texture::Texture(const std::string& path) {$/;"	f	class:cg::Texture	signature:(const std::string& path)
+cg::Texture::Texture	texture.hpp	/^	Texture();$/;"	p	class:cg::Texture	access:public	signature:()
+cg::Texture::Texture	texture.hpp	/^	Texture(const GLuint id);$/;"	p	class:cg::Texture	access:public	signature:(const GLuint id)
+cg::Texture::Texture	texture.hpp	/^	Texture(const std::string& path);$/;"	p	class:cg::Texture	access:public	signature:(const std::string& path)
+cg::Texture::bind	texture.cpp	/^void Texture::bind() {$/;"	f	class:cg::Texture	signature:()
+cg::Texture::bind	texture.hpp	/^	void bind();$/;"	p	class:cg::Texture	access:public	signature:()
+cg::Texture::getName	texture.hpp	/^	std::string getName() {$/;"	f	class:cg::Texture	access:public	signature:()
+cg::Texture::getTextureId	texture.cpp	/^GLuint Texture::getTextureId() const {$/;"	f	class:cg::Texture	signature:() const
+cg::Texture::getTextureId	texture.hpp	/^	GLuint getTextureId() const;$/;"	p	class:cg::Texture	access:public	signature:() const
+cg::Texture::getTextureType	texture.hpp	/^	GLuint getTextureType() const {$/;"	f	class:cg::Texture	access:public	signature:() const
+cg::Texture::loadTexture	texture.cpp	/^bool Texture::loadTexture(const std::string &path) {$/;"	f	class:cg::Texture	signature:(const std::string &path)
+cg::Texture::loadTexture	texture.cpp	/^bool Texture::loadTexture(sf::Image* img, const std::string& name) {$/;"	f	class:cg::Texture	signature:(sf::Image* img, const std::string& name)
+cg::Texture::loadTexture	texture.hpp	/^	bool loadTexture(const std::string& path);$/;"	p	class:cg::Texture	access:public	signature:(const std::string& path)
+cg::Texture::loadTexture	texture.hpp	/^	bool loadTexture(sf::Image *img, const std::string& name);$/;"	p	class:cg::Texture	access:public	signature:(sf::Image *img, const std::string& name)
+cg::Texture::mName	texture.hpp	/^	std::string mName;$/;"	m	class:cg::Texture	access:protected
+cg::Texture::mTextureId	texture.hpp	/^	GLuint mTextureId;$/;"	m	class:cg::Texture	access:protected
+cg::Texture::mTextureType	texture.hpp	/^	GLuint mTextureType;$/;"	m	class:cg::Texture	access:protected
+cg::Texture::uploadTexture	texture.cpp	/^void Texture::uploadTexture(sf::Image *img) {$/;"	f	class:cg::Texture	signature:(sf::Image *img)
+cg::Texture::uploadTexture	texture.hpp	/^	void uploadTexture(sf::Image *img);$/;"	p	class:cg::Texture	access:protected	signature:(sf::Image *img)
+cg::Texture::~Texture	texture.cpp	/^Texture::~Texture() {$/;"	f	class:cg::Texture	signature:()
+cg::Texture::~Texture	texture.hpp	/^	virtual ~Texture();$/;"	p	class:cg::Texture	access:public	signature:()
+cg::buf	fbo.cpp	/^            GLenum buf[1] = { GL_COLOR_ATTACHMENT0_EXT};$/;"	l
+cg::buffer	shader.cpp	/^		std::stringstream buffer;$/;"	l
+cg::buffer	shader.cpp	/^	GLuint buffer;$/;"	l
+cg::clear	shader.cpp	/^	m_textures.clear();$/;"	p	file:	signature:()
+cg::compile_ok	shader.cpp	/^    GLint compile_ok = GL_FALSE;$/;"	l
+cg::data	shader.cpp	/^	std::string data;$/;"	l
+cg::dataFile	shader.cpp	/^	std::fstream dataFile(str.c_str(), std::ios::in);$/;"	p	file:	signature:(str.c_str(), std::ios::in)
+cg::endl	fbo.cpp	/^                cout << "Good Framebuffer" << endl;$/;"	l
+cg::endl	shader.cpp	/^	cout << "setTexture " << texture << " for uniform " << uniformLocation << "("<<uniformID<<")" << endl;$/;"	l
+cg::endl	texture.cpp	/^		cerr << "Invalid image " << mName << endl;$/;"	l
+cg::endl	texture.cpp	/^	dinf << "Texture::bind() " << mName << endl;$/;"	l
+cg::errCode	shader.cpp	/^    GLenum errCode;$/;"	l
+cg::errString	shader.cpp	/^        const GLubyte *errString;$/;"	l
+cg::farray	shader.cpp	/^	GLfloat *farray;$/;"	l
+cg::farray	shader.cpp	/^	float *farray;$/;"	l
+cg::farray	shader.cpp	/^	glUniform1fv(getVariableId(uniformVarName), f.size(), farray);$/;"	l
+cg::farray	shader.cpp	/^	glUniform3fv(getVariableId(uniformVarName), 1, farray);$/;"	l
+cg::fragment	shader.cpp	/^    std::string fragment = loadFile(fragmentShaderPath);$/;"	l
+cg::getVariableId	shader.cpp	/^	glUniform1f(getVariableId(uniformVarName), value);$/;"	p	file:	signature:(uniformVarName)
+cg::getVariableId	shader.cpp	/^	glUniform1fv(getVariableId(uniformVarName), f.size(), farray);$/;"	p	file:	signature:(uniformVarName)
+cg::getVariableId	shader.cpp	/^	glUniform1i(getVariableId(uniformVarName), value);$/;"	p	file:	signature:(uniformVarName)
+cg::getVariableId	shader.cpp	/^	glUniform2f(getVariableId(uniformVarName), vector.x, vector.y);$/;"	p	file:	signature:(uniformVarName)
+cg::getVariableId	shader.cpp	/^	glUniform3f(getVariableId(uniformVarName), vector.x, vector.y, vector.z);$/;"	p	file:	signature:(uniformVarName)
+cg::getVariableId	shader.cpp	/^	glUniform3fv(getVariableId(uniformVarName), 1, farray);$/;"	p	file:	signature:(uniformVarName)
+cg::getVariableId	shader.cpp	/^	glUniform4f(getVariableId(uniformVarName), vector.x, vector.y, vector.z, vector.t);$/;"	p	file:	signature:(uniformVarName)
+cg::getVariableId	shader.cpp	/^	glUniformMatrix4fv(getVariableId(uniformVarName), 1, GL_FALSE,$/;"	p	file:	signature:(uniformVarName)
+cg::glIndex	shader.cpp	/^	int glIndex = 0;$/;"	l
+cg::glm::value_ptr	shader.cpp	/^			glm::value_ptr(mat));$/;"	p	class:cg::glm	file:	signature:(mat)
+cg::i	shader.cpp	/^	int i = 0;$/;"	l
+cg::i	shader.cpp	/^	static int i=0;$/;"	l	file:
+cg::id	texture.cpp	/^	ss << "Texture from id: " << id;$/;"	l
+cg::img	RessourcesManager.cpp	/^		sf::Image * img = new sf::Image();$/;"	l
+cg::img	texture.cpp	/^	sf::Image* img = RessourcesManager::getInstance().getImage(path);$/;"	l
+cg::it	RessourcesManager.cpp	/^	std::map<std::string, sf::Image*>::const_iterator it = mImages.find(path);$/;"	l
+cg::it	RessourcesManager.cpp	/^	std::map<std::string, sf::Image*>::const_iterator it;$/;"	l
+cg::loadFile	shader.cpp	/^    loadFragmentShader(loadFile(fragmentShader));$/;"	p	file:	signature:(fragmentShader)
+cg::loadFile	shader.cpp	/^    loadGeometryShader(loadFile(shaderPath));$/;"	p	file:	signature:(shaderPath)
+cg::loadFile	shader.cpp	/^    loadVertexShader(loadFile(vertexShader));$/;"	p	file:	signature:(vertexShader)
+cg::loadFromFile	RessourcesManager.cpp	/^			img->loadFromFile(path);$/;"	p	file:	signature:(path)
+cg::log	shader.cpp	/^    char* log = new char[log_length];$/;"	l
+cg::log_length	shader.cpp	/^    GLint log_length = 0;$/;"	l
+cg::rdbuf	shader.cpp	/^		buffer << dataFile.rdbuf();$/;"	p	file:	signature:()
+cg::shaderHandle	shader.cpp	/^    GLuint shaderHandle = glCreateShader(shaderType);$/;"	l
+cg::size	shader.cpp	/^	glUniform1fv(getVariableId(uniformVarName), f.size(), farray);$/;"	p	file:	signature:()
+cg::ss	texture.cpp	/^	std::stringstream ss;$/;"	l
+cg::status	fbo.cpp	/^        GLenum status;$/;"	l
+cg::std::cerr	shader.cpp	/^        std::cerr << "Shader::createSharedObjects: Failed creating shader object";$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^					<< std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^			dinf << "Texture " << path << " added." << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^		derr << "Error: texture " << path << " not loaded!" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^		dinf << "Texture " << path << " already loaded" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^		dinf << "Texture " << path << " loaded" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^		std::cout << "Image " << path << " already loaded" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^	dinf << "Deleting all entities" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^	dinf << "Deleting all ressources" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^	dinf << "Deleting all textures" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^	dinf << "Loading texture " << path << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	RessourcesManager.cpp	/^	dinf << "RessourcesManager: Image " << id << " added." << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	fbo.cpp	/^            std::cout << "Init Colour attachement" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^		std::cout << "aezfgbfvdnjk"<<std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^		std::cout << "error1                    aaa"<<std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^		std::cout << "error2                    aaa"<<std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^	std::cout << "loc: "<<vertexLoc << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^                << "GL_INVALID_OPERATION is generated if a non-zero buffer object name is bound to an enabled array or the element array and the buffer object's data store is currently mapped." << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^        cerr << "Uniform \\"" << strVariable << "\\" not found in shader " << mShaderName << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^        std::cerr <<  "Shader::printLog: Not a shader or a program" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^        std::cerr << "Shader::createSharedObjects: Shader " + shader + " failed compilation." << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^        std::cerr << "Shader::enable: Error: " << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^        std::cerr<< "OpenGL Error (" << errCode << "): "<< errString << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	shader.cpp	/^    std::cerr << log << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	texture.cpp	/^					<< name << " might cause troubles!" << std::endl;$/;"	m	class:cg::std	file:
+cg::std::endl	texture.cpp	/^		derr << "Unable to load texture " << name << std::endl;$/;"	m	class:cg::std	file:
+cg::te	shader.cpp	/^    const char *te = (shader.c_str());$/;"	l
+cg::texIt	RessourcesManager.cpp	/^	std::map<std::string, Texture*>::const_iterator texIt;$/;"	l
+cg::texture	RessourcesManager.cpp	/^	Texture *texture = new Texture();$/;"	l
+cg::texture_slot_index	shader.cpp	/^	int texture_slot_index = 0;$/;"	l
+cg::uniformID	shader.cpp	/^	int uniformID = getVariableId(uniformLocation);$/;"	l
+cg::uniformId	shader.cpp	/^	int uniformId = glGetUniformLocation(mProgramHandle, strVariable.c_str());$/;"	l
+cg::value	shader.cpp	/^	glUniform1f(getVariableId(uniformVarName), value);$/;"	l
+cg::value	shader.cpp	/^	glUniform1i(getVariableId(uniformVarName), value);$/;"	l
+cg::vertex	shader.cpp	/^    std::string vertex = loadFile(vertexShaderPath);$/;"	l
+cg::vertexLoc	shader.cpp	/^	GLint vertexLoc;$/;"	l
+cg::vertexLoc	shader.cpp	/^	vertexLoc = glGetAttribLocation(mProgramHandle,in_name.c_str());$/;"	l
+checkFBO	fbo.cpp	/^    void FBO::checkFBO() throw () {$/;"	f	class:cg::FBO	signature:()
+checkFBO	fbo.hpp	/^            void checkFBO() throw ();$/;"	p	class:cg::FBO	access:protected	signature:()
+cholesky	Matrices/Matrix.H	/^        Lapack<TYPE>::cholesky(N,&mat(1,1));$/;"	p	class:Maths::Lapack	signature:(N,&mat(1,1))
+cholesky	Matrices/lapack++.H	/^    cholesky(const unsigned n,double *Mat) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double *Mat)
+clear	fbo.cpp	/^    void FBO::clear() {$/;"	f	class:cg::FBO	signature:()
+clear	fbo.hpp	/^            void clear();$/;"	p	class:cg::FBO	access:public	signature:()
+clear	mosaic.cpp	/^			img.clear();$/;"	p	file:	signature:()
+clear	mosaic.cpp	/^			vtmp.clear();$/;"	p	file:	signature:()
+clear	shader.cpp	/^	m_textures.clear();$/;"	p	file:	signature:()
+clear_texture	main.cpp	/^				shader_sample.clear_texture();$/;"	p	file:	signature:()
+clear_texture	main.cpp	/^			shader.clear_texture();$/;"	p	file:	signature:()
+clear_texture	shader.cpp	/^void Shader::clear_texture()$/;"	f	class:cg::Shader	signature:()
+clear_texture	shader.hpp	/^	void clear_texture();$/;"	p	class:cg::Shader	access:public	signature:()
+close	main.cpp	/^							 window.close();$/;"	p	file:	signature:()
+close	main.cpp	/^					 window.close();$/;"	p	file:	signature:()
+close	mosaic.cpp	/^		fichier.close();$/;"	p	file:	signature:()
+col	Matrices/Matrix.H	/^        Vector<TYPE> col(const unsigned j) const {$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned j) const
+cols	Matrices/Matrix.H	/^            Matrix<TYPE> res(rows(),M.cols());$/;"	p	signature:()
+cols	Matrices/Matrix.H	/^            Vector<TYPE> res(cols());$/;"	p	signature:()
+cols	Matrices/Matrix.H	/^        unsigned cols() const { return nc; }$/;"	f	class:Maths::Matrix	access:public	signature:() const
+compile_ok	shader.cpp	/^    GLint compile_ok = GL_FALSE;$/;"	l
+compute_homographie	mosaic.cpp	/^void mosaic<T>::compute_homographie(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h)$/;"	f	class:mosaic	signature:(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h)
+compute_homographie	mosaic.h	/^		void compute_homographie(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h);$/;"	p	class:mosaic	access:public	signature:(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h)
+compute_next_mosaic	mosaic.cpp	/^void mosaic<T>::compute_next_mosaic()$/;"	f	class:mosaic	signature:()
+compute_next_mosaic	mosaic.h	/^		void compute_next_mosaic();$/;"	p	class:mosaic	access:public	signature:()
+compute_next_mosaic	test.cpp	/^	m.compute_next_mosaic();$/;"	p	file:	signature:()
+copy	Matrices/Matrix.H	/^            std::copy(M.elmts,M.elmts+nl*nc,elmts);$/;"	p	class:Maths::Matrix::std	signature:(M.elmts,M.elmts+nl*nc,elmts)
+copy	Matrices/Matrix.H	/^        Matrix(const Matrix& M): nl(M.nl),nc(M.nc),elmts(new TYPE[nl*nc]) { std::copy(M.elmts,M.elmts+nl*nc,elmts); }$/;"	p	class:Maths::Matrix::std	signature:(M.elmts,M.elmts+nl*nc,elmts)
+copy	Matrices/Matrix.H	/^        Vector(const Vector& V): n(V.n),elmts(new TYPE[n]) { std::copy(V.elmts,V.elmts+n,elmts); }$/;"	p	class:Maths::Vector::std	signature:(V.elmts,V.elmts+n,elmts)
+correspondance	correspondance.h	/^	correspondance(vec2<T> _p1 = vec2<T>(), vec2<T> _p2 = vec2<T>()):p1(_p1),p2(_p2){}$/;"	f	class:correspondance	access:public	signature:(vec2<T> _p1 = vec2<T>(), vec2<T> _p2 = vec2<T>())
+correspondance	correspondance.h	/^class correspondance$/;"	c
+correspondance	mosaic.cpp	/^				(*img[a.first])[result.get_id()].push_back(correspondance<T>(c.p2,c.p1));$/;"	p	file:	signature:(c.p2,c.p1)
+correspondance	mosaic.cpp	/^			(*img[a.first])[result.get_id()].push_back(correspondance<T>(c.p2,c.p1));$/;"	p	file:	signature:(c.p2,c.p1)
+correspondance::correspondance	correspondance.h	/^	correspondance(vec2<T> _p1 = vec2<T>(), vec2<T> _p2 = vec2<T>()):p1(_p1),p2(_p2){}$/;"	f	class:correspondance	access:public	signature:(vec2<T> _p1 = vec2<T>(), vec2<T> _p2 = vec2<T>())
+correspondance::operator <<	correspondance.h	/^	friend std::ostream& operator<< <>(std::ostream& os, const correspondance& c);$/;"	p	class:correspondance	access:friend	signature:(std::ostream& os, const correspondance& c)
+correspondance::p1	correspondance.h	/^	vec2<T> p1,p2;\/\/1,y1,x2,y2;$/;"	m	class:correspondance	access:public
+correspondance::p2	correspondance.h	/^	vec2<T> p1,p2;\/\/1,y1,x2,y2;$/;"	m	class:correspondance	access:public
+createSharedObjects	shader.cpp	/^GLuint Shader::createSharedObjects(const std::string shader,$/;"	f	class:cg::Shader	signature:(const std::string shader, GLenum shaderType)
+createSharedObjects	shader.hpp	/^	GLhandleARB createSharedObjects(const std::string shader,$/;"	p	class:cg::Shader	access:private	signature:(const std::string shader, GLenum shaderType)
+cv::SVD::solveZ	mosaic.cpp	/^	cv::SVD::solveZ(A,h);$/;"	p	class:cv::SVD	file:	signature:(A,h)
+data	Images/Image.h	/^        TYPE*    data;$/;"	m	class:Images::Image	access:private
+data	shader.cpp	/^	std::string data;$/;"	l
+dataFile	shader.cpp	/^	std::fstream dataFile(str.c_str(), std::ios::in);$/;"	p	file:	signature:(str.c_str(), std::ios::in)
+delta_img	main.cpp	/^		GLfloat delta_img = 0.1f + size_x;$/;"	l
+depth	Images/Image.h	/^        unsigned sx,sy,depth;$/;"	l
+depth	Images/Pixels.h	/^        static const unsigned depth = 255;$/;"	m	struct:Pixels::TAG	access:public
+derr	Debug.h	2;"	d
+destroy	Images/Image.h	/^        void destroy() {$/;"	f	class:Images::Image	access:private	signature:()
+det	Matrices/Matrix.H	/^    TYPE det(const Matrix<TYPE>& A) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A)
+det	Matrices/lapack++.H	/^        double det = 1.0;$/;"	l
+det	Matrices/lapack++.H	/^    det(const unsigned n,double *Mat) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double *Mat)
+dim	Images/Image.h	/^        unsigned dim(const unsigned i) const { return dims[i-1]; }$/;"	f	class:Images::Image	access:public	signature:(const unsigned i) const
+dim	Matrices/Matrix.H	/^        unsigned dim() const { return n; }$/;"	f	class:Maths::Vector	access:public	signature:() const
+dims	Images/Image.h	/^        unsigned dims[2];$/;"	m	class:Images::Image	access:private
+dimx	Images/Image.h	/^        unsigned dimx() const { return dim(1); }$/;"	f	class:Images::Image	access:public	signature:() const
+dimy	Images/Image.h	/^        unsigned dimy() const { return dim(2); }$/;"	f	class:Images::Image	access:public	signature:() const
+dinf	Debug.h	1;"	d
+disable	main.cpp	/^			Shader::disable();$/;"	p	class:Shader	file:	signature:()
+disable	shader.cpp	/^void Shader::disable() {$/;"	f	class:cg::Shader	signature:()
+disable	shader.hpp	/^	static void disable();$/;"	p	class:cg::Shader	access:public	signature:()
+display	main.cpp	/^		window.display();$/;"	p	file:	signature:()
+dotprod	Matrices/Matrix.H	/^    inline TYPE dotprod(const Vector<TYPE>& V1,const Vector<TYPE>& V2) {$/;"	f	namespace:Maths	signature:(const Vector<TYPE>& V1,const Vector<TYPE>& V2)
+dp	Matrices/Matrix.H	/^        TYPE dp = 0;$/;"	l
+droite	main.cpp	/^	std::shared_ptr<Texture> droite;$/;"	l
+dummy	Matrices/lapack++.H	/^        double*   dummy;$/;"	l
+dwarn	Debug.h	3;"	d
+dwork	Matrices/lapack++.H	/^        double MF[n*n],dwork[ldwork],R[n],C[n],FErr[n],BErr[n],RCond;$/;"	l
+elmts	Matrices/Matrix.H	/^        TYPE*    elmts;$/;"	m	class:Maths::Matrix	access:private
+elmts	Matrices/Matrix.H	/^        TYPE*    elmts;$/;"	m	class:Maths::Vector	access:private
+enable	main.cpp	/^					shader.enable();$/;"	p	file:	signature:()
+enable	main.cpp	/^					shader_sample.enable();$/;"	p	file:	signature:()
+enable	main.cpp	/^				shader_sample.enable();$/;"	p	file:	signature:()
+enable	main.cpp	/^			shader.enable();$/;"	p	file:	signature:()
+enable	main.cpp	/^			shader_sample.enable();$/;"	p	file:	signature:()
+enable	main.cpp	/^	shader.enable();$/;"	p	file:	signature:()
+enable	main.cpp	/^	shader_sample.enable();$/;"	p	file:	signature:()
+enable	shader.cpp	/^void Shader::enable() {$/;"	f	class:cg::Shader	signature:()
+enable	shader.hpp	/^	void enable();$/;"	p	class:cg::Shader	access:public	signature:()
+endl	Image.cpp	/^			os << '\\t' << c << std::endl;$/;"	m	class:std	file:
+endl	Images/Image.h	/^           << Pixels::TAG<TYPE>::depth << std::endl;$/;"	m	class:Images::std
+endl	Images/Image.h	/^        os << Pixels::TAG<TYPE>::value << std::endl;$/;"	m	class:Images::std
+endl	Matrices/Matrix.H	/^            os << std::endl;$/;"	m	class:Maths::std
+endl	Matrices/lapack++.H	/^        std::cerr << M << ' ' <<N << ' ' << ldwork << ' ' << Mat << ' ' << D << std::endl;$/;"	m	class:Lapack::std
+endl	Matrices/lapack++.H	/^        std::cerr <<"B" << std::endl;$/;"	m	class:Lapack::std
+endl	RessourcesManager.cpp	/^					<< std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^			dinf << "Texture " << path << " added." << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^		derr << "Error: texture " << path << " not loaded!" << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^		dinf << "Texture " << path << " already loaded" << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^		dinf << "Texture " << path << " loaded" << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^		std::cout << "Image " << path << " already loaded" << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^	dinf << "Deleting all entities" << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^	dinf << "Deleting all ressources" << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^	dinf << "Deleting all textures" << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^	dinf << "Loading texture " << path << std::endl;$/;"	m	class:cg::std	file:
+endl	RessourcesManager.cpp	/^	dinf << "RessourcesManager: Image " << id << " added." << std::endl;$/;"	m	class:cg::std	file:
+endl	fbo.cpp	/^                cout << "Good Framebuffer" << endl;$/;"	l
+endl	fbo.cpp	/^            std::cout << "Init Colour attachement" << std::endl;$/;"	m	class:cg::std	file:
+endl	main.cpp	/^		std::cout << "azertyu"<<std::endl<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^				std::cout << i[j] << " " << tmp[j]<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^			std::cerr << "0 appariement ????" << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^			std::cerr << "erreur:\\n\\tfile: " << __FILE__ << "\\n\\tline: " << __LINE__<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^			std::cerr << indice << " " << tmp_val << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^			std::cout << ptr_image->get_id() << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^		std::cerr << "impossible d'ouvrir le fichier" << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^		std::cout << "indice "<< indice<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^		std::cout << *ptr++<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^		std::cout << cc.p1 << " " << vec2<T>(h*cc.p2)<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^		std::cout << cc.p1 << " " << vec3<T>(h*cc.p2)<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^		std::cout << cc.p2 << " " << vec2<T>(h*cc.p1)<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^		std::cout << cc.p2 << " " << vec3<T>(h*cc.p1)<<std::endl<<std::endl;;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^		std::cout << nb_img << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^	std::cerr << "end compute_homographie " << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^	std::cerr << "start compute_homographie " << indice << " " << result.get_id()<<std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^	std::cerr << indice << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^	std::cout << "!!!!!!!!!" << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^	std::cout << (A*h) << std::endl;$/;"	m	class:std	file:
+endl	mosaic.cpp	/^	std::cout << h << std::endl;$/;"	m	class:std	file:
+endl	shader.cpp	/^		std::cout << "aezfgbfvdnjk"<<std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^		std::cout << "error1                    aaa"<<std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^		std::cout << "error2                    aaa"<<std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^	cout << "setTexture " << texture << " for uniform " << uniformLocation << "("<<uniformID<<")" << endl;$/;"	l
+endl	shader.cpp	/^	std::cout << "loc: "<<vertexLoc << std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^                << "GL_INVALID_OPERATION is generated if a non-zero buffer object name is bound to an enabled array or the element array and the buffer object's data store is currently mapped." << std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^        cerr << "Uniform \\"" << strVariable << "\\" not found in shader " << mShaderName << std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^        std::cerr <<  "Shader::printLog: Not a shader or a program" << std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^        std::cerr << "Shader::createSharedObjects: Shader " + shader + " failed compilation." << std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^        std::cerr << "Shader::enable: Error: " << std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^        std::cerr<< "OpenGL Error (" << errCode << "): "<< errString << std::endl;$/;"	m	class:cg::std	file:
+endl	shader.cpp	/^    std::cerr << log << std::endl;$/;"	m	class:cg::std	file:
+endl	test.cpp	/^	std::cout << m.size()<<std::endl;$/;"	m	class:std	file:
+endl	texture.cpp	/^					<< name << " might cause troubles!" << std::endl;$/;"	m	class:cg::std	file:
+endl	texture.cpp	/^		cerr << "Invalid image " << mName << endl;$/;"	l
+endl	texture.cpp	/^		derr << "Unable to load texture " << name << std::endl;$/;"	m	class:cg::std	file:
+endl	texture.cpp	/^	dinf << "Texture::bind() " << mName << endl;$/;"	l
+erase	Image.cpp	/^	assoc.erase(i);$/;"	p	file:	signature:(i)
+erase	Image.cpp	/^void Image<T>::erase(int i)$/;"	f	class:Image	signature:(int i)
+erase	Image.h	/^		void erase(int i);$/;"	p	class:Image	access:public	signature:(int i)
+erase	mosaic.cpp	/^			img[a.first]->erase(indice);$/;"	p	file:	signature:(indice)
+erase	mosaic.cpp	/^		img.erase(indice);$/;"	p	file:	signature:(indice)
+erase	mosaic.cpp	/^		img[a.first]->erase(indice);$/;"	p	file:	signature:(indice)
+erase	mosaic.cpp	/^		result.erase(indice);$/;"	p	file:	signature:(indice)
+erase	mosaic.cpp	/^	img.erase(indice);$/;"	p	file:	signature:(indice)
+errCode	shader.cpp	/^    GLenum errCode;$/;"	l
+errString	shader.cpp	/^        const GLubyte *errString;$/;"	l
+event	main.cpp	/^		 sf::Event event;$/;"	l
+f	Matrices/test.cpp	/^	Maths::Matrix<float> f;$/;"	l
+farray	shader.cpp	/^	GLfloat *farray;$/;"	l
+farray	shader.cpp	/^	float *farray;$/;"	l
+farray	shader.cpp	/^	glUniform1fv(getVariableId(uniformVarName), f.size(), farray);$/;"	l
+farray	shader.cpp	/^	glUniform3fv(getVariableId(uniformVarName), 1, farray);$/;"	l
+fichier	mosaic.cpp	/^	std::fstream fichier(file.c_str());$/;"	p	file:	signature:(file.c_str())
+fragment	shader.cpp	/^    std::string fragment = loadFile(fragmentShaderPath);$/;"	l
+gauche	main.cpp	/^	std::shared_ptr<Texture> gauche;$/;"	l
+getColorTextureId	fbo.hpp	/^            GLuint getColorTextureId() const {$/;"	f	class:cg::FBO	access:public	signature:() const
+getDepthTextureId	fbo.hpp	/^            GLuint getDepthTextureId() const {$/;"	f	class:cg::FBO	access:public	signature:() const
+getImage	RessourcesManager.cpp	/^sf::Image* RessourcesManager::getImage(const std::string& path) const {$/;"	f	class:cg::RessourcesManager	signature:(const std::string& path) const
+getImage	RessourcesManager.h	/^	sf::Image* getImage(const std::string& path) const;$/;"	p	class:cg::RessourcesManager	access:public	signature:(const std::string& path) const
+getInstance	RessourcesManager.h	/^	inline static RessourcesManager& getInstance() {$/;"	f	class:cg::RessourcesManager	access:public	signature:()
+getName	texture.hpp	/^	std::string getName() {$/;"	f	class:cg::Texture	access:public	signature:()
+getProgramHandle	shader.cpp	/^GLuint Shader::getProgramHandle() const {$/;"	f	class:cg::Shader	signature:() const
+getProgramHandle	shader.hpp	/^	GLhandleARB getProgramHandle() const;$/;"	p	class:cg::Shader	access:public	signature:() const
+getTextureId	texture.cpp	/^GLuint Texture::getTextureId() const {$/;"	f	class:cg::Texture	signature:() const
+getTextureId	texture.hpp	/^	GLuint getTextureId() const;$/;"	p	class:cg::Texture	access:public	signature:() const
+getTextureType	texture.hpp	/^	GLuint getTextureType() const {$/;"	f	class:cg::Texture	access:public	signature:() const
+getVariableId	shader.cpp	/^	glUniform1f(getVariableId(uniformVarName), value);$/;"	p	file:	signature:(uniformVarName)
+getVariableId	shader.cpp	/^	glUniform1fv(getVariableId(uniformVarName), f.size(), farray);$/;"	p	file:	signature:(uniformVarName)
+getVariableId	shader.cpp	/^	glUniform1i(getVariableId(uniformVarName), value);$/;"	p	file:	signature:(uniformVarName)
+getVariableId	shader.cpp	/^	glUniform2f(getVariableId(uniformVarName), vector.x, vector.y);$/;"	p	file:	signature:(uniformVarName)
+getVariableId	shader.cpp	/^	glUniform3f(getVariableId(uniformVarName), vector.x, vector.y, vector.z);$/;"	p	file:	signature:(uniformVarName)
+getVariableId	shader.cpp	/^	glUniform3fv(getVariableId(uniformVarName), 1, farray);$/;"	p	file:	signature:(uniformVarName)
+getVariableId	shader.cpp	/^	glUniform4f(getVariableId(uniformVarName), vector.x, vector.y, vector.z, vector.t);$/;"	p	file:	signature:(uniformVarName)
+getVariableId	shader.cpp	/^	glUniformMatrix4fv(getVariableId(uniformVarName), 1, GL_FALSE,$/;"	p	file:	signature:(uniformVarName)
+getVariableId	shader.cpp	/^int Shader::getVariableId(const std::string& strVariable) const {$/;"	f	class:cg::Shader	signature:(const std::string& strVariable) const
+getVariableId	shader.hpp	/^	int getVariableId(const std::string& strVariable) const;$/;"	p	class:cg::Shader	access:private	signature:(const std::string& strVariable) const
+get_assoc	Image.h	/^		const std::map<int,std::vector<correspondance<T>>>& get_assoc(){return assoc;}$/;"	f	class:Image	access:public	signature:()
+get_id	Image.h	/^		int get_id(){return id;}$/;"	f	class:Image	access:public	signature:()
+get_id_closest_img	Image.cpp	/^int Image<T>::get_id_closest_img()$/;"	f	class:Image	signature:()
+get_id_closest_img	Image.h	/^		int get_id_closest_img();$/;"	p	class:Image	access:public	signature:()
+get_img	Image.h	/^		const std::vector<image<T>>& get_img()const{return img;}$/;"	f	class:Image	access:public	signature:() const
+get_result	mosaic.h	/^		Image<T>& get_result(){return result;}$/;"	f	class:mosaic	access:public	signature:()
+getline	mosaic.cpp	/^			std::getline(fichier, ligne);$/;"	p	class:std	file:	signature:(fichier, ligne)
+getline	mosaic.cpp	/^		std::getline(fichier, ligne);$/;"	p	class:std	file:	signature:(fichier, ligne)
+glErr	PrintOpenglErrors.h	/^	GLenum glErr;$/;"	l
+glIndex	shader.cpp	/^	int glIndex = 0;$/;"	l
+gsvd	Matrices/lapack++.H	/^    gsvd(const unsigned m,const unsigned n,const unsigned p, $/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,const unsigned p, double *A,double* B,double *Q,double* SigA,double* SigB,int & K,int & L)
+gsvd	Matrices/lapack++.H	/^    gsvd(const unsigned m,const unsigned n,const unsigned p, $/;"	f	class:Lapack	access:public	signature:(const unsigned m,const unsigned n,const unsigned p, double *A,double* B,double *Q,double* U,double* V,double* SigA,double* SigB,int & K,int & L)
+h	mosaic.cpp	/^		cv::Mat_<T> h;$/;"	l
+hasShaderSupport	shader.cpp	/^bool Shader::hasShaderSupport() {$/;"	f	class:cg::Shader	signature:()
+hasShaderSupport	shader.hpp	/^	bool hasShaderSupport();$/;"	p	class:cg::Shader	access:public	signature:()
+i	shader.cpp	/^	int i = 0;$/;"	l
+i	shader.cpp	/^	static int i=0;$/;"	l	file:
+id	Image.h	/^        int id;$/;"	m	class:Image	access:private
+id	correspondance.h	/^	int id;$/;"	m	class:point_i	access:public
+id	mosaic.cpp	/^				int id = vtmp[i].id;$/;"	l
+id	texture.cpp	/^	ss << "Texture from id: " << id;$/;"	l
+id1	mosaic.cpp	/^		std::string id1,id2;$/;"	l
+id2	mosaic.cpp	/^		std::string id1,id2;$/;"	l
+ifs	Images/Image.h	/^            std::ifstream ifs(file);$/;"	p	signature:(file)
+ignore	Image.cpp	/^	ss.ignore();\/\/'x'$/;"	p	file:	signature:()
+im	Images/Test.cpp	/^    ofs << im;$/;"	l
+im1	Images/Test.cpp	/^    Image<Grey> im1(argv[3]);$/;"	p	file:	signature:(argv[3])
+im1	Images/Test.cpp	/^    ofs1 << im1;$/;"	l
+image	Image.cpp	/^    img.push_back(image<T>(nom_fich));$/;"	p	file:	signature:(nom_fich)
+image	Image.h	/^	image():name(""){};$/;"	f	class:image	access:public	signature:()
+image	Image.h	/^	image(std::string s):name(s){};$/;"	f	class:image	access:public	signature:(std::string s)
+image	Image.h	/^	image(std::string s, std::array<vec2<T>,4> v):name(s),vertex(v){};$/;"	f	class:image	access:public	signature:(std::string s, std::array<vec2<T>,4> v)
+image	Image.h	/^class image$/;"	c
+image::image	Image.h	/^	image():name(""){};$/;"	f	class:image	access:public	signature:()
+image::image	Image.h	/^	image(std::string s):name(s){};$/;"	f	class:image	access:public	signature:(std::string s)
+image::image	Image.h	/^	image(std::string s, std::array<vec2<T>,4> v):name(s),vertex(v){};$/;"	f	class:image	access:public	signature:(std::string s, std::array<vec2<T>,4> v)
+image::name	Image.h	/^	std::string name;$/;"	m	class:image	access:public
+image::operator []	Image.h	/^	const vec2<T>& operator[](int i)const$/;"	f	class:image	access:public	signature:(int i) const
+image::operator []	Image.h	/^	vec2<T>& operator[](int i)$/;"	f	class:image	access:public	signature:(int i)
+image::vertex	Image.h	/^	std::array<vec2<T>,4> vertex;\/\/A,B,C,D;$/;"	m	class:image	access:public
+img	Image.h	/^		std::vector<image<T>> img;$/;"	m	class:Image	access:private
+img	RessourcesManager.cpp	/^		sf::Image * img = new sf::Image();$/;"	l
+img	mosaic.h	/^		std::map<int, std::unique_ptr<Image<T>>> img;$/;"	m	class:mosaic	access:private
+img	texture.cpp	/^	sf::Image* img = RessourcesManager::getInstance().getImage(path);$/;"	l
+indice	mosaic.cpp	/^	int indice = -1;$/;"	l
+info	Matrices/lapack++.H	/^        int       info;$/;"	l
+info	Matrices/lapack++.H	/^        int    info,Rank;$/;"	l
+info	Matrices/lapack++.H	/^        int    info;$/;"	l
+info	Matrices/lapack++.H	/^        int info = 0;$/;"	l
+info	Matrices/lapack++.H	/^        int info;$/;"	l
+init	fbo.cpp	/^    void FBO::init() {$/;"	f	class:cg::FBO	signature:()
+init	fbo.hpp	/^            void init();$/;"	p	class:cg::FBO	access:public	signature:()
+init	shader.cpp	/^void Shader::init() {$/;"	f	class:cg::Shader	signature:()
+init	shader.hpp	/^	void init();$/;"	p	class:cg::Shader	access:private	signature:()
+initColorAttachement	fbo.cpp	/^    void FBO::initColorAttachement() {$/;"	f	class:cg::FBO	signature:()
+initColorAttachement	fbo.hpp	/^            void initColorAttachement();$/;"	p	class:cg::FBO	access:protected	signature:()
+initDepthTexture	fbo.cpp	/^    void FBO::initDepthTexture() {$/;"	f	class:cg::FBO	signature:()
+initDepthTexture	fbo.hpp	/^            void initDepthTexture();$/;"	p	class:cg::FBO	access:protected	signature:()
+initFBO	fbo.cpp	/^    void FBO::initFBO() {$/;"	f	class:cg::FBO	signature:()
+initFBO	fbo.hpp	/^            void initFBO();$/;"	p	class:cg::FBO	access:protected	signature:()
+init_compute_mosaic	mosaic.cpp	/^void mosaic<T>::init_compute_mosaic()$/;"	f	class:mosaic	signature:()
+init_compute_mosaic	mosaic.h	/^		void init_compute_mosaic();	$/;"	p	class:mosaic	access:public	signature:()
+init_compute_mosaic	test.cpp	/^	m.init_compute_mosaic();$/;"	p	file:	signature:()
+instance	RessourcesManager.h	/^		static RessourcesManager instance;$/;"	l
+inverse	Matrices/Matrix.H	/^        Lapack<TYPE>::inverse(M.rows(),&M(1,1));$/;"	p	class:Maths::Lapack	signature:(M.rows(),&M(1,1))
+inverse	Matrices/Matrix.H	/^    Matrix<TYPE> inverse(const Matrix<TYPE>& A) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& A)
+inverse	Matrices/lapack++.H	/^    inverse(const unsigned n,double *Mat) {$/;"	f	class:Lapack	access:public	signature:(const unsigned n,double *Mat)
+it	RessourcesManager.cpp	/^	std::map<std::string, sf::Image*>::const_iterator it = mImages.find(path);$/;"	l
+it	RessourcesManager.cpp	/^	std::map<std::string, sf::Image*>::const_iterator it;$/;"	l
+it	mosaic.cpp	/^	typename std::vector<correspondance<T>>::const_iterator it = c.begin();$/;"	l
+it_end	mosaic.cpp	/^	const typename std::vector<correspondance<T>>::const_iterator it_end = c.end();$/;"	l
+iwork	Matrices/lapack++.H	/^        int    pivot[n],iwork[n];$/;"	l
+iwork	Matrices/lapack++.H	/^        int iwork[N];$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = 3*minmn+Maths::max(2*minmn,NRHS,maxmn);$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = 4*n;$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = Maths::max(1,M,N);$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = N+P+Maths::max(M,N,P);$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(1,M);$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(1,N);$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(1U,3*n);$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(1U,3*n-1);$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork = std::max(3*minmn+maxmn,5*minmn);$/;"	l
+ldwork	Matrices/lapack++.H	/^        const int ldwork =3*n;$/;"	l
+lecture_appariement	mosaic.cpp	/^void mosaic<T>::lecture_appariement(std::string file)$/;"	f	class:mosaic	signature:(std::string file)
+lecture_appariement	mosaic.h	/^		void lecture_appariement(std::string file);$/;"	p	class:mosaic	access:public	signature:(std::string file)
+ligne	mosaic.cpp	/^		std::string ligne;$/;"	l
+linkShader	shader.cpp	/^void Shader::linkShader(GLuint shaderHandle) {$/;"	f	class:cg::Shader	signature:(GLuint shaderHandle)
+linkShader	shader.hpp	/^	void linkShader(GLhandleARB);$/;"	p	class:cg::Shader	access:private	signature:(GLhandleARB)
+loadFile	shader.cpp	/^    loadFragmentShader(loadFile(fragmentShader));$/;"	p	file:	signature:(fragmentShader)
+loadFile	shader.cpp	/^    loadGeometryShader(loadFile(shaderPath));$/;"	p	file:	signature:(shaderPath)
+loadFile	shader.cpp	/^    loadVertexShader(loadFile(vertexShader));$/;"	p	file:	signature:(vertexShader)
+loadFile	shader.cpp	/^std::string Shader::loadFile(const std::string &str) {$/;"	f	class:cg::Shader	signature:(const std::string &str)
+loadFile	shader.hpp	/^	std::string loadFile(const std::string &str);$/;"	p	class:cg::Shader	access:private	signature:(const std::string &str)
+loadFragmentShader	shader.cpp	/^void Shader::loadFragmentShader(const std::string &fragmentShader) {$/;"	f	class:cg::Shader	signature:(const std::string &fragmentShader)
+loadFragmentShader	shader.hpp	/^	void loadFragmentShader(const std::string &);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &)
+loadFragmentShaderFromFile	shader.cpp	/^void Shader::loadFragmentShaderFromFile(const std::string &fragmentShader) {$/;"	f	class:cg::Shader	signature:(const std::string &fragmentShader)
+loadFragmentShaderFromFile	shader.hpp	/^	void loadFragmentShaderFromFile(const std::string &);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &)
+loadFromFile	RessourcesManager.cpp	/^			img->loadFromFile(path);$/;"	p	file:	signature:(path)
+loadFromFile	shader.cpp	/^void Shader::loadFromFile(const std::string& vertexShaderPath, const std::string& fragmentShaderPath)$/;"	f	class:cg::Shader	signature:(const std::string& vertexShaderPath, const std::string& fragmentShaderPath)
+loadFromFile	shader.hpp	/^    void loadFromFile(const std::string& vertex, const std::string& fragment);$/;"	p	class:cg::Shader	access:public	signature:(const std::string& vertex, const std::string& fragment)
+loadFromMemory	shader.cpp	/^void Shader::loadFromMemory(const std::string& vertex, const std::string& fragment)$/;"	f	class:cg::Shader	signature:(const std::string& vertex, const std::string& fragment)
+loadFromMemory	shader.hpp	/^    void loadFromMemory(const std::string& vertex, const std::string& fragment);$/;"	p	class:cg::Shader	access:public	signature:(const std::string& vertex, const std::string& fragment)
+loadGeometryShader	shader.cpp	/^void Shader::loadGeometryShader(const std::string &shader) {$/;"	f	class:cg::Shader	signature:(const std::string &shader)
+loadGeometryShader	shader.hpp	/^    void loadGeometryShader(const std::string &shader);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &shader)
+loadGeometryShaderFromFile	shader.cpp	/^void Shader::loadGeometryShaderFromFile(const std::string &shaderPath) {$/;"	f	class:cg::Shader	signature:(const std::string &shaderPath)
+loadGeometryShaderFromFile	shader.hpp	/^    void loadGeometryShaderFromFile(const std::string &shader);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &shader)
+loadImage	RessourcesManager.cpp	/^bool RessourcesManager::loadImage(const std::string& path) {$/;"	f	class:cg::RessourcesManager	signature:(const std::string& path)
+loadImage	RessourcesManager.h	/^	bool loadImage(const std::string& path);$/;"	p	class:cg::RessourcesManager	access:public	signature:(const std::string& path)
+loadTexture	RessourcesManager.cpp	/^Texture * RessourcesManager::loadTexture(const std::string &path) {$/;"	f	class:cg::RessourcesManager	signature:(const std::string &path)
+loadTexture	RessourcesManager.h	/^	Texture* loadTexture(const std::string &path);$/;"	p	class:cg::RessourcesManager	access:public	signature:(const std::string &path)
+loadTexture	texture.cpp	/^bool Texture::loadTexture(const std::string &path) {$/;"	f	class:cg::Texture	signature:(const std::string &path)
+loadTexture	texture.cpp	/^bool Texture::loadTexture(sf::Image* img, const std::string& name) {$/;"	f	class:cg::Texture	signature:(sf::Image* img, const std::string& name)
+loadTexture	texture.hpp	/^	bool loadTexture(const std::string& path);$/;"	p	class:cg::Texture	access:public	signature:(const std::string& path)
+loadTexture	texture.hpp	/^	bool loadTexture(sf::Image *img, const std::string& name);$/;"	p	class:cg::Texture	access:public	signature:(sf::Image *img, const std::string& name)
+loadVertexShader	shader.cpp	/^void Shader::loadVertexShader(const std::string &vertexShader) {$/;"	f	class:cg::Shader	signature:(const std::string &vertexShader)
+loadVertexShader	shader.hpp	/^	void loadVertexShader(const std::string &);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &)
+loadVertexShaderFromFile	shader.cpp	/^void Shader::loadVertexShaderFromFile(const std::string &vertexShader) {$/;"	f	class:cg::Shader	signature:(const std::string &vertexShader)
+loadVertexShaderFromFile	shader.hpp	/^	void loadVertexShaderFromFile(const std::string &);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &)
+log	shader.cpp	/^    char* log = new char[log_length];$/;"	l
+log_length	shader.cpp	/^    GLint log_length = 0;$/;"	l
+m	test.cpp	/^	mosaic<TYPE> m;$/;"	l
+mColorTexture	fbo.hpp	/^            GLuint mColorTexture;$/;"	m	class:cg::FBO	access:protected
+mDepthTex	fbo.hpp	/^            GLuint mDepthTex;$/;"	m	class:cg::FBO	access:protected
+mFragmentHandle	shader.hpp	/^	GLhandleARB mFragmentHandle;$/;"	m	class:cg::Shader	access:private
+mFrameBuffer	fbo.hpp	/^            GLuint mFrameBuffer;$/;"	m	class:cg::FBO	access:protected
+mGeometryHandle	shader.hpp	/^	GLhandleARB mGeometryHandle;$/;"	m	class:cg::Shader	access:private
+mHeight	fbo.hpp	/^            int mHeight;$/;"	m	class:cg::FBO	access:protected
+mImages	RessourcesManager.h	/^	std::map<std::string, sf::Image*> mImages;$/;"	m	class:cg::RessourcesManager	access:protected
+mName	texture.hpp	/^	std::string mName;$/;"	m	class:cg::Texture	access:protected
+mProgramHandle	shader.hpp	/^	GLhandleARB mProgramHandle;$/;"	m	class:cg::Shader	access:private
+mShaderName	shader.hpp	/^	std::string mShaderName;$/;"	m	class:cg::Shader	access:private
+mTexture	fbo.hpp	/^            GLuint mTexture;$/;"	m	class:cg::FBO	access:protected
+mTextureId	texture.hpp	/^	GLuint mTextureId;$/;"	m	class:cg::Texture	access:protected
+mTextureType	texture.hpp	/^	GLuint mTextureType;$/;"	m	class:cg::Texture	access:protected
+mTextures	RessourcesManager.h	/^	std::map<std::string, Texture*> mTextures;$/;"	m	class:cg::RessourcesManager	access:protected
+mType	fbo.hpp	/^            Type mType;$/;"	m	class:cg::FBO	access:public
+mVertexHandle	shader.hpp	/^	GLhandleARB mVertexHandle;$/;"	m	class:cg::Shader	access:private
+mWidth	fbo.hpp	/^            int mWidth;$/;"	m	class:cg::FBO	access:protected
+m_textures	shader.hpp	/^	std::map<std::shared_ptr<Texture> , int> m_textures;$/;"	m	class:cg::Shader	access:private
+main	Images/Test.cpp	/^int main(const int argc,const char* argv[]) try {$/;"	f	signature:(const int argc,const char* argv[])
+main	Matrices/test.cpp	/^int main()$/;"	f	signature:()
+main	main.cpp	/^int main(int argc, char** argv)$/;"	f	signature:(int argc, char** argv)
+main	test.cpp	/^int main(int argc, char** argv)$/;"	f	signature:(int argc, char** argv)
+mat	Matrices/Matrix.H	/^        Matrix<TYPE> mat(A);$/;"	p	signature:(A)
+max	Images/Image.h	/^            is.ignore(std::numeric_limits<int>::max(),'\\n');$/;"	p	signature:()
+max	Matrices/lapack++.H	/^    T max(const T t1,const T t2,const T t3) {$/;"	f	namespace:Maths	signature:(const T t1,const T t2,const T t3)
+maxmn	Matrices/lapack++.H	/^        const int maxmn = std::max(M,N);$/;"	l
+maxmn	Matrices/lapack++.H	/^        const int maxmn = std::max(m,n);$/;"	l
+minmn	Matrices/lapack++.H	/^        const int minmn  = std::min(M,N);$/;"	l
+minmn	Matrices/lapack++.H	/^        const int minmn = std::min(M,N);$/;"	l
+minmn	Matrices/lapack++.H	/^        const int minmn = std::min(m,n);$/;"	l
+mosaic	mosaic.cpp	/^mosaic<T>::mosaic()$/;"	f	class:mosaic	signature:()
+mosaic	mosaic.h	/^		mosaic();$/;"	p	class:mosaic	access:public	signature:()
+mosaic	mosaic.h	/^class mosaic$/;"	c
+mosaic::compute_homographie	mosaic.cpp	/^void mosaic<T>::compute_homographie(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h)$/;"	f	class:mosaic	signature:(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h)
+mosaic::compute_homographie	mosaic.h	/^		void compute_homographie(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h);$/;"	p	class:mosaic	access:public	signature:(const std::vector<correspondance<T>>& c, cv::Mat_<T>& h)
+mosaic::compute_next_mosaic	mosaic.cpp	/^void mosaic<T>::compute_next_mosaic()$/;"	f	class:mosaic	signature:()
+mosaic::compute_next_mosaic	mosaic.h	/^		void compute_next_mosaic();$/;"	p	class:mosaic	access:public	signature:()
+mosaic::get_result	mosaic.h	/^		Image<T>& get_result(){return result;}$/;"	f	class:mosaic	access:public	signature:()
+mosaic::img	mosaic.h	/^		std::map<int, std::unique_ptr<Image<T>>> img;$/;"	m	class:mosaic	access:private
+mosaic::init_compute_mosaic	mosaic.cpp	/^void mosaic<T>::init_compute_mosaic()$/;"	f	class:mosaic	signature:()
+mosaic::init_compute_mosaic	mosaic.h	/^		void init_compute_mosaic();	$/;"	p	class:mosaic	access:public	signature:()
+mosaic::lecture_appariement	mosaic.cpp	/^void mosaic<T>::lecture_appariement(std::string file)$/;"	f	class:mosaic	signature:(std::string file)
+mosaic::lecture_appariement	mosaic.h	/^		void lecture_appariement(std::string file);$/;"	p	class:mosaic	access:public	signature:(std::string file)
+mosaic::mosaic	mosaic.cpp	/^mosaic<T>::mosaic()$/;"	f	class:mosaic	signature:()
+mosaic::mosaic	mosaic.h	/^		mosaic();$/;"	p	class:mosaic	access:public	signature:()
+mosaic::result	mosaic.h	/^		Image<T> result;$/;"	m	class:mosaic	access:private
+mosaic::size	mosaic.h	/^		int size(){return img.size();}$/;"	f	class:mosaic	access:public	signature:()
+mosaic::test	mosaic.cpp	/^void mosaic<T>::test()$/;"	f	class:mosaic	signature:()
+mosaic::test	mosaic.h	/^		void test();$/;"	p	class:mosaic	access:public	signature:()
+n	Matrices/Matrix.H	/^        unsigned n;$/;"	m	class:Maths::Vector	access:private
+name	Image.h	/^	std::string name;$/;"	m	class:image	access:public
+nb_img	mosaic.cpp	/^	int nb_img;$/;"	l
+nb_img_assoc	Image.h	/^		size_t nb_img_assoc(){return assoc.size();}$/;"	f	class:Image	access:public	signature:()
+nc	Matrices/Matrix.H	/^        unsigned nc;$/;"	m	class:Maths::Matrix	access:private
+nl	Matrices/Matrix.H	/^        unsigned nl;$/;"	m	class:Maths::Matrix	access:private
+norm	Matrices/Matrix.H	/^    inline TYPE norm(const Vector<TYPE>& V) {$/;"	f	namespace:Maths	signature:(const Vector<TYPE>& V)
+oerr	PrintOpenglErrors.h	28;"	d
+ofs	Images/Test.cpp	/^    std::ofstream ofs(argv[2]);$/;"	p	file:	signature:(argv[2])
+ofs1	Images/Test.cpp	/^    std::ofstream ofs1(argv[4]);$/;"	p	file:	signature:(argv[4])
+operator ()	Images/Image.h	/^              TYPE& operator()(const unsigned i,const unsigned j)       { return data[i*dimx()+j]; }$/;"	f	class:Images::Image	access:public	signature:(const unsigned i,const unsigned j)
+operator ()	Images/Image.h	/^        const TYPE& operator()(const unsigned i,const unsigned j) const { return data[i*dimx()+j]; }$/;"	f	class:Images::Image	access:public	signature:(const unsigned i,const unsigned j) const
+operator ()	Matrices/Matrix.H	/^              TYPE& operator()(const unsigned int i)      { return elmts[i-1]; }$/;"	f	class:Maths::Vector	access:public	signature:(const unsigned int i)
+operator ()	Matrices/Matrix.H	/^              TYPE& operator()(const unsigned int i,const unsigned j)      { return elmts[(j-1)*nl+(i-1)]; }$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned int i,const unsigned j)
+operator ()	Matrices/Matrix.H	/^        const TYPE&  operator()(const unsigned int i) const{ return elmts[i-1]; }$/;"	f	class:Maths::Vector	access:public	signature:(const unsigned int i) const
+operator ()	Matrices/Matrix.H	/^        const TYPE&  operator()(const unsigned int i,const unsigned j) const{ return elmts[(j-1)*nl+(i-1)]; }$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned int i,const unsigned j) const
+operator ()	shader.hpp	/^    void operator()() {  enable();  }$/;"	f	class:cg::Shader	access:public	signature:()
+operator *	Matrices/Matrix.H	/^        Matrix<TYPE> operator*(const Matrix<TYPE>& M) const {$/;"	f	class:Maths::Matrix	access:public	signature:(const Matrix<TYPE>& M) const
+operator *	Matrices/Matrix.H	/^        Vector operator*(const TYPE val) const {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val) const
+operator *	Matrices/Matrix.H	/^        Vector<TYPE> operator*(const Vector<TYPE>& V) const {$/;"	f	class:Maths::Matrix	access:public	signature:(const Vector<TYPE>& V) const
+operator *	Matrices/Matrix.H	/^    inline Vector<TYPE> operator*(const TYPE s,const Vector<TYPE>& V) {$/;"	f	namespace:Maths	signature:(const TYPE s,const Vector<TYPE>& V)
+operator *	mosaic.cpp	/^vec3<T> operator*(const cv::Mat_<T>& m, const vec2<T>& v)$/;"	f	signature:(const cv::Mat_<T>& m, const vec2<T>& v)
+operator *=	Matrices/Matrix.H	/^        Matrix<TYPE>& operator*=(const TYPE val) {$/;"	f	class:Maths::Matrix	access:public	signature:(const TYPE val)
+operator *=	Matrices/Matrix.H	/^        Vector& operator*=(const TYPE val) {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val)
+operator +	Matrices/Matrix.H	/^        Vector operator+(const Vector<TYPE>& V) const {$/;"	f	class:Maths::Vector	access:public	signature:(const Vector<TYPE>& V) const
+operator +=	Matrices/Matrix.H	/^        Vector& operator+=(const Vector<TYPE>& V) {$/;"	f	class:Maths::Vector	access:public	signature:(const Vector<TYPE>& V)
+operator -	Matrices/Matrix.H	/^        Matrix operator-() const {$/;"	f	class:Maths::Matrix	access:public	signature:() const
+operator -	Matrices/Matrix.H	/^        Vector operator-() const {$/;"	f	class:Maths::Vector	access:public	signature:() const
+operator -=	Matrices/Matrix.H	/^        Vector& operator-=(const Vector<TYPE>& V) {$/;"	f	class:Maths::Vector	access:public	signature:(const Vector<TYPE>& V)
+operator /	Matrices/Matrix.H	/^        Vector operator\/(const TYPE val) const {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val) const
+operator /=	Matrices/Matrix.H	/^        Matrix<TYPE>& operator\/=(const TYPE val) {$/;"	f	class:Maths::Matrix	access:public	signature:(const TYPE val)
+operator /=	Matrices/Matrix.H	/^        Vector& operator\/=(const TYPE val) {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val)
+operator <<	Image.cpp	/^std::ostream& operator<<(std::ostream& os, const Image<T>& i)$/;"	f	signature:(std::ostream& os, const Image<T>& i)
+operator <<	Image.h	/^		friend std::ostream& operator<< <>(std::ostream& os, const Image<T>& i);$/;"	p	class:Image	access:friend	signature:(std::ostream& os, const Image<T>& i)
+operator <<	Image.h	/^std::ostream& operator<< (std::ostream& os, const Image<T>& i);$/;"	p	signature:(std::ostream& os, const Image<T>& i)
+operator <<	Images/Image.h	/^    std::ostream& operator<<(std::ostream& os,const Image<TYPE>& im) throw(const std::string) {$/;"	f	namespace:Images	signature:(std::ostream& os,const Image<TYPE>& im)
+operator <<	Matrices/Matrix.H	/^    std::ostream& operator<<(std::ostream& os,const Matrix<TYPE>& M) {$/;"	f	namespace:Maths	signature:(std::ostream& os,const Matrix<TYPE>& M)
+operator <<	Matrices/Matrix.H	/^    std::ostream& operator<<(std::ostream& os,const Vector<TYPE>& V) {$/;"	f	namespace:Maths	signature:(std::ostream& os,const Vector<TYPE>& V)
+operator <<	correspondance.h	/^	friend std::ostream& operator<< <>(std::ostream& os, const correspondance& c);$/;"	p	class:correspondance	access:friend	signature:(std::ostream& os, const correspondance& c)
+operator <<	correspondance.h	/^std::ostream& operator<< (std::ostream& os, const correspondance<T>& c);$/;"	p	signature:(std::ostream& os, const correspondance<T>& c)
+operator <<	correspondance.h	/^std::ostream& operator<<(std::ostream& os, const correspondance<T>& c)$/;"	f	signature:(std::ostream& os, const correspondance<T>& c)
+operator <<	vec.cpp	/^inline std::ostream& operator<<(std::ostream& os, const vec2<T>& c)$/;"	f	signature:(std::ostream& os, const vec2<T>& c)
+operator <<	vec.cpp	/^inline std::ostream& operator<<(std::ostream& os, const vec3<T>& c)$/;"	f	signature:(std::ostream& os, const vec3<T>& c)
+operator <<	vec.h	/^	friend std::ostream& operator<< <>(std::ostream& os, const vec2& v);$/;"	p	class:vec2	access:friend	signature:(std::ostream& os, const vec2& v)
+operator <<	vec.h	/^	friend std::ostream& operator<< <>(std::ostream& os, const vec3& v);$/;"	p	class:vec3	access:friend	signature:(std::ostream& os, const vec3& v)
+operator <<	vec.h	/^std::ostream& operator<<(std::ostream& os, const vec2<T>& c);$/;"	p	signature:(std::ostream& os, const vec2<T>& c)
+operator <<	vec.h	/^std::ostream& operator<<(std::ostream& os, const vec3<T>& c);$/;"	p	signature:(std::ostream& os, const vec3<T>& c)
+operator =	Matrices/Matrix.H	/^        Matrix& operator=(const Matrix& M) {$/;"	f	class:Maths::Matrix	access:public	signature:(const Matrix& M)
+operator =	Matrices/Matrix.H	/^        Matrix& operator=(const TYPE val) {$/;"	f	class:Maths::Matrix	access:public	signature:(const TYPE val)
+operator =	Matrices/Matrix.H	/^        Vector& operator=(const TYPE val) {$/;"	f	class:Maths::Vector	access:public	signature:(const TYPE val)
+operator =	Matrices/Matrix.H	/^        Vector& operator=(const Vector<TYPE>& V) {$/;"	f	class:Maths::Vector	access:public	signature:(const Vector<TYPE>& V)
+operator =	RessourcesManager.h	/^	inline RessourcesManager& operator=(RessourcesManager const&) {$/;"	f	class:cg::RessourcesManager	access:private	signature:(RessourcesManager const&)
+operator =	vec.cpp	/^inline vec2<T>& vec2<T>::operator=(const vec2& v)$/;"	f	class:vec2	signature:(const vec2& v)
+operator =	vec.cpp	/^inline vec2<T>& vec2<T>::operator=(const vec3<T>& v)$/;"	f	class:vec2	signature:(const vec3<T>& v)
+operator =	vec.cpp	/^inline vec3<T>& vec3<T>::operator=(const vec2<T>& v)$/;"	f	class:vec3	signature:(const vec2<T>& v)
+operator =	vec.cpp	/^inline vec3<T>& vec3<T>::operator=(const vec3<T>& v)$/;"	f	class:vec3	signature:(const vec3<T>& v)
+operator =	vec.h	/^	vec2& operator=(const vec2<T>& v);$/;"	p	class:vec2	access:public	signature:(const vec2<T>& v)
+operator =	vec.h	/^	vec2& operator=(const vec3<T>& v);$/;"	p	class:vec2	access:public	signature:(const vec3<T>& v)
+operator =	vec.h	/^	vec3& operator=(const vec2<T>& v);$/;"	p	class:vec3	access:public	signature:(const vec2<T>& v)
+operator =	vec.h	/^	vec3& operator=(const vec3<T>& v);$/;"	p	class:vec3	access:public	signature:(const vec3<T>& v)
+operator >>	Images/Image.h	/^    std::istream& operator>>(std::istream& is,Image<TYPE>& im) throw(const std::string) {$/;"	f	namespace:Images	signature:(std::istream& is,Image<TYPE>& im)
+operator >>	Matrices/Matrix.H	/^    std::istream& operator>>(std::istream& is,Matrix<TYPE>& M) {$/;"	f	namespace:Maths	signature:(std::istream& is,Matrix<TYPE>& M)
+operator >>	Matrices/Matrix.H	/^    std::istream& operator>>(std::istream& is,Vector<TYPE>& V) {$/;"	f	namespace:Maths	signature:(std::istream& is,Vector<TYPE>& V)
+operator GLuint	shader.hpp	/^    operator GLuint() { return mProgramHandle; }$/;"	f	class:cg::Shader	access:public	signature:()
+operator []	Image.cpp	/^std::vector<correspondance<T>>& Image<T>::operator[](int i)$/;"	f	class:Image	signature:(int i)
+operator []	Image.h	/^		std::vector<correspondance<T>>& operator[](int i);$/;"	p	class:Image	access:public	signature:(int i)
+operator []	Image.h	/^	const vec2<T>& operator[](int i)const$/;"	f	class:image	access:public	signature:(int i) const
+operator []	Image.h	/^	vec2<T>& operator[](int i)$/;"	f	class:image	access:public	signature:(int i)
+p	correspondance.h	/^	vec2<T> p;\/\/double x,y;$/;"	m	class:point_i	access:public
+p1	correspondance.h	/^	vec2<T> p1,p2;\/\/1,y1,x2,y2;$/;"	m	class:correspondance	access:public
+p2	correspondance.h	/^	vec2<T> p1,p2;\/\/1,y1,x2,y2;$/;"	m	class:correspondance	access:public
+pivot	Matrices/lapack++.H	/^        int    pivot[n],iwork[n];$/;"	l
+pivot	Matrices/lapack++.H	/^        int    pivot[n];$/;"	l
+pivot	Matrices/lapack++.H	/^        int pivot[n];$/;"	l
+point_i	correspondance.h	/^class point_i$/;"	c
+point_i::id	correspondance.h	/^	int id;$/;"	m	class:point_i	access:public
+point_i::p	correspondance.h	/^	vec2<T> p;\/\/double x,y;$/;"	m	class:point_i	access:public
+print	Image.cpp	/^void Image<T>::print()const$/;"	f	class:Image	signature:() const
+print	Image.h	/^        void print()const;$/;"	p	class:Image	access:public	signature:() const
+printLog	shader.cpp	/^void Shader::printLog(GLuint object)$/;"	f	class:cg::Shader	signature:(GLuint object)
+printLog	shader.hpp	/^    void printLog(GLuint object);$/;"	p	class:cg::Shader	access:private	signature:(GLuint object)
+printOglError	PrintOpenglErrors.h	/^int printOglError(const char *file, int line) {$/;"	f	signature:(const char *file, int line)
+printOpenGLError	PrintOpenglErrors.h	27;"	d
+ptmp	mosaic.cpp	/^		point_i<T> ptmp;$/;"	l
+ptr	mosaic.cpp	/^		std::cout << *ptr++<<" ";$/;"	l
+ptr	mosaic.cpp	/^		std::unique_ptr<Image<T>>& ptr = img[indice];$/;"	l
+ptr	mosaic.cpp	/^	T* ptr = A[0]-1;$/;"	l
+ptr_image	mosaic.cpp	/^	std::unique_ptr<Image<T>> ptr_image;$/;"	l
+ptr_tex	main.cpp	/^	GLfloat* ptr_tex = tex_data__.data();$/;"	l
+ptr_vertex	main.cpp	/^	GLfloat* ptr_vertex = vertex_data;$/;"	l
+push_back	Image.cpp	/^	img.push_back(i);$/;"	p	file:	signature:(i)
+push_back	mosaic.cpp	/^				result[a.first].push_back(c2);$/;"	p	file:	signature:(c2)
+push_back	mosaic.cpp	/^				vtmp.push_back(ptmp);$/;"	p	file:	signature:(ptmp)
+push_back	mosaic.cpp	/^			result[a.first].push_back(c);$/;"	p	file:	signature:(c)
+ratio	main.cpp	/^		const GLfloat ratio = 765.0f\/509.0f;$/;"	l
+rdbuf	shader.cpp	/^		buffer << dataFile.rdbuf();$/;"	p	file:	signature:()
+renderToFBO	fbo.cpp	/^    void FBO::renderToFBO() {$/;"	f	class:cg::FBO	signature:()
+renderToFBO	fbo.hpp	/^            void renderToFBO();$/;"	p	class:cg::FBO	access:public	signature:()
+renderToScreen	fbo.cpp	/^    void FBO::renderToScreen() {$/;"	f	class:cg::FBO	signature:()
+renderToScreen	fbo.hpp	/^            static void renderToScreen();$/;"	p	class:cg::FBO	access:public	signature:()
+res	Matrices/Matrix.H	/^            Matrix res = *this;$/;"	l
+res	Matrices/Matrix.H	/^            Vector res = *this;$/;"	l
+res	Matrices/Matrix.H	/^        Matrix<TYPE> res(M.cols(),M.rows());$/;"	p	signature:(M.cols(),M.rows())
+resize	Images/Image.h	/^        im.resize(sx,sy);$/;"	p	signature:(sx,sy)
+resize	Images/Image.h	/^        void resize(const unsigned sx,const unsigned sy) {$/;"	f	class:Images::Image	access:public	signature:(const unsigned sx,const unsigned sy)
+result	mosaic.h	/^		Image<T> result;$/;"	m	class:mosaic	access:private
+retCode	PrintOpenglErrors.h	/^	int retCode = 0;$/;"	l
+row	Matrices/Matrix.H	/^        Vector<TYPE> row(const unsigned i) const {$/;"	f	class:Maths::Matrix	access:public	signature:(const unsigned i) const
+rows	Matrices/Matrix.H	/^            Matrix<TYPE> res(rows(),M.cols());$/;"	p	signature:()
+rows	Matrices/Matrix.H	/^            Vector<TYPE> res(rows());$/;"	p	signature:()
+rows	Matrices/Matrix.H	/^        unsigned rows() const { return nl; }$/;"	f	class:Maths::Matrix	access:public	signature:() const
+setFloat	shader.cpp	/^void Shader::setFloat(const std::string &uniformVarName, float value) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, float value)
+setFloat	shader.hpp	/^	void setFloat(const std::string &uniformVarName, float value);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, float value)
+setFloatArray	shader.cpp	/^void Shader::setFloatArray(const std::string &uniformVarName,$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const std::vector<float>& f)
+setFloatArray	shader.hpp	/^	void setFloatArray(const std::string &uniformVarName,$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const std::vector<float>& f)
+setInt	shader.cpp	/^void Shader::setInt(const std::string &uniformVarName, int value) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, int value)
+setInt	shader.hpp	/^	void setInt(const std::string &uniformVarName, int value);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, int value)
+setMat4	shader.cpp	/^void Shader::setMat4(const std::string &uniformVarName, const glm::mat4& mat) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const glm::mat4& mat)
+setMat4	shader.hpp	/^	void setMat4(const std::string &uniformVarName, const glm::mat4& mat);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const glm::mat4& mat)
+setName	shader.hpp	/^    void setName(const std::string& name) {$/;"	f	class:cg::Shader	access:public	signature:(const std::string& name)
+setTexture	shader.cpp	/^void Shader::setTexture(const std::string &uniformLocation, GLuint texture) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformLocation, GLuint texture)
+setTexture	shader.cpp	/^void Shader::setTexture(const std::string &uniformLocation, const shared_ptr<Texture>& texture) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformLocation, const shared_ptr<Texture>& texture)
+setTexture	shader.hpp	/^	void setTexture(const std::string &uniformLocation, GLuint texture);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformLocation, GLuint texture)
+setTexture	shader.hpp	/^	void setTexture(const std::string &uniformLocation, const std::shared_ptr<Texture>& texture);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformLocation, const std::shared_ptr<Texture>& texture)
+setVec2	shader.cpp	/^void Shader::setVec2(const std::string &uniformVarName,$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const glm::vec2& vector)
+setVec2	shader.hpp	/^	void setVec2(const std::string &uniformVarName, const glm::vec2& vector);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const glm::vec2& vector)
+setVec3	shader.cpp	/^void Shader::setVec3(const std::string &uniformVarName,$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const glm::vec3& vector)
+setVec3	shader.hpp	/^	void setVec3(const std::string &uniformVarName, const glm::vec3& vector);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const glm::vec3& vector)
+setVec3Array	shader.cpp	/^void Shader::setVec3Array(const std::string &uniformVarName,$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const std::vector<sf::Vector3f>& f)
+setVec3Array	shader.hpp	/^	void setVec3Array(const std::string &uniformVarName,$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const std::vector<sf::Vector3f>& f)
+setVec4	shader.cpp	/^void Shader::setVec4(const std::string &uniformVarName, const glm::vec4& vector) {$/;"	f	class:cg::Shader	signature:(const std::string &uniformVarName, const glm::vec4& vector)
+setVec4	shader.hpp	/^	void setVec4(const std::string &uniformVarName, const glm::vec4& vector);$/;"	p	class:cg::Shader	access:public	signature:(const std::string &uniformVarName, const glm::vec4& vector)
+set_in_f	shader.cpp	/^void Shader::set_in_f(int n, const std::string &in_name,$/;"	f	class:cg::Shader	signature:(int n, const std::string &in_name, const std::vector<float>& pos)
+set_in_f	shader.hpp	/^	void set_in_f(int n, const std::string &in_name,$/;"	p	class:cg::Shader	access:public	signature:(int n, const std::string &in_name, const std::vector<float>& pos)
+settings	main.cpp	/^	sf::ContextSettings settings;$/;"	l
+settings	main.cpp	/^	sf::Window window(sf::VideoMode(800, 600), "My window", sf::Style::Default, settings);$/;"	l
+sf::Style::Default	main.cpp	/^	sf::Window window(sf::VideoMode(800, 600), "My window", sf::Style::Default, settings);$/;"	m	class:sf::Style	file:
+shader	main.cpp	/^	Shader shader;$/;"	l
+shaderHandle	shader.cpp	/^    GLuint shaderHandle = glCreateShader(shaderType);$/;"	l
+shader_sample	main.cpp	/^	Shader shader_sample;$/;"	l
+shader_type	shader.hpp	/^	GLenum shader_type;$/;"	m	class:cg::Shader	access:private
+size	Images/Image.h	/^        const unsigned size = im.dimx()*im.dimy()*sizeof(TYPE);$/;"	l
+size	mosaic.cpp	/^			const int size = vtmp.size();$/;"	l
+size	mosaic.cpp	/^	const size_t size = c.size();$/;"	l
+size	mosaic.h	/^		int size(){return img.size();}$/;"	f	class:mosaic	access:public	signature:()
+size	shader.cpp	/^	glUniform1fv(getVariableId(uniformVarName), f.size(), farray);$/;"	p	file:	signature:()
+size_x	main.cpp	/^		GLfloat size_x = 1.0f;$/;"	l
+size_y	main.cpp	/^		GLfloat size_y = 1.0f;\/\/size_x\/ratio;$/;"	l
+solveZ	mosaic.cpp	/^	cv::SVD::solveZ(A,h);$/;"	p	class:cv::SVD	file:	signature:(A,h)
+ss	Image.cpp	/^	std::stringstream ss(line);$/;"	p	file:	signature:(line)
+ss	mosaic.cpp	/^			std::stringstream ss(ligne);$/;"	p	file:	signature:(ligne)
+ss	texture.cpp	/^	std::stringstream ss;$/;"	l
+status	fbo.cpp	/^        GLenum status;$/;"	l
+std::endl	Image.cpp	/^			os << '\\t' << c << std::endl;$/;"	m	class:std	file:
+std::endl	main.cpp	/^		std::cout << "azertyu"<<std::endl<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^				std::cout << i[j] << " " << tmp[j]<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^			std::cerr << "0 appariement ????" << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^			std::cerr << "erreur:\\n\\tfile: " << __FILE__ << "\\n\\tline: " << __LINE__<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^			std::cerr << indice << " " << tmp_val << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^			std::cout << ptr_image->get_id() << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^		std::cerr << "impossible d'ouvrir le fichier" << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^		std::cout << "indice "<< indice<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^		std::cout << *ptr++<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^		std::cout << cc.p1 << " " << vec2<T>(h*cc.p2)<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^		std::cout << cc.p1 << " " << vec3<T>(h*cc.p2)<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^		std::cout << cc.p2 << " " << vec2<T>(h*cc.p1)<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^		std::cout << cc.p2 << " " << vec3<T>(h*cc.p1)<<std::endl<<std::endl;;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^		std::cout << nb_img << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^	std::cerr << "end compute_homographie " << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^	std::cerr << "start compute_homographie " << indice << " " << result.get_id()<<std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^	std::cerr << indice << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^	std::cout << "!!!!!!!!!" << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^	std::cout << (A*h) << std::endl;$/;"	m	class:std	file:
+std::endl	mosaic.cpp	/^	std::cout << h << std::endl;$/;"	m	class:std	file:
+std::endl	test.cpp	/^	std::cout << m.size()<<std::endl;$/;"	m	class:std	file:
+std::getline	mosaic.cpp	/^			std::getline(fichier, ligne);$/;"	p	class:std	file:	signature:(fichier, ligne)
+std::getline	mosaic.cpp	/^		std::getline(fichier, ligne);$/;"	p	class:std	file:	signature:(fichier, ligne)
+str	Images/Image.h	/^        is >> str;$/;"	l
+str	Images/Image.h	/^        std::string str;$/;"	l
+sx	Images/Image.h	/^        unsigned sx,sy,depth;$/;"	l
+sy	Images/Image.h	/^        unsigned sx,sy,depth;$/;"	l
+t	mosaic.cpp	/^	T x,y,z,t,tx,ty,zx,zy;$/;"	l
+te	shader.cpp	/^    const char *te = (shader.c_str());$/;"	l
+test	mosaic.cpp	/^void mosaic<T>::test()$/;"	f	class:mosaic	signature:()
+test	mosaic.h	/^		void test();$/;"	p	class:mosaic	access:public	signature:()
+tex	main.cpp	/^	std::map<std::string,std::shared_ptr<Texture>> tex;$/;"	l
+texIt	RessourcesManager.cpp	/^	std::map<std::string, Texture*>::const_iterator texIt;$/;"	l
+texture	RessourcesManager.cpp	/^	Texture *texture = new Texture();$/;"	l
+texture_slot_index	shader.cpp	/^	int texture_slot_index = 0;$/;"	l
+tmp	Image.cpp	/^	int tmp;$/;"	l
+tmp	main.cpp	/^						GLfloat tmp = ratio\/windows_ratio;$/;"	l
+tmp	mosaic.cpp	/^		image<T> tmp;$/;"	l
+tmp	mosaic.cpp	/^	image<T> tmp;$/;"	l
+tmp_val	mosaic.cpp	/^	int tmp_val;$/;"	l
+transpose	Matrices/Matrix.H	/^    inline Matrix<TYPE> transpose(const Matrix<TYPE>& M) {$/;"	f	namespace:Maths	signature:(const Matrix<TYPE>& M)
+tx	mosaic.cpp	/^	T x,y,z,t,tx,ty,zx,zy;$/;"	l
+ty	mosaic.cpp	/^	T x,y,z,t,tx,ty,zx,zy;$/;"	l
+uniformID	shader.cpp	/^	int uniformID = getVariableId(uniformLocation);$/;"	l
+uniformId	shader.cpp	/^	int uniformId = glGetUniformLocation(mProgramHandle, strVariable.c_str());$/;"	l
+uploadTexture	texture.cpp	/^void Texture::uploadTexture(sf::Image *img) {$/;"	f	class:cg::Texture	signature:(sf::Image *img)
+uploadTexture	texture.hpp	/^	void uploadTexture(sf::Image *img);$/;"	p	class:cg::Texture	access:protected	signature:(sf::Image *img)
+val	Matrices/Matrix.H	/^                    TYPE val =0.0;$/;"	l
+val	Matrices/Matrix.H	/^                TYPE val =0.0;$/;"	l
+val	mosaic.cpp	/^	int val = -1;$/;"	l
+value	Images/Pixels.h	/^        static const char value[];$/;"	m	struct:Pixels::TAG	access:public
+value	Images/Pixels.h	/^    const char TAG<Grey>::value[] = "P5";$/;"	m	class:Pixels::TAG
+value	Images/Pixels.h	/^    const char TAG<RGB<> >::value[] = "P6";$/;"	m	class:Pixels::TAG
+value	shader.cpp	/^	glUniform1f(getVariableId(uniformVarName), value);$/;"	l
+value	shader.cpp	/^	glUniform1i(getVariableId(uniformVarName), value);$/;"	l
+value_ptr	shader.cpp	/^			glm::value_ptr(mat));$/;"	p	class:cg::glm	file:	signature:(mat)
+values	Images/Pixels.h	/^        TYPE values[3];$/;"	m	struct:Pixels::RGB	access:public
+vao	shader.hpp	/^	GLuint vao;$/;"	m	class:cg::Shader	access:private
+vec2	vec.cpp	/^inline vec2<T>::vec2()$/;"	f	class:vec2	signature:()
+vec2	vec.cpp	/^inline vec2<T>::vec2(T _x, T _y)$/;"	f	class:vec2	signature:(T _x, T _y)
+vec2	vec.cpp	/^inline vec2<T>::vec2(const vec2<T>& v)$/;"	f	class:vec2	signature:(const vec2<T>& v)
+vec2	vec.cpp	/^inline vec2<T>::vec2(const vec3<T>& v)$/;"	f	class:vec2	signature:(const vec3<T>& v)
+vec2	vec.h	/^	vec2();$/;"	p	class:vec2	access:public	signature:()
+vec2	vec.h	/^	vec2(T _x, T _y);$/;"	p	class:vec2	access:public	signature:(T _x, T _y)
+vec2	vec.h	/^	vec2(const vec2<T>& v);$/;"	p	class:vec2	access:public	signature:(const vec2<T>& v)
+vec2	vec.h	/^	vec2(const vec3<T>& v);$/;"	p	class:vec2	access:public	signature:(const vec3<T>& v)
+vec2	vec.h	/^class vec2$/;"	c
+vec2::operator <<	vec.h	/^	friend std::ostream& operator<< <>(std::ostream& os, const vec2& v);$/;"	p	class:vec2	access:friend	signature:(std::ostream& os, const vec2& v)
+vec2::operator =	vec.cpp	/^inline vec2<T>& vec2<T>::operator=(const vec2& v)$/;"	f	class:vec2	signature:(const vec2& v)
+vec2::operator =	vec.cpp	/^inline vec2<T>& vec2<T>::operator=(const vec3<T>& v)$/;"	f	class:vec2	signature:(const vec3<T>& v)
+vec2::operator =	vec.h	/^	vec2& operator=(const vec2<T>& v);$/;"	p	class:vec2	access:public	signature:(const vec2<T>& v)
+vec2::operator =	vec.h	/^	vec2& operator=(const vec3<T>& v);$/;"	p	class:vec2	access:public	signature:(const vec3<T>& v)
+vec2::vec2	vec.cpp	/^inline vec2<T>::vec2()$/;"	f	class:vec2	signature:()
+vec2::vec2	vec.cpp	/^inline vec2<T>::vec2(T _x, T _y)$/;"	f	class:vec2	signature:(T _x, T _y)
+vec2::vec2	vec.cpp	/^inline vec2<T>::vec2(const vec2<T>& v)$/;"	f	class:vec2	signature:(const vec2<T>& v)
+vec2::vec2	vec.cpp	/^inline vec2<T>::vec2(const vec3<T>& v)$/;"	f	class:vec2	signature:(const vec3<T>& v)
+vec2::vec2	vec.h	/^	vec2();$/;"	p	class:vec2	access:public	signature:()
+vec2::vec2	vec.h	/^	vec2(T _x, T _y);$/;"	p	class:vec2	access:public	signature:(T _x, T _y)
+vec2::vec2	vec.h	/^	vec2(const vec2<T>& v);$/;"	p	class:vec2	access:public	signature:(const vec2<T>& v)
+vec2::vec2	vec.h	/^	vec2(const vec3<T>& v);$/;"	p	class:vec2	access:public	signature:(const vec3<T>& v)
+vec2::x	vec.h	/^	T x,y;$/;"	m	class:vec2	access:public
+vec2::y	vec.h	/^	T x,y;$/;"	m	class:vec2	access:public
+vec3	vec.cpp	/^inline vec3<T>::vec3()$/;"	f	class:vec3	signature:()
+vec3	vec.cpp	/^inline vec3<T>::vec3(T _x, T _y, T _z)$/;"	f	class:vec3	signature:(T _x, T _y, T _z)
+vec3	vec.cpp	/^inline vec3<T>::vec3(const vec2<T>& v)$/;"	f	class:vec3	signature:(const vec2<T>& v)
+vec3	vec.cpp	/^inline vec3<T>::vec3(const vec3<T>& v)$/;"	f	class:vec3	signature:(const vec3<T>& v)
+vec3	vec.h	/^	vec3();$/;"	p	class:vec3	access:public	signature:()
+vec3	vec.h	/^	vec3(T _x, T _y, T _z);$/;"	p	class:vec3	access:public	signature:(T _x, T _y, T _z)
+vec3	vec.h	/^	vec3(const vec2<T>& v);$/;"	p	class:vec3	access:public	signature:(const vec2<T>& v)
+vec3	vec.h	/^	vec3(const vec3<T>& v);$/;"	p	class:vec3	access:public	signature:(const vec3<T>& v)
+vec3	vec.h	/^class vec3$/;"	c
+vec3::operator <<	vec.h	/^	friend std::ostream& operator<< <>(std::ostream& os, const vec3& v);$/;"	p	class:vec3	access:friend	signature:(std::ostream& os, const vec3& v)
+vec3::operator =	vec.cpp	/^inline vec3<T>& vec3<T>::operator=(const vec2<T>& v)$/;"	f	class:vec3	signature:(const vec2<T>& v)
+vec3::operator =	vec.cpp	/^inline vec3<T>& vec3<T>::operator=(const vec3<T>& v)$/;"	f	class:vec3	signature:(const vec3<T>& v)
+vec3::operator =	vec.h	/^	vec3& operator=(const vec2<T>& v);$/;"	p	class:vec3	access:public	signature:(const vec2<T>& v)
+vec3::operator =	vec.h	/^	vec3& operator=(const vec3<T>& v);$/;"	p	class:vec3	access:public	signature:(const vec3<T>& v)
+vec3::vec3	vec.cpp	/^inline vec3<T>::vec3()$/;"	f	class:vec3	signature:()
+vec3::vec3	vec.cpp	/^inline vec3<T>::vec3(T _x, T _y, T _z)$/;"	f	class:vec3	signature:(T _x, T _y, T _z)
+vec3::vec3	vec.cpp	/^inline vec3<T>::vec3(const vec2<T>& v)$/;"	f	class:vec3	signature:(const vec2<T>& v)
+vec3::vec3	vec.cpp	/^inline vec3<T>::vec3(const vec3<T>& v)$/;"	f	class:vec3	signature:(const vec3<T>& v)
+vec3::vec3	vec.h	/^	vec3();$/;"	p	class:vec3	access:public	signature:()
+vec3::vec3	vec.h	/^	vec3(T _x, T _y, T _z);$/;"	p	class:vec3	access:public	signature:(T _x, T _y, T _z)
+vec3::vec3	vec.h	/^	vec3(const vec2<T>& v);$/;"	p	class:vec3	access:public	signature:(const vec2<T>& v)
+vec3::vec3	vec.h	/^	vec3(const vec3<T>& v);$/;"	p	class:vec3	access:public	signature:(const vec3<T>& v)
+vec3::x	vec.h	/^	T x,y,z;$/;"	m	class:vec3	access:public
+vec3::y	vec.h	/^	T x,y,z;$/;"	m	class:vec3	access:public
+vec3::z	vec.h	/^	T x,y,z;$/;"	m	class:vec3	access:public
+vertex	Image.h	/^	std::array<vec2<T>,4> vertex;\/\/A,B,C,D;$/;"	m	class:image	access:public
+vertex	shader.cpp	/^    std::string vertex = loadFile(vertexShaderPath);$/;"	l
+vertexLoc	shader.cpp	/^	GLint vertexLoc;$/;"	l
+vertexLoc	shader.cpp	/^	vertexLoc = glGetAttribLocation(mProgramHandle,in_name.c_str());$/;"	l
+vertex_data	main.cpp	/^	GLfloat* const vertex_data = vertex_data__.data();$/;"	l
+vtmp	mosaic.cpp	/^		std::vector<point_i<T>> vtmp;$/;"	l
+windows_ratio	main.cpp	/^	GLfloat windows_ratio = 4.0f\/3.0f;$/;"	l
+work	Matrices/lapack++.H	/^        double    work[ldwork];$/;"	l
+work	Matrices/lapack++.H	/^        double *DUMMY=0,work[ldwork];$/;"	l
+work	Matrices/lapack++.H	/^        double work[ldwork],Tau[minmn];$/;"	l
+work	Matrices/lapack++.H	/^        double work[ldwork],Tau[std::min(M,N)];$/;"	l
+work	Matrices/lapack++.H	/^        double work[ldwork];$/;"	l
+work	Matrices/lapack++.H	/^        double work[n];$/;"	l
+work1	Matrices/lapack++.H	/^        double work1[ws];$/;"	l
+ws	Images/Image.h	/^        is >> std::ws;$/;"	m	class:Images::std
+ws	Images/Image.h	/^        is >> sx >> sy >> depth >> std::ws;$/;"	m	class:Images::std
+ws	Matrices/lapack++.H	/^        const unsigned ws = Maths::max(M,P,3*N)+N;$/;"	l
+x	mosaic.cpp	/^	T x,y,z,t,tx,ty,zx,zy;$/;"	l
+x	vec.h	/^	T x,y,z;$/;"	m	class:vec3	access:public
+x	vec.h	/^	T x,y;$/;"	m	class:vec2	access:public
+y	mosaic.cpp	/^	T x,y,z,t,tx,ty,zx,zy;$/;"	l
+y	vec.h	/^	T x,y,z;$/;"	m	class:vec3	access:public
+y	vec.h	/^	T x,y;$/;"	m	class:vec2	access:public
+z	mosaic.cpp	/^	T x,y,z,t,tx,ty,zx,zy;$/;"	l
+z	vec.h	/^	T x,y,z;$/;"	m	class:vec3	access:public
+zx	mosaic.cpp	/^	T x,y,z,t,tx,ty,zx,zy;$/;"	l
+zy	mosaic.cpp	/^	T x,y,z,t,tx,ty,zx,zy;$/;"	l
+~FBO	fbo.cpp	/^    FBO::~FBO() {$/;"	f	class:cg::FBO	signature:()
+~FBO	fbo.hpp	/^            virtual ~FBO();$/;"	p	class:cg::FBO	access:public	signature:()
+~Image	Image.cpp	/^Image<T>::~Image()$/;"	f	class:Image	signature:()
+~Image	Image.h	/^        virtual ~Image();$/;"	p	class:Image	access:public	signature:()
+~Image	Images/Image.h	/^        ~Image() { destroy(); }$/;"	f	class:Images::Image	access:public	signature:()
+~Matrix	Matrices/Matrix.H	/^        ~Matrix() { delete[] elmts; }$/;"	f	class:Maths::Matrix	access:public	signature:()
+~RessourcesManager	RessourcesManager.cpp	/^RessourcesManager::~RessourcesManager() {$/;"	f	class:cg::RessourcesManager	signature:()
+~RessourcesManager	RessourcesManager.h	/^	~RessourcesManager();$/;"	p	class:cg::RessourcesManager	access:private	signature:()
+~Shader	shader.cpp	/^Shader::~Shader() {$/;"	f	class:cg::Shader	signature:()
+~Shader	shader.hpp	/^	virtual ~Shader();$/;"	p	class:cg::Shader	access:public	signature:()
+~Texture	texture.cpp	/^Texture::~Texture() {$/;"	f	class:cg::Texture	signature:()
+~Texture	texture.hpp	/^	virtual ~Texture();$/;"	p	class:cg::Texture	access:public	signature:()
+~Vector	Matrices/Matrix.H	/^        ~Vector() { delete[] elmts; }$/;"	f	class:Maths::Vector	access:public	signature:()
