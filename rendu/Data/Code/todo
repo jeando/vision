@@ -1,0 +1,6 @@
+cmakefile
+normaliser couleur histo
+dans image:
+->remettre w,h
+->enlever le tableau de sommets
+->dans le main utiliser w et h de image lorsque l'on calcule tous les vertex 
