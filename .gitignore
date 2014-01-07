@@ -6,5 +6,7 @@
 vision
 *.tgz
 *.out
-
+CMakeCache.txt
+CMakeFiles
+CMakeFiles/*
 
