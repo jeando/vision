@@ -23,7 +23,8 @@ Les librairies nécessaires à ce projet sont :<br>
 Compilation :
 -------------
 Pour compiler notre projet, il suffit de faire tourner la commande `cmake .;make` dans le dossier`./Data/Code`
-.. warning:: il faut donc avoir les modules `cmake` correspondants aux librairies précisées ci-dessus!
+<br>
+<b>Attention</b>: il faut donc avoir les modules `cmake` correspondants aux librairies précisées ci-dessus!
 
 Execution :
 -----------
