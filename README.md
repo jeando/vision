@@ -1,4 +1,4 @@
-﻿Projet de Vision
+Projet de Vision
 ================
 
 Auteurs :
@@ -16,21 +16,23 @@ Les librairies nécessaires à ce projet sont :<br>
 * openCV (opencv_core)
 * openGL 3
 * SFML 2.0
+* glew
 
 <br>Merci de vérifier que ces librairies sont bien installées sur votre ordinateur avant d'essayer de compiler notre projet.
 
 Compilation :
 -------------
-Pour compiler notre projet, il suffit de faire tourner la commande `make` ou `cmake` dans le fichier `./Data/Code`
+Pour compiler notre projet, il suffit de faire tourner la commande `cmake .;make` dans le dossier`./Data/Code`
+.. warning:: il faut donc avoir les modules `cmake` correspondants aux librairies précisées ci-dessus!
 
 Execution :
 -----------
 
 * Si vous voulez rentrer à la main (au clic de souris) la liste des appariements :<br>
-Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `.interface`
+Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `./vision_gui`
 <br>(le recollement ne se fait pas automatiquement, il faudra pour cela lancé la commande suivante)
 * Si vous voulez générer le recollement à partir d'un fichier où les appariements sont listés : (celui-ci devra se nomer `matching_points`)<br>
-Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `.recollement`
+Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `./recollement`
 
 
 commandes :
