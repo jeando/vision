@@ -3,7 +3,7 @@ Projet de Vision
 
 Auteurs :
 ---------
-Guï¿½non Marie & Favreau Jean-Dominique
+Guénon Marie & Favreau Jean-Dominique
 
 Date :
 ------
@@ -11,45 +11,45 @@ Date :
 
 Librairies :
 ------------
-Les librairies nï¿½cessaires ï¿½ ce projet sont :<br>
+Les librairies nécessaires à ce projet sont :<br>
 
 * openCV (opencv_core)
 * openGL 3
 * SFML 2.0
 * glew
 
-<br>Merci de vï¿½rifier que ces librairies sont bien installï¿½es sur votre ordinateur avant d'essayer de compiler notre projet.
+<br>Merci de vérifier que ces librairies sont bien installées sur votre ordinateur avant d'essayer de compiler notre projet.
 
 Compilation :
 -------------
 Pour compiler notre projet, il suffit de faire tourner la commande `cmake .;make` dans le dossier`./Data/Code`
 <br>
-<b>Attention</b>: il faut donc avoir les modules `cmake` correspondants aux librairies prï¿½cisï¿½es ci-dessus!
+<b>Attention</b>: il faut donc avoir les modules `cmake` correspondants aux librairies précisées ci-dessus!
 
 Execution :
 -----------
 
-* Si vous voulez rentrer ï¿½ la main (au clic de souris) la liste des appariements :<br>
-Se mettre dans le rï¿½pertoire `./Data/code` et ï¿½xecuter le fichier `vision` crï¿½ï¿½ lors de la compilation en lanï¿½ant la ligne de commande `./vision_gui`
-<br>(le recollement ne se fait pas automatiquement, il faudra pour cela lancï¿½ la commande suivante)
-* Si vous voulez gï¿½nï¿½rer le recollement ï¿½ partir d'un fichier oï¿½ les appariements sont listï¿½s : (celui-ci devra se nomer `matching_points`)<br>
-Se mettre dans le rï¿½pertoire `./Data/code` et ï¿½xecuter le fichier `vision` crï¿½ï¿½ lors de la compilation en lanï¿½ant la ligne de commande `./recollement`
+* Si vous voulez rentrer à la main (au clic de souris) la liste des appariements :<br>
+Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `./vision_gui`
+<br>(le recollement ne se fait pas automatiquement, il faudra pour cela lancé la commande suivante)
+* Si vous voulez générer le recollement à partir d'un fichier où les appariements sont listés : (celui-ci devra se nomer `matching_points`)<br>
+Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `./recollement`
 
 
 commandes :
 -----------
 Dans l'interface :
 
-* flï¿½ches clavier gauche/droite pour dï¿½placer la liste d'images
-* flï¿½ches clavier haut/bas pour faire dï¿½filer la liste des appariements
-* clique sur une image de la liste pour la sï¿½lectionner
+* flèches clavier gauche/droite pour déplacer la liste d'images
+* flèches clavier haut/bas pour faire défiler la liste des appariements
+* clique sur une image de la liste pour la sélectionner
 * clique sur les images actives pour ajouter des appariements
 * `echap` pour quitter
 * `w` pour sauvegarder les appariements dans un fichier `maching_points`
 
 Dans l'affichage des recollements:
 
-* `F1` prend une impression d'ï¿½cran sauvegardï¿½e dans un fichier `screenshot.jpg`
+* `F1` prend une impression d'écran sauvegardée dans un fichier `screenshot.jpg`
 * `echap` pour quitter
 * `F2` calcul le recollement suivant
 
