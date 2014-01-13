@@ -32,7 +32,7 @@ Execution :
 * Si vous voulez rentrer à la main (au clic de souris) la liste des appariements :<br>
 Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `./vision_gui`
 <br>(le recollement ne se fait pas automatiquement, il faudra pour cela lancé la commande suivante)
-* Si vous voulez générer le recollement à partir d'un fichier où les appariements sont listés : (celui-ci devra se nomer `matching_points`)<br>
+* Si vous voulez générer le recollement à partir d'un fichier où les appariements sont listés : (celui-ci devra se nommer `matching_points`)<br>
 Se mettre dans le répertoire `./Data/code` et éxecuter le fichier `vision` créé lors de la compilation en lançant la ligne de commande `./recollement`
 
 
